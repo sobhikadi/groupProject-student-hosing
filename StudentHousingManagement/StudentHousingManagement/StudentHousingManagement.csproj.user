@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Forms\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\BuildingAdministration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ChoreShedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Complaints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CreateAnnoucement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FileComplaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\UserAdministration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\UserPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\WhoPaysWhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Forms\ChoreShedule.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\FileComplaint.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\LogIn.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\MyProfile.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\UserAdministration.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

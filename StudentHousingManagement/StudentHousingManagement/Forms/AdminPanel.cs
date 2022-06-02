@@ -7,17 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentHousingManagement;
 
 namespace StudentHousingManagementForms
 {
     public partial class AdminPanel : Form
     {
-        private Button currentButton;
-        private Form activeForm;
-        private LogIn logIn;
-        public AdminPanel(LogIn logIn)
+        UserController userController;
+        BuildingController buildingController;
+
+        Button currentButton;
+        Form activeForm;
+        LogIn logIn;
+        public AdminPanel(LogIn logIn, UserController userController, BuildingController buildingController)
         {
             InitializeComponent();
+            this.userController = userController;
+            this.buildingController = buildingController;
+            this.logIn = logIn;
         }
 
         private void ActivateButton(object btnSender)
@@ -72,12 +79,12 @@ namespace StudentHousingManagementForms
 
         private void btnBuildingAdmin_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new BuildingAdministration(), sender);
+            OpenChildForm(new BuildingAdministration(buildingController), sender);
         }
 
         private void btnUserAdmin_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new UserAdministration(), sender);
+            OpenChildForm(new UserAdministration(userController, buildingController), sender);
         }
 
         private void btnCreateAnnoucement_Click(object sender, EventArgs e)
@@ -97,7 +104,6 @@ namespace StudentHousingManagementForms
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            logIn = new LogIn();
             logIn.Show();
             this.Close();
         }

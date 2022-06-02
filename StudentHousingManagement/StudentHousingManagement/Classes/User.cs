@@ -17,7 +17,7 @@ namespace StudentHousingManagement
 
         public int ID
         { get; private set; }
-        public string UserName
+        public string Name
         { get; private set; }
         public string Password
         { get; private set; }
@@ -28,13 +28,14 @@ namespace StudentHousingManagement
 
 
 
-        public User(string name, string password, string email, int id, bool admin)
+        public User(string name, string password, string email, int id, bool admin, House house)
         {
-            UserName = name;
+            Name = name;
             Email = email;
             Password = password;
             ID = id;
             Admin = admin;
+            House = house;
 
             Complaints = new List<Message>();
         }
@@ -52,5 +53,9 @@ namespace StudentHousingManagement
             Complaints.Add(complaint);
         }
 
+        public override string ToString()
+        {
+            return Name + " - " + Email;
+        }
     }
 }

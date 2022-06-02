@@ -3,23 +3,26 @@ namespace StudentHousingManagementForms
 {
     public partial class LogIn : Form
     {
-        private UserPanel? userPanel;
-        private AdminPanel? adminPanel;
-        public UserController userController;
+        UserPanel? userPanel;
+        AdminPanel? adminPanel;
+        UserController userController;
+        BuildingController buildingController;
 
         public LogIn()
         {
             InitializeComponent();
-            userController = new UserController();
+            buildingController = new BuildingController();
+            userController = new UserController(buildingController);
+            
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            if (userController.LogIn(tbUserName.Text, tbPassword.Text))
+            if (userController.LogIn(tbEmail.Text, tbPassword.Text))
             {
                 if (userController.CurrentUser.Admin)
                 {
-                    adminPanel = new AdminPanel(this);
+                    adminPanel = new AdminPanel(this, userController, buildingController);
                     adminPanel.Show();
                     this.Hide();
                 }

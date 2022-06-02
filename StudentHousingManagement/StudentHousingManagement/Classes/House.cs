@@ -8,20 +8,39 @@ namespace StudentHousingManagement
 {
     public class House
     {
-        private string address;
         private int noOfResidents;
-        private int ID;
-        private List<User> residentList;
+        private string houseNumber;
         private ChoreSchedule choreSchedule;
         private string houseRules;
-        private List<Message> announcements;
+
+        public Building Building
+        { get; private set; }
+        public List<User> Residents
+        { get; private set; }
+        public List<Message> Announcements
+        { get; private set; }
         
-        public House(Building building, int noOfResidents)
+        public House(Building building, int noOfResidents, string houseNumber)
         {
-            this.noOfResidents = noOfResidents; 
+            Building = building;
+            this.noOfResidents = noOfResidents;
+            this.houseNumber = houseNumber;
+
+            Residents = new List<User>();
+            Announcements = new List<Message>();
+        }
+
+        public void AddResident(User resident)
+        {
+            Residents.Add(resident);
         }
 
         public void NewHouseRules(string rules)
         { }
+
+        public override string ToString()
+        {
+            return houseNumber;
+        }
     }
 }

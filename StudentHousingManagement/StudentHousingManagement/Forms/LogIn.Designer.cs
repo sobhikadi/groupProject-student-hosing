@@ -33,7 +33,7 @@
             this.btnLogIn = new System.Windows.Forms.Button();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.tbUserName = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.lblUserName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             this.panel1.Controls.Add(this.btnLogIn);
             this.panel1.Controls.Add(this.tbPassword);
             this.panel1.Controls.Add(this.lblPassword);
-            this.panel1.Controls.Add(this.tbUserName);
+            this.panel1.Controls.Add(this.tbEmail);
             this.panel1.Controls.Add(this.lblUserName);
             this.panel1.Location = new System.Drawing.Point(160, 85);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -94,24 +94,24 @@
             this.lblPassword.TabIndex = 4;
             this.lblPassword.Text = "Password:";
             // 
-            // tbUserName
+            // tbEmail
             // 
-            this.tbUserName.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbUserName.Location = new System.Drawing.Point(193, 57);
-            this.tbUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbUserName.Name = "tbUserName";
-            this.tbUserName.Size = new System.Drawing.Size(239, 32);
-            this.tbUserName.TabIndex = 3;
+            this.tbEmail.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbEmail.Location = new System.Drawing.Point(193, 57);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(239, 32);
+            this.tbEmail.TabIndex = 3;
             // 
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
             this.lblUserName.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUserName.Location = new System.Drawing.Point(57, 59);
+            this.lblUserName.Location = new System.Drawing.Point(90, 57);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(106, 25);
+            this.lblUserName.Size = new System.Drawing.Size(62, 25);
             this.lblUserName.TabIndex = 2;
-            this.lblUserName.Text = "User name:";
+            this.lblUserName.Text = "Email:";
             // 
             // LogIn
             // 
@@ -137,7 +137,7 @@
         private Button btnLogIn;
         private TextBox tbPassword;
         private Label lblPassword;
-        private TextBox tbUserName;
+        private TextBox tbEmail;
         private Label lblUserName;
     }
 }

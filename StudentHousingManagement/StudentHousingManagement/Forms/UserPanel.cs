@@ -11,17 +11,16 @@ using System.Windows.Forms;
 
 namespace StudentHousingManagementForms
 {
-    
-
     public partial class UserPanel : Form
     {
         private Button currentButton;
         private Form activeForm;
         private LogIn logIn;
 
-        public UserPanel()
+        public UserPanel(LogIn logIn)
         {
             InitializeComponent();   
+            this.logIn = logIn;
         }
 
         private void ActivateButton(object btnSender)
@@ -106,7 +105,6 @@ namespace StudentHousingManagementForms
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            logIn = new LogIn();
             logIn.Show();
             this.Close();
         }

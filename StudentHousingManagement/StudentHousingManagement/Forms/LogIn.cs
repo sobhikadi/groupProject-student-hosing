@@ -1,32 +1,36 @@
+using StudentHousingManagement;
 namespace StudentHousingManagementForms
 {
     public partial class LogIn : Form
     {
-        private UserPanel userPanel;
-        private AdminPanel adminPanel;
+        private UserPanel? userPanel;
+        private AdminPanel? adminPanel;
+        public UserController userController;
 
         public LogIn()
         {
             InitializeComponent();
-            userPanel = new UserPanel();
-            adminPanel = new AdminPanel();        
+            userController = new UserController();
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            string userName = tbUserName.Text;
-            int password = Convert.ToInt32(tbPassword.Text);
-
-            if (userName == "admin" && password == 1122)
+            if (userController.LogIn(tbUserName.Text, tbPassword.Text))
             {
-                adminPanel.Show();
-                this.Hide();
+                if (userController.CurrentUser.Admin)
+                {
+                    adminPanel = new AdminPanel(this);
+                    adminPanel.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    userPanel = new UserPanel(this);
+                    userPanel.Show();
+                    this.Hide();
+                }
             }
-            else 
-            {
-                userPanel.Show();
-                this.Hide();
-            }
+            else MessageBox.Show("Invalid username or password");
         }
     }
 }

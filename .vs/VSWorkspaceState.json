@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\StudentHousingManagement",
+    "\\StudentHousingManagement\\StudentHousingManagement",
+    "\\StudentHousingManagement\\StudentHousingManagement\\Forms"
   ],
-  "SelectedNode": "\\C:\\Users\\maxva\\OneDrive\\Documents\\HBO-ICT\\StudentHousingManagement",
+  "SelectedNode": "\\StudentHousingManagement\\StudentHousingManagement\\Forms\\Dashboard.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -15,7 +15,7 @@ namespace StudentHousingManagementForms
         private Button currentButton;
         private Form activeForm;
         private LogIn logIn;
-        public AdminPanel()
+        public AdminPanel(LogIn logIn)
         {
             InitializeComponent();
         }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Student_Housing_Managment
+namespace StudentHousingManagement
 {
     public class Building
     {

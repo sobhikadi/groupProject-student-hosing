@@ -4,39 +4,48 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Student_Housing_Managment
+namespace StudentHousingManagement
 {
     public class UserController
     {
-        private int userIdFeeder;
+        private int IDFeeder;
 
+        public User? CurrentUser
+        { get; private set; }
         public List<User> Users
         { get; private set; }
-        public Admin Admin
-        { get; private set; }
 
-        private UserController()
+        public UserController()
         {
             Users = new List<User>();
-            Admin = new Admin("Admin", "password");
-            userIdFeeder = 0;
+            IDFeeder = 0;
+            NewUser("admin", "password", "email", true);
+            NewUser("user", "password", "email", false);
         }
 
-        public void NewUser(string userName, string password, string email)
+        public bool LogIn(string userName, string password)
         {
-            Users.Add(new User(userName, password, email, userIdFeeder));
-            userIdFeeder++;
+            foreach (User user in Users)
+            {
+                if (user.UserName == userName && user.Password == password)
+                {
+                    CurrentUser = user;
+                    return true;
+                }            
+            }
+            return false;
         }
 
-        public void NewAdmin(string userName, string password)
+        public void NewUser(string userName, string password, string email, bool admin)
         {
-            Admin = new Admin(userName, password);
+            User user = new User(userName, password, email, IDFeeder, admin);
+            Users.Add(user);
+            IDFeeder++;
         }
 
         public void NewMessage(string subject, string body, User user)
         {
             Message message = new Message(subject, body, user);
-
         }
     }
 }

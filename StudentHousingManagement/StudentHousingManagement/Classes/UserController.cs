@@ -39,8 +39,14 @@ namespace StudentHousingManagement
             return false;
         }
 
-        public void NewUser(string name, string password, string email, bool admin, House house)
+        public bool NewUser(string name, string password, string email, bool admin, House house)
         {
+            foreach(User u in Users)
+            {
+                if (u.Email == email)
+                { return false; }
+            }
+
             User user = new User(name, password, email, IDFeeder, admin, house);
             Users.Add(user);
 
@@ -48,13 +54,20 @@ namespace StudentHousingManagement
             house.AddResident(user);
 
             IDFeeder++;
+            return true;
         }
-        public void NewUser(string name, string email, bool admin, House house)
+        public bool NewUser(string name, string email, bool admin, House house)
         {
+            foreach (User u in Users)
+            {
+                if (u.Email == email)
+                { return false; }
+            }
             //User user = new User(name, RandomPassword(), email, IDFeeder, admin, house);
             User user = new User(name, "password", email, IDFeeder, admin, house);
             Users.Add(user);
             IDFeeder++;
+            return true;
         }
 
         public string RandomPassword()

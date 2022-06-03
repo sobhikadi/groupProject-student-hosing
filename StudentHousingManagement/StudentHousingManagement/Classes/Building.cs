@@ -27,7 +27,7 @@
             this.noOfHouses = noOfHouses;
 
             Houses = new List<House>();
-            NewHouse(6, "51-56");
+            NewHouse(6, "51");
             Residents = new List<User>();
             Complaints = new List<Message>();
             Announcements = new List<Message>();

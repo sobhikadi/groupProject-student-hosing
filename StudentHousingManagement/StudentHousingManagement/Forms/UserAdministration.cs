@@ -28,9 +28,26 @@ namespace StudentHousingManagementForms
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-            userController.NewUser(tbStudentName.Text, tbStudentEmail.Text, rbAdmin.Checked, (House)cboxHouseAdd.SelectedItem);
-            UpdateUserList();
+            //Check if Textboxes are not empty.
+            if (String.IsNullOrEmpty(tbStudentName.Text))
+            {
+                MessageBox.Show("Please input a name.");
+                return;
+            }
+            if(String.IsNullOrEmpty(tbStudentEmail.Text))
+            {
+                MessageBox.Show("Please input an email.");
+                return;
+            }
+
+            if (userController.NewUser(tbStudentName.Text, tbStudentEmail.Text, rbAdmin.Checked, (House)cboxHouseAdd.SelectedItem))
+            {
+                MessageBox.Show("User succesfully added.");
+                UpdateUserList();
+            }
+            else MessageBox.Show("This email is already in use.");
         }
+
         private void btnRemoveUser_Click(object sender, EventArgs e)
         {
             if (userController.CurrentUser != (User)lboxUsers.SelectedItem)
@@ -40,6 +57,7 @@ namespace StudentHousingManagementForms
             }
             else MessageBox.Show("You cannot remove yourself.");
         }
+
         private void UpdateUserList()
         {
             lboxUsers.DataSource = null;

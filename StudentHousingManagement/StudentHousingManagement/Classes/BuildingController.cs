@@ -14,13 +14,13 @@ namespace StudentHousingManagement
         public BuildingController()
         {
             Buildings = new List<Building>();
-
-            NewBuilding("Tilburg, Korvelse Weg 51-74", 4);
+            NewBuilding("Tilburg 5025TJ, Korvelse Weg 51-54", 4);
         }
 
         public void NewBuilding(string address, int noOfHouses)
         {
             Buildings.Add(new Building(address, noOfHouses));
+            Buildings.Sort((a, b) => a.Address.CompareTo(b.Address));
         }
 
         public void NewAnnoucement(string header, string message,DateTime dateTime, string user)

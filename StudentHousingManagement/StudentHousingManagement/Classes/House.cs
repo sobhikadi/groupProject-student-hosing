@@ -40,7 +40,7 @@ namespace StudentHousingManagement
 
         public override string ToString()
         {
-            return houseNumber;
+            return $"House Number: {houseNumber}";
         }
     }
 }

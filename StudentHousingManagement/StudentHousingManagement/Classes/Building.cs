@@ -8,15 +8,14 @@ namespace StudentHousingManagement
 {
     public class Building
     {
-        private string address;
-        private int ID;
-        private int noOfHouses;
-        private string buildingRules;
+        int IDFeeder;
+        int noOfHouses;
+        string buildingRules;
         private List<Message> announcements;
         private List<Message> complaints;
         
 
-        int IDFeeder = 0;
+        
         public List<User> Residents
         { get; private set; }
         public List<House> Houses
@@ -29,19 +28,22 @@ namespace StudentHousingManagement
         {
             Address = address;
             this.noOfHouses = noOfHouses;
+            IDFeeder = 0;
 
             Houses = new List<House>();
-            NewHouse(6, "51-56");
+            NewHouse(6, "51");
             Residents = new List<User>();
         }
 
-        public void NewHouse(int noOfResidents, string houseNumber)
+        public bool NewHouse(int noOfResidents, string houseNumber)
         {
-            if(noOfHouses > IDFeeder)
+            if (noOfHouses > IDFeeder)
             {
                 Houses.Add(new House(this, noOfResidents, houseNumber));
                 IDFeeder++;
-            }   
+                return true;
+            }
+            else return false;
         }
 
         public void AddResident(User resident)

@@ -3,8 +3,6 @@ namespace StudentHousingManagementForms
 {
     public partial class LogIn : Form
     {
-        UserPanel? userPanel;
-        AdminPanel? adminPanel;
         UserController userController;
         BuildingController buildingController;
 
@@ -22,13 +20,13 @@ namespace StudentHousingManagementForms
             {
                 if (userController.CurrentUser.Admin)
                 {
-                    adminPanel = new AdminPanel(this, userController, buildingController);
+                    AdminPanel adminPanel = new AdminPanel(this, userController, buildingController);
                     adminPanel.Show();
                     this.Hide();
                 }
                 else
                 {
-                    userPanel = new UserPanel(this);
+                    UserPanel userPanel = new UserPanel(this);
                     userPanel.Show();
                     this.Hide();
                 }

@@ -57,11 +57,6 @@ namespace StudentHousingManagement
             IDFeeder++;
         }
 
-        public void NewMessage(string subject, string body, User user)
-        {
-            Message message = new Message(subject, body, user);
-        }
-
         public string RandomPassword()
         {
             Random random = new Random();

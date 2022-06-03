@@ -26,7 +26,7 @@ namespace StudentHousingManagementForms
                 }
                 else
                 {
-                    UserPanel userPanel = new UserPanel(this);
+                    UserPanel userPanel = new UserPanel(this, userController);
                     userPanel.Show();
                     this.Hide();
                 }

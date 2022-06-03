@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbComplaintDiscription = new System.Windows.Forms.TextBox();
+            this.tbComplaintDescription = new System.Windows.Forms.TextBox();
             this.lblComplaintDescription = new System.Windows.Forms.Label();
             this.btnPublishComplaint = new System.Windows.Forms.Button();
             this.tbComplaintTitle = new System.Windows.Forms.TextBox();
             this.lblComplaintTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // tbComplaintDiscription
+            // tbComplaintDescription
             // 
-            this.tbComplaintDiscription.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tbComplaintDiscription.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbComplaintDiscription.Location = new System.Drawing.Point(30, 288);
-            this.tbComplaintDiscription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbComplaintDiscription.Multiline = true;
-            this.tbComplaintDiscription.Name = "tbComplaintDiscription";
-            this.tbComplaintDiscription.Size = new System.Drawing.Size(1068, 472);
-            this.tbComplaintDiscription.TabIndex = 9;
+            this.tbComplaintDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbComplaintDescription.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbComplaintDescription.Location = new System.Drawing.Point(30, 288);
+            this.tbComplaintDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbComplaintDescription.Multiline = true;
+            this.tbComplaintDescription.Name = "tbComplaintDescription";
+            this.tbComplaintDescription.Size = new System.Drawing.Size(1068, 472);
+            this.tbComplaintDescription.TabIndex = 9;
             // 
             // lblComplaintDescription
             // 
@@ -62,19 +62,20 @@
             // 
             this.btnPublishComplaint.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPublishComplaint.Location = new System.Drawing.Point(689, 788);
-            this.btnPublishComplaint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPublishComplaint.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnPublishComplaint.Name = "btnPublishComplaint";
-            this.btnPublishComplaint.Size = new System.Drawing.Size(410, 66);
+            this.btnPublishComplaint.Size = new System.Drawing.Size(410, 67);
             this.btnPublishComplaint.TabIndex = 7;
             this.btnPublishComplaint.Text = "Publish Complaint";
             this.btnPublishComplaint.UseVisualStyleBackColor = true;
+            this.btnPublishComplaint.Click += new System.EventHandler(this.btnPublishComplaint_Click);
             // 
             // tbComplaintTitle
             // 
             this.tbComplaintTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbComplaintTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbComplaintTitle.Location = new System.Drawing.Point(30, 96);
-            this.tbComplaintTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbComplaintTitle.Location = new System.Drawing.Point(30, 97);
+            this.tbComplaintTitle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbComplaintTitle.Name = "tbComplaintTitle";
             this.tbComplaintTitle.Size = new System.Drawing.Size(1068, 50);
             this.tbComplaintTitle.TabIndex = 6;
@@ -95,13 +96,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 874);
-            this.Controls.Add(this.tbComplaintDiscription);
+            this.ClientSize = new System.Drawing.Size(1129, 873);
+            this.Controls.Add(this.tbComplaintDescription);
             this.Controls.Add(this.lblComplaintDescription);
             this.Controls.Add(this.btnPublishComplaint);
             this.Controls.Add(this.tbComplaintTitle);
             this.Controls.Add(this.lblComplaintTitle);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FileComplaint";
             this.Text = "FileComplaint";
             this.ResumeLayout(false);
@@ -111,7 +112,7 @@
 
         #endregion
 
-        private TextBox tbComplaintDiscription;
+        private TextBox tbComplaintDescription;
         private Label lblComplaintDescription;
         private Button btnPublishComplaint;
         private TextBox tbComplaintTitle;

@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using StudentHousingManagement;
 
 namespace StudentHousingManagementForms
 {
@@ -17,10 +17,13 @@ namespace StudentHousingManagementForms
         private Form activeForm;
         private LogIn logIn;
 
-        public UserPanel(LogIn logIn)
+        UserController userController;
+
+        public UserPanel(LogIn logIn, UserController userController)
         {
             InitializeComponent();   
             this.logIn = logIn;
+            this.userController = userController;
         }
 
         private void ActivateButton(object btnSender)
@@ -87,13 +90,13 @@ namespace StudentHousingManagementForms
 
         private void btnCreateAnnoucement_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new CreateAnnoucement(), sender);
+            OpenChildForm(new CreateAnnoucement(userController), sender);
 
         }
 
         private void btnFileComplaint_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FileComplaint(), sender);
+            OpenChildForm(new FileComplaint(userController), sender);
 
         }
 

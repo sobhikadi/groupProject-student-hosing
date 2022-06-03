@@ -49,7 +49,7 @@ namespace StudentHousingManagement
 
         public void NewComplaint(string subject, string body, DateTime time)
         {
-            Message complaint = new Message(subject, body, this);
+            Message complaint = new Message(subject, body, this, DateTime.Now);
             Complaints.Add(complaint);
         }
 

@@ -89,7 +89,7 @@ namespace StudentHousingManagementForms
 
         private void btnCreateAnnoucement_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new CreateAnnoucement(), sender);
+            OpenChildForm(new CreateAnnoucement(userController), sender);
         }
 
         private void btnComplaints_Click(object sender, EventArgs e)

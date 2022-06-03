@@ -1,38 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StudentHousingManagement
+﻿namespace StudentHousingManagement
 {
     public class Building
     {
-        int IDFeeder;
+        int ID;
         int noOfHouses;
         string buildingRules;
-        private List<Message> announcements;
-        private List<Message> complaints;
-        
 
-        
+
+        int IDFeeder = 0;
+
         public List<User> Residents
         { get; private set; }
         public List<House> Houses
         { get; private set; }
-       
+        public List<Message> Complaints
+        { get; private set; }
+        public List<Message> Announcements
+        { get; private set; }
+
         public string Address
-        {get; private set; }
+        { get; private set; }
 
         public Building(string address, int noOfHouses)
         {
             Address = address;
             this.noOfHouses = noOfHouses;
-            IDFeeder = 0;
 
             Houses = new List<House>();
-            NewHouse(6, "51");
+            NewHouse(6, "51-56");
             Residents = new List<User>();
+            Complaints = new List<Message>();
+            Announcements = new List<Message>();
         }
 
         public bool NewHouse(int noOfResidents, string houseNumber)
@@ -59,6 +57,16 @@ namespace StudentHousingManagement
         public override string ToString()
         {
             return Address;
+        }
+
+        public void NewAnnouncement(string header, string body, User user, DateTime dateTime)
+        {
+            Announcements.Add(new Message(header, body, user, dateTime));
+        }
+
+        public void NewComplaint(string header, string body, User user, DateTime dateTime)
+        {
+            Complaints.Add(new Message(header, body, user, dateTime));
         }
     }
 }

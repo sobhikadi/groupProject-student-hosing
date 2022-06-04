@@ -1,0 +1,8 @@
+form(name of the form) = form
+label = lbl
+textbox = tb
+button = btn
+panel = p
+comboBox = cbox
+groupBox = gbox
+listBox = lbox

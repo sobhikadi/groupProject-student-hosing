@@ -13,11 +13,12 @@ namespace StudentHousingManagement
         private DateTime dateTime;
         public User User { get; private set; }
 
-        public Message(string header, string body, User user)
+        public Message(string header, string body, User user, DateTime dateTime)
         {
             this.header = header;
             this.body = body;
             User = user;
+            this.dateTime = dateTime;
             
         }
     }

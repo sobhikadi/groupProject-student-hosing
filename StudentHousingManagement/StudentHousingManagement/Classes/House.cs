@@ -35,12 +35,17 @@ namespace StudentHousingManagement
             Residents.Add(resident);
         }
 
+        public void NewAnnouncement(string header, string body, User user, DateTime dateTime)
+        {
+            Announcements.Add(new Message(header, body, user, dateTime));
+        }
+
         public void NewHouseRules(string rules)
         { }
 
         public override string ToString()
         {
-            return houseNumber;
+            return $"House Number: {houseNumber}";
         }
     }
 }

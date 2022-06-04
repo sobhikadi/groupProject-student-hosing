@@ -18,12 +18,45 @@ namespace StudentHousingManagementForms
         {
             InitializeComponent();
             this.buildingController = buildingController;
+            UpdateBuildingList();
         }
 
         private void btnAddBuilding_Click(object sender, EventArgs e)
         {
-            //string address = ($tbStreetAndNumber.Text + 
-            //buildingController.NewBuilding()
+            buildingController.NewBuilding($"{tbCity.Text} {tbZIP.Text}, {tbStreetAndNumber.Text}", (int)nudNoOfHouses.Value);
+            UpdateBuildingList();
+        }
+
+        private void btnAddHouse_Click(object sender, EventArgs e)
+        {
+            Building building = (Building)cboxBuilding.SelectedItem;
+            if (building.NewHouse((int)nudNoOfResidents.Value, nudHouseNumber.Value.ToString()))
+            {
+                MessageBox.Show("House added succesfully.");
+                cboxBuilding.SelectedIndex = 0;
+                UpdateHouseList(building);
+            }
+            else MessageBox.Show("This building already has the maximum number of houses.");
+            
+        }
+
+        private void UpdateBuildingList()
+        {
+            cboxBuilding.DataSource = null;
+            cboxBuilding.DataSource = buildingController.Buildings;
+        }
+
+        private void UpdateHouseList(Building building)
+        {
+            lboxHouses.DataSource = null;
+            lboxHouses.DataSource = building.Houses;
+        }
+
+        private void cboxBuilding_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboxBuilding.SelectedItem != null)
+            { UpdateHouseList((Building)cboxBuilding.SelectedItem); }
+            
         }
     }
 }

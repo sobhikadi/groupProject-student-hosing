@@ -6,7 +6,6 @@
         int noOfHouses;
         string buildingRules;
 
-
         int IDFeeder = 0;
 
         public List<User> Residents

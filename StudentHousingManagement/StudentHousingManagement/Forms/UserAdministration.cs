@@ -64,7 +64,8 @@ namespace StudentHousingManagementForms
         private void btnUpdateInfo_Click(object sender, EventArgs e)
         {
             User user = (User)lboxUsers.SelectedItem;
-            user.House = (House)cBoxHouseUpdate.SelectedItem;
+            user.ChangeHouse((House)cboxHouseUpdate.SelectedItem);
+            UpdateUserList();
         }
 
         private void btnGetPassword_Click(object sender, EventArgs e)
@@ -104,8 +105,8 @@ namespace StudentHousingManagementForms
 
         private void UpdateHouseUpdateList(Building building)
         {
-            cBoxHouseUpdate.DataSource = null;
-            cBoxHouseUpdate.DataSource = building.Houses;
+            cboxHouseUpdate.DataSource = null;
+            cboxHouseUpdate.DataSource= building.Houses;
         }
 
         private void cBoxBuildingAdd_SelectedIndexChanged(object sender, EventArgs e)
@@ -134,12 +135,12 @@ namespace StudentHousingManagementForms
             if (this.Size.Width > 1100)
             {
                 gboxAddUser.Width = this.Size.Width - 520;
-                groupBox1.Width = this.Size.Width - gboxAddUser.Width - 20;
+                gboxStudents.Width = this.Size.Width - gboxAddUser.Width - 20;
             }
             else 
             { 
-                groupBox1.Width = 312; 
-                gboxAddUser.Width = this.Width - groupBox1.Width - 20; 
+                gboxStudents.Width = 312; 
+                gboxAddUser.Width = this.Width - gboxStudents.Width - 20; 
             }
 
         }

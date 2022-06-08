@@ -11,7 +11,7 @@ namespace StudentHousingManagement
         public List<Message> Complaints
         { get; private set; }
         public House House
-        { get; private set; }
+        { get; set; }
         public bool Admin
         { get; private set; }
 
@@ -26,6 +26,8 @@ namespace StudentHousingManagement
         public int PhoneNumber
         { get; private set; }
 
+        public double Balance
+        { get; private set; }
 
 
         public User(string name, string password, string email, int id, bool admin, House house)
@@ -51,6 +53,11 @@ namespace StudentHousingManagement
         {
             Message complaint = new Message(subject, body, this, DateTime.Now);
             Complaints.Add(complaint);
+        }
+
+        public void UpdateBalance(double amount)
+        {
+            Balance += amount;
         }
 
         public override string ToString()

@@ -48,7 +48,7 @@
             // 
             // pContainer
             // 
-            this.pContainer.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContainer.Location = new System.Drawing.Point(273, 0);
             this.pContainer.Name = "pContainer";
             this.pContainer.Size = new System.Drawing.Size(921, 746);
@@ -74,7 +74,7 @@
             // 
             this.btnLogOut.FlatAppearance.BorderSize = 0;
             this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLogOut.Location = new System.Drawing.Point(3, 666);
+            this.btnLogOut.Location = new System.Drawing.Point(5, 675);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(264, 49);
             this.btnLogOut.TabIndex = 6;
@@ -86,7 +86,7 @@
             // 
             this.btnMyProfile.FlatAppearance.BorderSize = 0;
             this.btnMyProfile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMyProfile.Location = new System.Drawing.Point(3, 573);
+            this.btnMyProfile.Location = new System.Drawing.Point(5, 580);
             this.btnMyProfile.Name = "btnMyProfile";
             this.btnMyProfile.Size = new System.Drawing.Size(264, 49);
             this.btnMyProfile.TabIndex = 5;
@@ -98,7 +98,7 @@
             // 
             this.btnWhoPaysWhat.FlatAppearance.BorderSize = 0;
             this.btnWhoPaysWhat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnWhoPaysWhat.Location = new System.Drawing.Point(3, 288);
+            this.btnWhoPaysWhat.Location = new System.Drawing.Point(5, 281);
             this.btnWhoPaysWhat.Name = "btnWhoPaysWhat";
             this.btnWhoPaysWhat.Size = new System.Drawing.Size(264, 49);
             this.btnWhoPaysWhat.TabIndex = 4;
@@ -110,7 +110,7 @@
             // 
             this.btnCreateAnnoucement.FlatAppearance.BorderSize = 0;
             this.btnCreateAnnoucement.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCreateAnnoucement.Location = new System.Drawing.Point(3, 382);
+            this.btnCreateAnnoucement.Location = new System.Drawing.Point(5, 379);
             this.btnCreateAnnoucement.Name = "btnCreateAnnoucement";
             this.btnCreateAnnoucement.Size = new System.Drawing.Size(264, 49);
             this.btnCreateAnnoucement.TabIndex = 3;
@@ -122,7 +122,7 @@
             // 
             this.btnFileComplaint.FlatAppearance.BorderSize = 0;
             this.btnFileComplaint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnFileComplaint.Location = new System.Drawing.Point(3, 478);
+            this.btnFileComplaint.Location = new System.Drawing.Point(5, 479);
             this.btnFileComplaint.Name = "btnFileComplaint";
             this.btnFileComplaint.Size = new System.Drawing.Size(264, 49);
             this.btnFileComplaint.TabIndex = 2;
@@ -134,7 +134,7 @@
             // 
             this.btnChoreSchedule.FlatAppearance.BorderSize = 0;
             this.btnChoreSchedule.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnChoreSchedule.Location = new System.Drawing.Point(3, 199);
+            this.btnChoreSchedule.Location = new System.Drawing.Point(5, 190);
             this.btnChoreSchedule.Name = "btnChoreSchedule";
             this.btnChoreSchedule.Size = new System.Drawing.Size(264, 49);
             this.btnChoreSchedule.TabIndex = 1;
@@ -146,7 +146,7 @@
             // 
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDashboard.Location = new System.Drawing.Point(3, 108);
+            this.btnDashboard.Location = new System.Drawing.Point(5, 107);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(264, 49);
             this.btnDashboard.TabIndex = 0;
@@ -184,14 +184,15 @@
             this.pboxLogo.TabIndex = 0;
             this.pboxLogo.TabStop = false;
             // 
-            // formUserPanel
+            // UserPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1194, 746);
             this.Controls.Add(this.pContainer);
             this.Controls.Add(this.pMenu);
-            this.Name = "formUserPanel";
+            this.Name = "UserPanel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserPanel";
             this.pMenu.ResumeLayout(false);
             this.pLogo.ResumeLayout(false);

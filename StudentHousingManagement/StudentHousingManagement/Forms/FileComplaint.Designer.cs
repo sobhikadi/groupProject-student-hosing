@@ -37,34 +37,38 @@
             // 
             // tbComplaintDescription
             // 
-            this.tbComplaintDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbComplaintDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbComplaintDescription.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbComplaintDescription.Location = new System.Drawing.Point(30, 288);
-            this.tbComplaintDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbComplaintDescription.Location = new System.Drawing.Point(24, 230);
+            this.tbComplaintDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbComplaintDescription.Multiline = true;
             this.tbComplaintDescription.Name = "tbComplaintDescription";
-            this.tbComplaintDescription.Size = new System.Drawing.Size(1068, 472);
+            this.tbComplaintDescription.Size = new System.Drawing.Size(855, 378);
             this.tbComplaintDescription.TabIndex = 9;
             // 
             // lblComplaintDescription
             // 
-            this.lblComplaintDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblComplaintDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblComplaintDescription.AutoSize = true;
             this.lblComplaintDescription.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblComplaintDescription.Location = new System.Drawing.Point(30, 202);
-            this.lblComplaintDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblComplaintDescription.Location = new System.Drawing.Point(24, 162);
             this.lblComplaintDescription.Name = "lblComplaintDescription";
-            this.lblComplaintDescription.Size = new System.Drawing.Size(428, 54);
+            this.lblComplaintDescription.Size = new System.Drawing.Size(361, 46);
             this.lblComplaintDescription.TabIndex = 8;
             this.lblComplaintDescription.Text = "Complaint Description:";
             // 
             // btnPublishComplaint
             // 
-            this.btnPublishComplaint.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPublishComplaint.Location = new System.Drawing.Point(689, 788);
-            this.btnPublishComplaint.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnPublishComplaint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPublishComplaint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPublishComplaint.Location = new System.Drawing.Point(551, 630);
+            this.btnPublishComplaint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPublishComplaint.Name = "btnPublishComplaint";
-            this.btnPublishComplaint.Size = new System.Drawing.Size(410, 67);
+            this.btnPublishComplaint.Size = new System.Drawing.Size(328, 54);
             this.btnPublishComplaint.TabIndex = 7;
             this.btnPublishComplaint.Text = "Publish Complaint";
             this.btnPublishComplaint.UseVisualStyleBackColor = true;
@@ -72,37 +76,41 @@
             // 
             // tbComplaintTitle
             // 
-            this.tbComplaintTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbComplaintTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbComplaintTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbComplaintTitle.Location = new System.Drawing.Point(30, 97);
-            this.tbComplaintTitle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbComplaintTitle.Location = new System.Drawing.Point(24, 78);
+            this.tbComplaintTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbComplaintTitle.Name = "tbComplaintTitle";
-            this.tbComplaintTitle.Size = new System.Drawing.Size(1068, 50);
+            this.tbComplaintTitle.Size = new System.Drawing.Size(855, 43);
             this.tbComplaintTitle.TabIndex = 6;
             // 
             // lblComplaintTitle
             // 
-            this.lblComplaintTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblComplaintTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblComplaintTitle.AutoSize = true;
             this.lblComplaintTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblComplaintTitle.Location = new System.Drawing.Point(30, 20);
-            this.lblComplaintTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblComplaintTitle.Location = new System.Drawing.Point(24, 16);
             this.lblComplaintTitle.Name = "lblComplaintTitle";
-            this.lblComplaintTitle.Size = new System.Drawing.Size(302, 54);
+            this.lblComplaintTitle.Size = new System.Drawing.Size(254, 46);
             this.lblComplaintTitle.TabIndex = 5;
             this.lblComplaintTitle.Text = "Complaint Title:";
             // 
             // FileComplaint
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 873);
+            this.ClientSize = new System.Drawing.Size(903, 698);
             this.Controls.Add(this.tbComplaintDescription);
             this.Controls.Add(this.lblComplaintDescription);
             this.Controls.Add(this.btnPublishComplaint);
             this.Controls.Add(this.tbComplaintTitle);
             this.Controls.Add(this.lblComplaintTitle);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FileComplaint";
             this.Text = "FileComplaint";
             this.ResumeLayout(false);

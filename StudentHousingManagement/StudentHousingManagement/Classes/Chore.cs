@@ -9,14 +9,19 @@ namespace StudentHousingManagement
     public class Chore
     {
         private string name;
-        private int weekNumber;
+        private string date;
         private User user;
 
-        public Chore(string name, int weekNumber, User user)
+        public Chore(string name, string date, User user)
         {
             this.name = name;
-            this.weekNumber = weekNumber;
+            this.date = date;
             this.user = user;
+        }
+
+        public string GetInfo() 
+        {
+            return $"{name} - {user.Name}";
         }
 
     }

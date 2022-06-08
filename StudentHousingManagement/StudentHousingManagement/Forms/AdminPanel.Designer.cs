@@ -48,8 +48,10 @@
             // 
             // pContainer
             // 
-            this.pContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pContainer.AutoSize = true;
+            this.pContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContainer.Location = new System.Drawing.Point(273, 0);
+            this.pContainer.MinimumSize = new System.Drawing.Size(921, 746);
             this.pContainer.Name = "pContainer";
             this.pContainer.Size = new System.Drawing.Size(921, 746);
             this.pContainer.TabIndex = 3;
@@ -184,20 +186,22 @@
             this.pboxLogo.TabIndex = 0;
             this.pboxLogo.TabStop = false;
             // 
-            // formAdminPanel
+            // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1194, 746);
             this.Controls.Add(this.pContainer);
             this.Controls.Add(this.pMenu);
-            this.Name = "formAdminPanel";
+            this.Name = "AdminPanel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminPanel";
             this.pMenu.ResumeLayout(false);
             this.pLogo.ResumeLayout(false);
             this.pLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

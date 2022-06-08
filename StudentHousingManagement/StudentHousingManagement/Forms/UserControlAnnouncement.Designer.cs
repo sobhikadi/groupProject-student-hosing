@@ -1,6 +1,6 @@
 ﻿namespace StudentHousingManagementForms
 {
-    partial class UserControlDays
+    partial class UserControlAnnouncement
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,28 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblDaysNum = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblDaysNum
+            // label1
             // 
-            this.lblDaysNum.AutoSize = true;
-            this.lblDaysNum.Location = new System.Drawing.Point(8, 8);
-            this.lblDaysNum.Name = "lblDaysNum";
-            this.lblDaysNum.Size = new System.Drawing.Size(25, 20);
-            this.lblDaysNum.TabIndex = 0;
-            this.lblDaysNum.Text = "00";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(271, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
             // 
-            // UserControlDays
+            // UserControlAnnouncement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.lblDaysNum);
-            this.Name = "UserControlDays";
-            this.Size = new System.Drawing.Size(122, 93);
-            this.Load += new System.EventHandler(this.UserControlDays_Load);
-            this.Click += new System.EventHandler(this.UserControlDays_Click);
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(0, 10, 10, 10);
+            this.Name = "UserControlAnnouncement";
+            this.Size = new System.Drawing.Size(845, 138);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -57,6 +56,6 @@
 
         #endregion
 
-        private Label lblDaysNum;
+        private Label label1;
     }
 }

@@ -22,6 +22,7 @@ namespace StudentHousingManagementForms
             this.userController = userController;
             this.buildingController = buildingController;
             
+            
             UpdateUserList();
             UpdateBuildingList();
         }
@@ -88,6 +89,21 @@ namespace StudentHousingManagementForms
         private void cboxBuildingView_SelectedIndexChanged(object sender, EventArgs e)
         {
             UpdateHouseList((Building)cboxBuildingView.SelectedItem);
+        }
+
+        private void UserAdministration_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.Size.Width > 1100)
+            {
+                gboxAddUser.Width = this.Size.Width - 520;
+                groupBox1.Width = this.Size.Width - gboxAddUser.Width - 20;
+            }
+            else 
+            { 
+                groupBox1.Width = 312; 
+                gboxAddUser.Width = this.Width - groupBox1.Width - 20; 
+            }
+
         }
     }
 }

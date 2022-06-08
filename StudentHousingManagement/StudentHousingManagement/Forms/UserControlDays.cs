@@ -12,6 +12,8 @@ namespace StudentHousingManagementForms
 {
     public partial class UserControlDays : UserControl
     {
+        public static string Static_Day;
+
         public UserControlDays()
         {
             InitializeComponent();
@@ -24,6 +26,14 @@ namespace StudentHousingManagementForms
         public void Days(int numsDays) 
         {
             lblDaysNum.Text = numsDays.ToString();
+        }
+
+        private void UserControlDays_Click(object sender, EventArgs e)
+        {
+            Static_Day = lblDaysNum.Text;
+            ChoreForm choreForm = new ChoreForm();
+            choreForm.Show();
+
         }
     }
 }

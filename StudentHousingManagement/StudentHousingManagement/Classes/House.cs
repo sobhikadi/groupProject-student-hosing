@@ -8,8 +8,6 @@ namespace StudentHousingManagement
 {
     public class House
     {
-        private int noOfResidents;
-        private string houseNumber;
         private ChoreSchedule choreSchedule;
         private string houseRules;
 
@@ -20,11 +18,16 @@ namespace StudentHousingManagement
         public List<Message> Announcements
         { get; private set; }
         
+        public string HouseNumber
+        { get; private set; }
+        public int NoOfResidents
+        { get; private set; }
+
         public House(Building building, int noOfResidents, string houseNumber)
         {
             Building = building;
-            this.noOfResidents = noOfResidents;
-            this.houseNumber = houseNumber;
+            NoOfResidents = noOfResidents;
+            HouseNumber = houseNumber;
 
             Residents = new List<User>();
             Announcements = new List<Message>();
@@ -34,18 +37,20 @@ namespace StudentHousingManagement
         {
             Residents.Add(resident);
         }
-
-        public void NewAnnouncement(string header, string body, User user, DateTime dateTime)
+        public void RemoveResident(User resident)
         {
-            Announcements.Add(new Message(header, body, user, dateTime));
+            Residents.Remove(resident);
         }
+
+        public bool RoomAvailable()
+        { return Residents.Count < NoOfResidents; }
 
         public void NewHouseRules(string rules)
         { }
 
         public override string ToString()
         {
-            return $"House Number: {houseNumber}";
+            return $"House Number: {HouseNumber}";
         }
     }
 }

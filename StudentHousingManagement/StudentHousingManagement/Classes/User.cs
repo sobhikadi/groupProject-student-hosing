@@ -49,12 +49,6 @@ namespace StudentHousingManagement
             else return false;
         }
 
-        public void ChangeHouse(House house)
-        {
-            House.Residents.Remove(this);
-            house.Residents.Add(this);
-        }
-
         public void NewComplaint(string subject, string body, DateTime time)
         {
             Message complaint = new Message(subject, body, this, DateTime.Now);

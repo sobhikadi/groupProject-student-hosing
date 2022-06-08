@@ -266,17 +266,6 @@
             this.btnGetPassword.Text = "Login Information";
             this.btnGetPassword.UseVisualStyleBackColor = true;
             // 
-            // lblRemoveUser
-            // 
-            this.lblRemoveUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblRemoveUser.AutoSize = true;
-            this.lblRemoveUser.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblRemoveUser.Location = new System.Drawing.Point(28, 657);
-            this.lblRemoveUser.Name = "lblRemoveUser";
-            this.lblRemoveUser.Size = new System.Drawing.Size(179, 23);
-            this.lblRemoveUser.TabIndex = 14;
-            this.lblRemoveUser.Text = "Select user to remove:";
-            // 
             // btnRemoveUser
             // 
             this.btnRemoveUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));

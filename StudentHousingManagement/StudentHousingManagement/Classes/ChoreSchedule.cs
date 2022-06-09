@@ -8,17 +8,18 @@ namespace StudentHousingManagement
 {
     public class ChoreSchedule
     {
-        private MonthCalendar calendar;
-        private Chore choreList;
 
-        public ChoreSchedule(int noOfChores)
+        public List<Chore> Chores
+        { get; private set; }
+
+        public ChoreSchedule() 
         {
-
+            Chores = new List<Chore>();
         }
 
-        public void NewChore(string name, int perHowManyWeeks)
+        public void NewChore(string name, string date, User user)
         {
-
+            Chores.Add(new Chore(name, date, user));
         }
     }
 }

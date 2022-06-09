@@ -14,11 +14,13 @@ namespace StudentHousingManagementForms
 {
     public partial class CreateAnnoucement : Form
     {
-        UserController userController;
+        User currentUser;
+        MessageController messageController;
         public CreateAnnoucement(UserController userController)
         {
             InitializeComponent();
-            this.userController = userController;
+            messageController = new MessageController();
+            currentUser = userController.CurrentUser;
         }
 
         private void btnPublishAnnouncement_Click(object sender, EventArgs e)
@@ -43,13 +45,13 @@ namespace StudentHousingManagementForms
             //Call functionality to add announcements to the proper Building or House.
             if(rbBuilding.Checked == true)
             {
-                userController.CurrentUser.House.Building.NewAnnouncement(tbAnnouncementTitle.Text,
-                tbAnnouncementDescription.Text, userController.CurrentUser, DateTime.Now);
+                messageController.NewAnnouncementBuilding(currentUser, tbAnnouncementTitle.Text,
+                tbAnnouncementDescription.Text, DateTime.Now);
             }
             else if(rbHouse.Checked == true)
             {
-                userController.CurrentUser.House.NewAnnouncement(tbAnnouncementTitle.Text,
-                tbAnnouncementDescription.Text, userController.CurrentUser, DateTime.Now);
+                messageController.NewAnnouncementHouse(currentUser, tbAnnouncementTitle.Text,
+                tbAnnouncementDescription.Text, DateTime.Now);
             }
             MessageBox.Show("Announcement published succesfully.");
   

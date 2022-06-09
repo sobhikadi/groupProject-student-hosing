@@ -2,9 +2,8 @@
 {
     public class Building
     {
-        int ID;
         int noOfHouses;
-        string buildingRules;
+        string? buildingRules;
 
         int IDFeeder = 0;
 
@@ -26,7 +25,7 @@
             this.noOfHouses = noOfHouses;
 
             Houses = new List<House>();
-            NewHouse(6, "51");
+            NewHouse(3, "51");
             Residents = new List<User>();
             Complaints = new List<Message>();
             Announcements = new List<Message>();
@@ -34,38 +33,34 @@
 
         public bool NewHouse(int noOfResidents, string houseNumber)
         {
-            if (noOfHouses > IDFeeder)
+            foreach(House house in Houses)
             {
-                Houses.Add(new House(this, noOfResidents, houseNumber));
-                IDFeeder++;
-                return true;
+                if (houseNumber == house.HouseNumber)
+                { return false; }
             }
-            else return false;
+            Houses.Add(new House(this, noOfResidents, houseNumber));
+            return true;
         }
 
         public void AddResident(User resident)
         {
             Residents.Add(resident);
         }
-
+        public void RemoveResident(User resident)
+        {
+            Residents.Remove(resident);
+        }
         public void NewBuildingRules(string rules)
         {
 
         }
 
+        public bool HouseAvailable()
+        { return Houses.Count < noOfHouses; }
+
         public override string ToString()
         {
             return Address;
-        }
-
-        public void NewAnnouncement(string header, string body, User user, DateTime dateTime)
-        {
-            Announcements.Add(new Message(header, body, user, dateTime));
-        }
-
-        public void NewComplaint(string header, string body, User user, DateTime dateTime)
-        {
-            Complaints.Add(new Message(header, body, user, dateTime));
         }
     }
 }

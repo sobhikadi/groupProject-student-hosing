@@ -30,14 +30,19 @@ namespace StudentHousingManagementForms
         private void btnAddHouse_Click(object sender, EventArgs e)
         {
             Building building = (Building)cboxBuilding.SelectedItem;
-            if (building.NewHouse((int)nudNoOfResidents.Value, nudHouseNumber.Value.ToString()))
+            if (!building.HouseAvailable())
+            {
+                MessageBox.Show("This building already has the maximum number of houses.");
+                return;
+            }
+
+            if (building.NewHouse((int)nudNoOfResidents.Value, tbHouseNumber.Text))
             {
                 MessageBox.Show("House added succesfully.");
-                cboxBuilding.SelectedIndex = 0;
+                //cboxBuilding.SelectedIndex = 0;
                 UpdateHouseList(building);
             }
-            else MessageBox.Show("This building already has the maximum number of houses.");
-            
+            else MessageBox.Show("This house number is already in use.");
         }
 
         private void UpdateBuildingList()

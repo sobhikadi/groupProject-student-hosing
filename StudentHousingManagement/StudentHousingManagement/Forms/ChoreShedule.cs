@@ -15,6 +15,8 @@ namespace StudentHousingManagementForms
     {
         int month, year;
 
+        public static int Static_Month, Static_Year;
+
         public ChoreShedule()
         {
             InitializeComponent();
@@ -31,6 +33,9 @@ namespace StudentHousingManagementForms
 
             month = currentDate.Month;
             year = currentDate.Year;
+
+            Static_Month = month;
+            Static_Year = year;
 
             String monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lblMonthyear.Text = $"{monthName} - {year}";
@@ -65,6 +70,9 @@ namespace StudentHousingManagementForms
             {
                 month = 1;
                 year++;
+
+                Static_Month = month;
+                Static_Year = year;
             }
 
             String monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
@@ -87,8 +95,11 @@ namespace StudentHousingManagementForms
                 ucDays.Days(i);
                 daysContainer.Controls.Add(ucDays);
             }
+            ChangeElementsSize();
+
 
         }
+
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             daysContainer.Controls.Clear();
@@ -99,6 +110,9 @@ namespace StudentHousingManagementForms
             {
                 month = 12;
                 year--;
+
+                Static_Month = month;
+                Static_Year = year;
             }
 
             String monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
@@ -121,6 +135,44 @@ namespace StudentHousingManagementForms
                 ucDays.Days(i);
                 daysContainer.Controls.Add(ucDays);
             }
+            ChangeElementsSize();
+
+        }
+
+        public void ChangeElementsSize()
+        {
+            if (this.Size.Width > 1100)
+            {
+                foreach (Label lbl in pDaysNames.Controls)
+                {
+                    lbl.Margin = new Padding(105, 5, 30, 10);
+                    lbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
+                }
+                foreach (UserControl uc in daysContainer.Controls)
+                {
+                    uc.Size = new Size(225, 130);
+                }
+            }
+            else
+            {
+                foreach (Label lbl in pDaysNames.Controls)
+                {
+                    lbl.Margin = new Padding(48, 5, 3, 0);
+                    lbl.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
+                }
+                foreach (UserControl uc in daysContainer.Controls)
+                {
+                    uc.Size = new Size(122, 93);
+                }
+
+            }
+        }
+
+        private void ChoreShedule_SizeChanged(object sender, EventArgs e)
+        {
+            ChangeElementsSize();
         }
     }
 }

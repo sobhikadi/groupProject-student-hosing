@@ -24,6 +24,7 @@ namespace StudentHousingManagement
             IDFeeder = 0;
             NewUser("Max Vaskovich", "password", "admin", true, buildingController.Buildings[0].Houses[0]);
             NewUser("Sobhi Kadi", "password", "user", false, buildingController.Buildings[0].Houses[0]);
+            NewUser("Isaac", "password", "isaac@gmail.com", false, buildingController.Buildings[1].Houses[0]);
         }
 
         public bool LogIn(string email, string password)
@@ -66,8 +67,17 @@ namespace StudentHousingManagement
             //User user = new User(name, RandomPassword(), email, IDFeeder, admin, house);
             User user = new User(name, "password", email, IDFeeder, admin, house);
             Users.Add(user);
+
+            house.Building.AddResident(user);
+            house.AddResident(user);
+
             IDFeeder++;
             return true;
+        }
+
+        public void ChangeHouse(House house, User user)
+        {
+            user.House = house;
         }
 
         public string RandomPassword()

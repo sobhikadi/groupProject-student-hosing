@@ -73,7 +73,7 @@ namespace StudentHousingManagementForms
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Dashboard(), sender);
+            OpenChildForm(new Dashboard(userController), sender);
         }
 
         private void btnChoreShedule_Click(object sender, EventArgs e)

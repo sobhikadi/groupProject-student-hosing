@@ -39,33 +39,39 @@
             // 
             // lblAnnouncementTitle
             // 
-            this.lblAnnouncementTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblAnnouncementTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAnnouncementTitle.AutoSize = true;
             this.lblAnnouncementTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAnnouncementTitle.Location = new System.Drawing.Point(29, 30);
-            this.lblAnnouncementTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAnnouncementTitle.Location = new System.Drawing.Point(32, 47);
             this.lblAnnouncementTitle.Name = "lblAnnouncementTitle";
-            this.lblAnnouncementTitle.Size = new System.Drawing.Size(391, 54);
+            this.lblAnnouncementTitle.Size = new System.Drawing.Size(330, 46);
             this.lblAnnouncementTitle.TabIndex = 0;
             this.lblAnnouncementTitle.Text = "Announcement Title:";
             // 
             // tbAnnouncementTitle
             // 
-            this.tbAnnouncementTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbAnnouncementTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbAnnouncementTitle.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.tbAnnouncementTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbAnnouncementTitle.Location = new System.Drawing.Point(29, 107);
-            this.tbAnnouncementTitle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbAnnouncementTitle.Location = new System.Drawing.Point(32, 109);
+            this.tbAnnouncementTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbAnnouncementTitle.Name = "tbAnnouncementTitle";
-            this.tbAnnouncementTitle.Size = new System.Drawing.Size(1068, 50);
+            this.tbAnnouncementTitle.Size = new System.Drawing.Size(855, 43);
             this.tbAnnouncementTitle.TabIndex = 1;
             // 
             // btnPublishAnnouncement
             // 
-            this.btnPublishAnnouncement.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPublishAnnouncement.Location = new System.Drawing.Point(689, 798);
-            this.btnPublishAnnouncement.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnPublishAnnouncement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPublishAnnouncement.AutoSize = true;
+            this.btnPublishAnnouncement.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPublishAnnouncement.Location = new System.Drawing.Point(559, 684);
+            this.btnPublishAnnouncement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPublishAnnouncement.Name = "btnPublishAnnouncement";
-            this.btnPublishAnnouncement.Size = new System.Drawing.Size(410, 67);
+            this.btnPublishAnnouncement.Size = new System.Drawing.Size(328, 54);
             this.btnPublishAnnouncement.TabIndex = 2;
             this.btnPublishAnnouncement.Text = "Publish Announcement";
             this.btnPublishAnnouncement.UseVisualStyleBackColor = true;
@@ -73,34 +79,41 @@
             // 
             // lblAnnouncementDescription
             // 
-            this.lblAnnouncementDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblAnnouncementDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAnnouncementDescription.AutoSize = true;
             this.lblAnnouncementDescription.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAnnouncementDescription.Location = new System.Drawing.Point(29, 212);
-            this.lblAnnouncementDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAnnouncementDescription.Location = new System.Drawing.Point(32, 193);
             this.lblAnnouncementDescription.Name = "lblAnnouncementDescription";
-            this.lblAnnouncementDescription.Size = new System.Drawing.Size(517, 54);
+            this.lblAnnouncementDescription.Size = new System.Drawing.Size(437, 46);
             this.lblAnnouncementDescription.TabIndex = 3;
             this.lblAnnouncementDescription.Text = "Announcement Description:";
             // 
             // tbAnnouncementDescription
             // 
-            this.tbAnnouncementDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbAnnouncementDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbAnnouncementDescription.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbAnnouncementDescription.Location = new System.Drawing.Point(29, 298);
-            this.tbAnnouncementDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbAnnouncementDescription.Location = new System.Drawing.Point(32, 261);
+            this.tbAnnouncementDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbAnnouncementDescription.MinimumSize = new System.Drawing.Size(855, 378);
             this.tbAnnouncementDescription.Multiline = true;
             this.tbAnnouncementDescription.Name = "tbAnnouncementDescription";
-            this.tbAnnouncementDescription.Size = new System.Drawing.Size(1068, 472);
+            this.tbAnnouncementDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbAnnouncementDescription.Size = new System.Drawing.Size(855, 378);
             this.tbAnnouncementDescription.TabIndex = 4;
             // 
             // rbHouse
             // 
+            this.rbHouse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.rbHouse.AutoSize = true;
-            this.rbHouse.Location = new System.Drawing.Point(596, 817);
-            this.rbHouse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rbHouse.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbHouse.Location = new System.Drawing.Point(160, 695);
+            this.rbHouse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbHouse.Name = "rbHouse";
-            this.rbHouse.Size = new System.Drawing.Size(88, 29);
+            this.rbHouse.Size = new System.Drawing.Size(88, 32);
             this.rbHouse.TabIndex = 5;
             this.rbHouse.TabStop = true;
             this.rbHouse.Text = "House";
@@ -108,11 +121,13 @@
             // 
             // rbBuilding
             // 
+            this.rbBuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.rbBuilding.AutoSize = true;
-            this.rbBuilding.Location = new System.Drawing.Point(474, 817);
-            this.rbBuilding.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rbBuilding.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbBuilding.Location = new System.Drawing.Point(32, 695);
+            this.rbBuilding.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbBuilding.Name = "rbBuilding";
-            this.rbBuilding.Size = new System.Drawing.Size(101, 29);
+            this.rbBuilding.Size = new System.Drawing.Size(105, 32);
             this.rbBuilding.TabIndex = 6;
             this.rbBuilding.TabStop = true;
             this.rbBuilding.Text = "Building";
@@ -120,9 +135,9 @@
             // 
             // CreateAnnoucement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 878);
+            this.ClientSize = new System.Drawing.Size(921, 749);
             this.Controls.Add(this.rbBuilding);
             this.Controls.Add(this.rbHouse);
             this.Controls.Add(this.tbAnnouncementDescription);
@@ -130,7 +145,8 @@
             this.Controls.Add(this.btnPublishAnnouncement);
             this.Controls.Add(this.tbAnnouncementTitle);
             this.Controls.Add(this.lblAnnouncementTitle);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CreateAnnoucement";
             this.Text = "CreateAnnouncement";
             this.ResumeLayout(false);

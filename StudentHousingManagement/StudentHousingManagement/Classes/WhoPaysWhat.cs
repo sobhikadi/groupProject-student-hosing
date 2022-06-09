@@ -19,9 +19,9 @@ namespace StudentHousingManagement
             Expenses = new List<Expense>();
         }
 
-        public void NewExpense(double amount)
+        public void NewExpense(List<double> amounts)
         {
-            Expense expense = new Expense(Users, amount);
+            Expense expense = new Expense(Users, amounts);
             Expenses.Add(expense);
         }
 

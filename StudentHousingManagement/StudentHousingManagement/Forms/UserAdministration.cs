@@ -141,7 +141,11 @@ namespace StudentHousingManagementForms
         private void cboxHouseView_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboxHouseView.SelectedItem != null)
-            { UpdateUserList(); }
+            {
+                House house = (House)cboxHouseView.SelectedItem;
+                UpdateUserList();
+                tbNoOfResidents.Text = house.NoOfResidents.ToString();
+            }
         }
 
         private void cboxBuildingUpdate_SelectedIndexChanged(object sender, EventArgs e)

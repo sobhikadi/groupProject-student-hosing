@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maxva\\OneDrive\\Documents\\HBO-ICT\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj": {}
+    "C:\\Users\\Isaac\\Desktop\\fontys\\1 semester\\Project\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maxva\\OneDrive\\Documents\\HBO-ICT\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj": {
+    "C:\\Users\\Isaac\\Desktop\\fontys\\1 semester\\Project\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maxva\\OneDrive\\Documents\\HBO-ICT\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj",
+        "projectUniqueName": "C:\\Users\\Isaac\\Desktop\\fontys\\1 semester\\Project\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj",
         "projectName": "StudentHousingManagement",
-        "projectPath": "C:\\Users\\maxva\\OneDrive\\Documents\\HBO-ICT\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj",
-        "packagesPath": "C:\\Users\\maxva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maxva\\OneDrive\\Documents\\HBO-ICT\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement\\obj\\",
+        "projectPath": "C:\\Users\\Isaac\\Desktop\\fontys\\1 semester\\Project\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj",
+        "packagesPath": "C:\\Users\\Isaac\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Isaac\\Desktop\\fontys\\1 semester\\Project\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maxva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Isaac\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

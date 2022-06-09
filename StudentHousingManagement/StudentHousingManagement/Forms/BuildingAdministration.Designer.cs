@@ -37,6 +37,7 @@
             this.lblBuildingAddress = new System.Windows.Forms.Label();
             this.tbStreetAndNumber = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbHouseNumber = new System.Windows.Forms.TextBox();
             this.btnAddHouse = new System.Windows.Forms.Button();
             this.lboxHouses = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,7 +45,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.nudNoOfResidents = new System.Windows.Forms.NumericUpDown();
             this.cboxBuilding = new System.Windows.Forms.ComboBox();
-            this.tbHouseNumber = new System.Windows.Forms.TextBox();
+            this.tbNoOfHouses = new System.Windows.Forms.TextBox();
+            this.lblNoOfHouses = new System.Windows.Forms.Label();
             this.gboxAddUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNoOfHouses)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -60,44 +62,45 @@
             this.gboxAddUser.Controls.Add(this.tbCity);
             this.gboxAddUser.Controls.Add(this.lblBuildingAddress);
             this.gboxAddUser.Controls.Add(this.tbStreetAndNumber);
-            this.gboxAddUser.Location = new System.Drawing.Point(12, 11);
-            this.gboxAddUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gboxAddUser.Location = new System.Drawing.Point(17, 18);
+            this.gboxAddUser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gboxAddUser.Name = "gboxAddUser";
-            this.gboxAddUser.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gboxAddUser.Size = new System.Drawing.Size(382, 294);
+            this.gboxAddUser.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.gboxAddUser.Size = new System.Drawing.Size(546, 490);
             this.gboxAddUser.TabIndex = 3;
             this.gboxAddUser.TabStop = false;
             this.gboxAddUser.Text = "Add Building";
             // 
             // nudNoOfHouses
             // 
-            this.nudNoOfHouses.Location = new System.Drawing.Point(110, 125);
+            this.nudNoOfHouses.Location = new System.Drawing.Point(157, 208);
+            this.nudNoOfHouses.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nudNoOfHouses.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.nudNoOfHouses.Name = "nudNoOfHouses";
-            this.nudNoOfHouses.Size = new System.Drawing.Size(76, 23);
+            this.nudNoOfHouses.Size = new System.Drawing.Size(109, 31);
             this.nudNoOfHouses.TabIndex = 11;
             // 
             // tbZIP
             // 
             this.tbZIP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbZIP.Location = new System.Drawing.Point(110, 69);
-            this.tbZIP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbZIP.Location = new System.Drawing.Point(157, 115);
+            this.tbZIP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbZIP.Name = "tbZIP";
             this.tbZIP.PlaceholderText = "ZIP Code";
-            this.tbZIP.Size = new System.Drawing.Size(76, 25);
+            this.tbZIP.Size = new System.Drawing.Size(107, 34);
             this.tbZIP.TabIndex = 1;
             // 
             // btnAddBuilding
             // 
             this.btnAddBuilding.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddBuilding.Location = new System.Drawing.Point(6, 173);
-            this.btnAddBuilding.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddBuilding.Location = new System.Drawing.Point(9, 288);
+            this.btnAddBuilding.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAddBuilding.Name = "btnAddBuilding";
-            this.btnAddBuilding.Size = new System.Drawing.Size(188, 29);
+            this.btnAddBuilding.Size = new System.Drawing.Size(269, 48);
             this.btnAddBuilding.TabIndex = 10;
             this.btnAddBuilding.Text = "Add Building";
             this.btnAddBuilding.UseVisualStyleBackColor = true;
@@ -107,44 +110,48 @@
             // 
             this.lblNoOfResidents.AutoSize = true;
             this.lblNoOfResidents.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNoOfResidents.Location = new System.Drawing.Point(6, 125);
+            this.lblNoOfResidents.Location = new System.Drawing.Point(9, 208);
+            this.lblNoOfResidents.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNoOfResidents.Name = "lblNoOfResidents";
-            this.lblNoOfResidents.Size = new System.Drawing.Size(98, 19);
+            this.lblNoOfResidents.Size = new System.Drawing.Size(137, 28);
             this.lblNoOfResidents.TabIndex = 2;
             this.lblNoOfResidents.Text = "No Of Houses:";
             // 
             // tbCity
             // 
             this.tbCity.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbCity.Location = new System.Drawing.Point(192, 69);
-            this.tbCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbCity.Location = new System.Drawing.Point(274, 115);
+            this.tbCity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbCity.Name = "tbCity";
             this.tbCity.PlaceholderText = "City";
-            this.tbCity.Size = new System.Drawing.Size(182, 25);
+            this.tbCity.Size = new System.Drawing.Size(258, 34);
             this.tbCity.TabIndex = 5;
             // 
             // lblBuildingAddress
             // 
             this.lblBuildingAddress.AutoSize = true;
             this.lblBuildingAddress.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblBuildingAddress.Location = new System.Drawing.Point(6, 32);
+            this.lblBuildingAddress.Location = new System.Drawing.Point(9, 53);
+            this.lblBuildingAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBuildingAddress.Name = "lblBuildingAddress";
-            this.lblBuildingAddress.Size = new System.Drawing.Size(61, 19);
+            this.lblBuildingAddress.Size = new System.Drawing.Size(86, 28);
             this.lblBuildingAddress.TabIndex = 4;
             this.lblBuildingAddress.Text = "Address:";
             // 
             // tbStreetAndNumber
             // 
             this.tbStreetAndNumber.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbStreetAndNumber.Location = new System.Drawing.Point(110, 29);
-            this.tbStreetAndNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbStreetAndNumber.Location = new System.Drawing.Point(157, 48);
+            this.tbStreetAndNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbStreetAndNumber.Name = "tbStreetAndNumber";
             this.tbStreetAndNumber.PlaceholderText = "Adress";
-            this.tbStreetAndNumber.Size = new System.Drawing.Size(264, 25);
+            this.tbStreetAndNumber.Size = new System.Drawing.Size(375, 34);
             this.tbStreetAndNumber.TabIndex = 3;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblNoOfHouses);
+            this.groupBox1.Controls.Add(this.tbNoOfHouses);
             this.groupBox1.Controls.Add(this.tbHouseNumber);
             this.groupBox1.Controls.Add(this.btnAddHouse);
             this.groupBox1.Controls.Add(this.lboxHouses);
@@ -153,22 +160,27 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.nudNoOfResidents);
             this.groupBox1.Controls.Add(this.cboxBuilding);
-            this.groupBox1.Location = new System.Drawing.Point(412, 11);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(589, 18);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(368, 294);
+            this.groupBox1.Size = new System.Drawing.Size(526, 490);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add House";
             // 
+            // tbHouseNumber
+            // 
+            this.tbHouseNumber.Location = new System.Drawing.Point(149, 328);
+            this.tbHouseNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbHouseNumber.Name = "tbHouseNumber";
+            this.tbHouseNumber.Size = new System.Drawing.Size(180, 31);
+            this.tbHouseNumber.TabIndex = 16;
+            // 
             // btnAddHouse
             // 
             this.btnAddHouse.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddHouse.Location = new System.Drawing.Point(4, 252);
-            this.btnAddHouse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddHouse.Location = new System.Drawing.Point(6, 420);
             this.btnAddHouse.Name = "btnAddHouse";
-            this.btnAddHouse.Size = new System.Drawing.Size(188, 29);
+            this.btnAddHouse.Size = new System.Drawing.Size(269, 48);
             this.btnAddHouse.TabIndex = 13;
             this.btnAddHouse.Text = "Add House";
             this.btnAddHouse.UseVisualStyleBackColor = true;
@@ -177,75 +189,80 @@
             // lboxHouses
             // 
             this.lboxHouses.FormattingEnabled = true;
-            this.lboxHouses.ItemHeight = 15;
-            this.lboxHouses.Location = new System.Drawing.Point(104, 53);
-            this.lboxHouses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lboxHouses.ItemHeight = 25;
+            this.lboxHouses.Location = new System.Drawing.Point(149, 138);
             this.lboxHouses.Name = "lboxHouses";
-            this.lboxHouses.Size = new System.Drawing.Size(261, 139);
+            this.lboxHouses.Size = new System.Drawing.Size(371, 179);
             this.lboxHouses.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 23);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(6, 38);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 15);
+            this.label3.Size = new System.Drawing.Size(80, 25);
             this.label3.TabIndex = 18;
             this.label3.Text = "Building:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 200);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(6, 333);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 15);
+            this.label2.Size = new System.Drawing.Size(137, 25);
             this.label2.TabIndex = 17;
             this.label2.Text = "House Number:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 227);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(6, 378);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 15);
+            this.label1.Size = new System.Drawing.Size(135, 25);
             this.label1.TabIndex = 16;
             this.label1.Text = "NoOfResidents:";
             // 
             // nudNoOfResidents
             // 
-            this.nudNoOfResidents.Location = new System.Drawing.Point(104, 225);
-            this.nudNoOfResidents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudNoOfResidents.Location = new System.Drawing.Point(149, 375);
             this.nudNoOfResidents.Name = "nudNoOfResidents";
-            this.nudNoOfResidents.Size = new System.Drawing.Size(127, 23);
+            this.nudNoOfResidents.Size = new System.Drawing.Size(181, 31);
             this.nudNoOfResidents.TabIndex = 14;
             // 
             // cboxBuilding
             // 
             this.cboxBuilding.FormattingEnabled = true;
-            this.cboxBuilding.Location = new System.Drawing.Point(104, 22);
-            this.cboxBuilding.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxBuilding.Location = new System.Drawing.Point(149, 37);
             this.cboxBuilding.Name = "cboxBuilding";
-            this.cboxBuilding.Size = new System.Drawing.Size(261, 23);
+            this.cboxBuilding.Size = new System.Drawing.Size(371, 33);
             this.cboxBuilding.TabIndex = 13;
             this.cboxBuilding.SelectedIndexChanged += new System.EventHandler(this.cboxBuilding_SelectedIndexChanged);
             // 
-            // tbHouseNumber
+            // tbNoOfHouses
             // 
-            this.tbHouseNumber.Location = new System.Drawing.Point(104, 197);
-            this.tbHouseNumber.Name = "tbHouseNumber";
-            this.tbHouseNumber.Size = new System.Drawing.Size(127, 23);
-            this.tbHouseNumber.TabIndex = 16;
+            this.tbNoOfHouses.Location = new System.Drawing.Point(149, 76);
+            this.tbNoOfHouses.Name = "tbNoOfHouses";
+            this.tbNoOfHouses.ReadOnly = true;
+            this.tbNoOfHouses.Size = new System.Drawing.Size(150, 31);
+            this.tbNoOfHouses.TabIndex = 19;
+            // 
+            // lblNoOfHouses
+            // 
+            this.lblNoOfHouses.AutoSize = true;
+            this.lblNoOfHouses.Location = new System.Drawing.Point(6, 79);
+            this.lblNoOfHouses.Name = "lblNoOfHouses";
+            this.lblNoOfHouses.Size = new System.Drawing.Size(129, 25);
+            this.lblNoOfHouses.TabIndex = 20;
+            this.lblNoOfHouses.Text = "No Of Houses:";
             // 
             // BuildingAdministration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1143, 750);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gboxAddUser);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BuildingAdministration";
             this.Text = "BuildingAdministration";
             this.gboxAddUser.ResumeLayout(false);
@@ -277,5 +294,7 @@
         private ListBox lboxHouses;
         private Button btnAddHouse;
         private TextBox tbHouseNumber;
+        private Label lblNoOfHouses;
+        private TextBox tbNoOfHouses;
     }
 }

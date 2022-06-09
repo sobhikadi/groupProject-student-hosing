@@ -2,7 +2,6 @@
 {
     public class Building
     {
-        int noOfHouses;
         string? buildingRules;
 
         int IDFeeder = 0;
@@ -18,11 +17,13 @@
 
         public string Address
         { get; private set; }
+        public int NoOfHouses
+        { get; private set; }
 
         public Building(string address, int noOfHouses)
         {
             Address = address;
-            this.noOfHouses = noOfHouses;
+            this.NoOfHouses = noOfHouses;
 
             Houses = new List<House>();
             NewHouse(3, "51");
@@ -56,7 +57,7 @@
         }
 
         public bool HouseAvailable()
-        { return Houses.Count < noOfHouses; }
+        { return Houses.Count < NoOfHouses; }
 
         public override string ToString()
         {

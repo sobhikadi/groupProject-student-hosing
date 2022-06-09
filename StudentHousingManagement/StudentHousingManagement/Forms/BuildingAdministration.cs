@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using StudentHousingManagement;
+﻿using StudentHousingManagement;
 
 namespace StudentHousingManagementForms
 {
@@ -60,7 +51,11 @@ namespace StudentHousingManagementForms
         private void cboxBuilding_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboxBuilding.SelectedItem != null)
-            { UpdateHouseList((Building)cboxBuilding.SelectedItem); }
+            { 
+                Building building = (Building)cboxBuilding.SelectedItem;
+                UpdateHouseList(building);
+                tbNoOfHouses.Text = building.NoOfHouses.ToString();
+            }
             
         }
     }

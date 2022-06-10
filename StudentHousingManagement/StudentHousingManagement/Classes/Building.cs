@@ -26,7 +26,7 @@
             this.NoOfHouses = noOfHouses;
 
             Houses = new List<House>();
-            NewHouse(3, "51");
+            NewHouse(100, "1");
             Residents = new List<User>();
             Complaints = new List<Message>();
             Announcements = new List<Message>();

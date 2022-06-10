@@ -53,6 +53,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flpAnnouncements.AutoScroll = true;
+            this.flpAnnouncements.AutoSize = true;
             this.flpAnnouncements.Location = new System.Drawing.Point(12, 54);
             this.flpAnnouncements.Name = "flpAnnouncements";
             this.flpAnnouncements.Size = new System.Drawing.Size(879, 633);
@@ -70,6 +71,7 @@
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

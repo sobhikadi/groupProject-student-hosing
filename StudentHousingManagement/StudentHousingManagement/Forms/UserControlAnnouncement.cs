@@ -16,5 +16,14 @@ namespace StudentHousingManagementForms
         {
             InitializeComponent();
         }
+
+        public void Announcements(StudentHousingManagement.Message message) 
+        {
+            lblUserName.Text = message.User.Name;
+            lblAnnouncementTitle.Text = message.header;
+            lblAnnouncementBody.Text = message.body.Substring(0, 15);
+            lblAnnouncementDate.Text = message.dateTime.ToString();
+
+        }
     }
 }

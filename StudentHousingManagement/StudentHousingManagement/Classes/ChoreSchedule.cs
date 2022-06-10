@@ -17,7 +17,7 @@ namespace StudentHousingManagement
             Chores = new List<Chore>();
         }
 
-        public void NewChore(string name, string date, User user)
+        public void AddNewChore(string name, string date, User user)
         {
             Chores.Add(new Chore(name, date, user));
         }

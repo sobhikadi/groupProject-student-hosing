@@ -1,6 +1,6 @@
 ﻿namespace StudentHousingManagementForms
 {
-    partial class Dashboard
+    partial class AdminDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,24 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cboxAllOrHouse = new System.Windows.Forms.ComboBox();
             this.flpAnnouncements = new System.Windows.Forms.FlowLayoutPanel();
+            this.cboxBuildings = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // cboxAllOrHouse
-            // 
-            this.cboxAllOrHouse.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cboxAllOrHouse.FormattingEnabled = true;
-            this.cboxAllOrHouse.Items.AddRange(new object[] {
-            "All",
-            "Building",
-            "House"});
-            this.cboxAllOrHouse.Location = new System.Drawing.Point(12, 12);
-            this.cboxAllOrHouse.Name = "cboxAllOrHouse";
-            this.cboxAllOrHouse.Size = new System.Drawing.Size(450, 36);
-            this.cboxAllOrHouse.TabIndex = 0;
-            this.cboxAllOrHouse.Text = "All";
-            this.cboxAllOrHouse.SelectedIndexChanged += new System.EventHandler(this.cboxAllOrHouse_SelectedIndexChanged);
             // 
             // flpAnnouncements
             // 
@@ -53,29 +38,43 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flpAnnouncements.AutoScroll = true;
+            this.flpAnnouncements.AutoSize = true;
             this.flpAnnouncements.Location = new System.Drawing.Point(12, 54);
             this.flpAnnouncements.Name = "flpAnnouncements";
             this.flpAnnouncements.Size = new System.Drawing.Size(879, 633);
-            this.flpAnnouncements.TabIndex = 1;
+            this.flpAnnouncements.TabIndex = 3;
             this.flpAnnouncements.SizeChanged += new System.EventHandler(this.flpAnnouncements_SizeChanged);
             // 
-            // Dashboard
+            // cboxBuildings
+            // 
+            this.cboxBuildings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cboxBuildings.FormattingEnabled = true;
+            this.cboxBuildings.Location = new System.Drawing.Point(12, 12);
+            this.cboxBuildings.Name = "cboxBuildings";
+            this.cboxBuildings.Size = new System.Drawing.Size(450, 36);
+            this.cboxBuildings.TabIndex = 2;
+            this.cboxBuildings.Text = "Select a building to show rules";
+            this.cboxBuildings.SelectedIndexChanged += new System.EventHandler(this.cboxBuildings_SelectedIndexChanged);
+            // 
+            // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(903, 699);
             this.Controls.Add(this.flpAnnouncements);
-            this.Controls.Add(this.cboxAllOrHouse);
-            this.Name = "Dashboard";
-            this.Text = "Dashboard";
-            this.Load += new System.EventHandler(this.Dashboard_Load);
+            this.Controls.Add(this.cboxBuildings);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "AdminDashboard";
+            this.Text = "AdminDashboard";
+            this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private ComboBox cboxAllOrHouse;
         private FlowLayoutPanel flpAnnouncements;
+        private ComboBox cboxBuildings;
     }
 }

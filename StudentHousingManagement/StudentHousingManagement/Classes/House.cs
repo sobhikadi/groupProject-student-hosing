@@ -8,9 +8,12 @@ namespace StudentHousingManagement
 {
     public class House
     {
-        private ChoreSchedule choreSchedule;
+        private int noOfResidents;
+        private string houseNumber;
         private string houseRules;
 
+        public ChoreSchedule ChoreSchedule 
+        { get; private set; }
         public Building Building
         { get; private set; }
         public List<User> Residents
@@ -29,8 +32,10 @@ namespace StudentHousingManagement
             NoOfResidents = noOfResidents;
             HouseNumber = houseNumber;
 
+            ChoreSchedule = new ChoreSchedule();
             Residents = new List<User>();
             Announcements = new List<Message>();
+            
         }
 
         public void AddResident(User resident)

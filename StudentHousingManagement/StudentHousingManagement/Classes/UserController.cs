@@ -23,7 +23,7 @@ namespace StudentHousingManagement
             Users = new List<User>();
             IDFeeder = 0;
             NewUser("Max Vaskovich", "password", "admin", true, buildingController.Buildings[0].Houses[0]);
-            NewUser("Sobhi Kadi", "password", "user", false, buildingController.Buildings[0].Houses[0]);
+            NewUser("Sobhi Kadi", "password", "user", false, buildingController.Buildings[1].Houses[0]);
             NewUser("Isaac", "password", "isaac@gmail.com", false, buildingController.Buildings[1].Houses[0]);
         }
 

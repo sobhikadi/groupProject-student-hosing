@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Isaac\\Desktop\\fontys\\1 semester\\Project\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj": {}
+    "D:\\Fontys\\Semeester 1\\Advanced block\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Isaac\\Desktop\\fontys\\1 semester\\Project\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj": {
+    "D:\\Fontys\\Semeester 1\\Advanced block\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Isaac\\Desktop\\fontys\\1 semester\\Project\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj",
+        "projectUniqueName": "D:\\Fontys\\Semeester 1\\Advanced block\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj",
         "projectName": "StudentHousingManagement",
-        "projectPath": "C:\\Users\\Isaac\\Desktop\\fontys\\1 semester\\Project\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj",
-        "packagesPath": "C:\\Users\\Isaac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Isaac\\Desktop\\fontys\\1 semester\\Project\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\obj\\",
+        "projectPath": "D:\\Fontys\\Semeester 1\\Advanced block\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj",
+        "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
+        "outputPath": "D:\\Fontys\\Semeester 1\\Advanced block\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Isaac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

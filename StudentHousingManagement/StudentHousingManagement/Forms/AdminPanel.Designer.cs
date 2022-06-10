@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPanel));
             this.pContainer = new System.Windows.Forms.Panel();
             this.pMenu = new System.Windows.Forms.Panel();
+            this.btnBuildingRules = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnMyProfile = new System.Windows.Forms.Button();
             this.btnUserAdmin = new System.Windows.Forms.Button();
@@ -58,6 +59,7 @@
             // 
             // pMenu
             // 
+            this.pMenu.Controls.Add(this.btnBuildingRules);
             this.pMenu.Controls.Add(this.btnLogOut);
             this.pMenu.Controls.Add(this.btnMyProfile);
             this.pMenu.Controls.Add(this.btnUserAdmin);
@@ -71,6 +73,18 @@
             this.pMenu.Name = "pMenu";
             this.pMenu.Size = new System.Drawing.Size(273, 746);
             this.pMenu.TabIndex = 2;
+            // 
+            // btnBuildingRules
+            // 
+            this.btnBuildingRules.FlatAppearance.BorderSize = 0;
+            this.btnBuildingRules.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBuildingRules.Location = new System.Drawing.Point(3, 515);
+            this.btnBuildingRules.Name = "btnBuildingRules";
+            this.btnBuildingRules.Size = new System.Drawing.Size(264, 49);
+            this.btnBuildingRules.TabIndex = 7;
+            this.btnBuildingRules.Text = "Building Rules";
+            this.btnBuildingRules.UseVisualStyleBackColor = true;
+            this.btnBuildingRules.Click += new System.EventHandler(this.btnBuildingRules_Click);
             // 
             // btnLogOut
             // 
@@ -88,7 +102,7 @@
             // 
             this.btnMyProfile.FlatAppearance.BorderSize = 0;
             this.btnMyProfile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMyProfile.Location = new System.Drawing.Point(3, 573);
+            this.btnMyProfile.Location = new System.Drawing.Point(3, 592);
             this.btnMyProfile.Name = "btnMyProfile";
             this.btnMyProfile.Size = new System.Drawing.Size(264, 49);
             this.btnMyProfile.TabIndex = 5;
@@ -100,7 +114,7 @@
             // 
             this.btnUserAdmin.FlatAppearance.BorderSize = 0;
             this.btnUserAdmin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnUserAdmin.Location = new System.Drawing.Point(3, 288);
+            this.btnUserAdmin.Location = new System.Drawing.Point(3, 267);
             this.btnUserAdmin.Name = "btnUserAdmin";
             this.btnUserAdmin.Size = new System.Drawing.Size(264, 49);
             this.btnUserAdmin.TabIndex = 4;
@@ -112,7 +126,7 @@
             // 
             this.btnCreateAnnoucement.FlatAppearance.BorderSize = 0;
             this.btnCreateAnnoucement.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCreateAnnoucement.Location = new System.Drawing.Point(3, 382);
+            this.btnCreateAnnoucement.Location = new System.Drawing.Point(3, 349);
             this.btnCreateAnnoucement.Name = "btnCreateAnnoucement";
             this.btnCreateAnnoucement.Size = new System.Drawing.Size(264, 49);
             this.btnCreateAnnoucement.TabIndex = 3;
@@ -124,7 +138,7 @@
             // 
             this.btnComplaints.FlatAppearance.BorderSize = 0;
             this.btnComplaints.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnComplaints.Location = new System.Drawing.Point(3, 478);
+            this.btnComplaints.Location = new System.Drawing.Point(3, 434);
             this.btnComplaints.Name = "btnComplaints";
             this.btnComplaints.Size = new System.Drawing.Size(264, 49);
             this.btnComplaints.TabIndex = 2;
@@ -136,7 +150,7 @@
             // 
             this.btnBuildingAdmin.FlatAppearance.BorderSize = 0;
             this.btnBuildingAdmin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuildingAdmin.Location = new System.Drawing.Point(3, 199);
+            this.btnBuildingAdmin.Location = new System.Drawing.Point(3, 184);
             this.btnBuildingAdmin.Name = "btnBuildingAdmin";
             this.btnBuildingAdmin.Size = new System.Drawing.Size(264, 49);
             this.btnBuildingAdmin.TabIndex = 1;
@@ -196,6 +210,7 @@
             this.Name = "AdminPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminPanel";
+            this.Load += new System.EventHandler(this.AdminPanel_Load);
             this.pMenu.ResumeLayout(false);
             this.pLogo.ResumeLayout(false);
             this.pLogo.PerformLayout();
@@ -219,5 +234,6 @@
         private Panel pLogo;
         private Label lblLogoName;
         private PictureBox pboxLogo;
+        private Button btnBuildingRules;
     }
 }

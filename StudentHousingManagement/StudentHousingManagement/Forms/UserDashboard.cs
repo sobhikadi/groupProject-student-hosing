@@ -12,11 +12,11 @@ using StudentHousingManagement;
 
 namespace StudentHousingManagementForms
 {
-    public partial class Dashboard : Form
+    public partial class UserDashboard : Form
     {
         UserController userController;
 
-        public Dashboard(UserController userController)
+        public UserDashboard(UserController userController)
         {
             InitializeComponent();
             this.userController = userController;

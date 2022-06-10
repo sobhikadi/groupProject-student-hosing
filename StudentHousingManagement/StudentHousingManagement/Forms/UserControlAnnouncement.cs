@@ -25,5 +25,10 @@ namespace StudentHousingManagementForms
             lblAnnouncementDate.Text = message.dateTime.ToString();
 
         }
+
+        private void UserControlAnnouncement_Click(object sender, EventArgs e)
+        {
+            DisplayFullAnnouncement displayAnnouncement = new DisplayFullAnnouncement();
+        }
     }
 }

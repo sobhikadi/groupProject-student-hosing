@@ -39,7 +39,7 @@
             // 
             this.lblUserName.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblUserName.AutoSize = true;
-            this.lblUserName.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUserName.Font = new System.Drawing.Font("Segoe UI Black", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblUserName.Location = new System.Drawing.Point(23, 16);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(0, 25);
@@ -49,7 +49,7 @@
             // 
             this.lblAnnouncementTitle.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblAnnouncementTitle.AutoSize = true;
-            this.lblAnnouncementTitle.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAnnouncementTitle.Font = new System.Drawing.Font("Segoe UI", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblAnnouncementTitle.Location = new System.Drawing.Point(23, 62);
             this.lblAnnouncementTitle.Name = "lblAnnouncementTitle";
             this.lblAnnouncementTitle.Size = new System.Drawing.Size(0, 25);
@@ -59,7 +59,7 @@
             // 
             this.lblAnnouncementBody.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblAnnouncementBody.AutoSize = true;
-            this.lblAnnouncementBody.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAnnouncementBody.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblAnnouncementBody.Location = new System.Drawing.Point(23, 108);
             this.lblAnnouncementBody.Name = "lblAnnouncementBody";
             this.lblAnnouncementBody.Size = new System.Drawing.Size(0, 25);

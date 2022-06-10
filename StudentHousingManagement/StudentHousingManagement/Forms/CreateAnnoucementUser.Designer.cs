@@ -1,6 +1,6 @@
 ﻿namespace StudentHousingManagementForms
 {
-    partial class CreateAnnoucement
+    partial class CreateAnnoucementUser
     {
         /// <summary>
         /// Required designer variable.
@@ -133,7 +133,7 @@
             this.rbBuilding.Text = "Building";
             this.rbBuilding.UseVisualStyleBackColor = true;
             // 
-            // CreateAnnoucement
+            // CreateAnnoucementUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -147,7 +147,7 @@
             this.Controls.Add(this.lblAnnouncementTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "CreateAnnoucement";
+            this.Name = "CreateAnnoucementUser";
             this.Text = "CreateAnnouncement";
             this.ResumeLayout(false);
             this.PerformLayout();

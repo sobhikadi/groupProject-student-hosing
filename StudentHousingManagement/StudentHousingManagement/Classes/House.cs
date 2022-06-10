@@ -10,9 +10,10 @@ namespace StudentHousingManagement
     {
         private int noOfResidents;
         private string houseNumber;
-        private ChoreSchedule choreSchedule;
         private string houseRules;
 
+        public ChoreSchedule ChoreSchedule 
+        { get; private set; }
         public Building Building
         { get; private set; }
         public List<User> Residents
@@ -26,8 +27,10 @@ namespace StudentHousingManagement
             this.noOfResidents = noOfResidents;
             this.houseNumber = houseNumber;
 
+            ChoreSchedule = new ChoreSchedule();
             Residents = new List<User>();
             Announcements = new List<Message>();
+            
         }
 
         public void AddResident(User resident)

@@ -8,9 +8,12 @@ namespace StudentHousingManagement
 {
     public class Message
     {
-        private string header;
-        private string body;
-        private DateTime dateTime;
+        public string header 
+        { get; private set; }
+        public string body 
+        { get; private set; }
+        public DateTime dateTime 
+        { get; private set; }
         public User User { get; private set; }
 
         public Message(string header, string body, User user, DateTime dateTime)

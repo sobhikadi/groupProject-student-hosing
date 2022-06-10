@@ -10,24 +10,21 @@ namespace StudentHousingManagement
     {
         double amount;
 
-        public List<User> Users
-        { get; private set; }
+        List<User> Users;
+        List<double> doubles;
 
-
-        public Expense(List<User> users, double amount)
+        public Expense(List<User> users, List<double> doubles)
         {
             Users = users;
-            this.amount = amount;
+            this.doubles = doubles;
+            UpdateBalances();
         }
 
-        public void AddExpenseToUser(User user, double amount)
+        public void UpdateBalances()
         {
-            foreach (User user1 in Users)
+            for (int i = 0; i < Users.Count; i++)
             {
-                if (user == user1)
-                {
-                    //user1.Balance += amount;
-                }
+                Users[i].UpdateBalance(doubles[i]);
             }
         }
     }

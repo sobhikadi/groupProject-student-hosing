@@ -13,11 +13,13 @@ namespace StudentHousingManagementForms
 {
     public partial class FileComplaint : Form
     {
-        UserController userController;
+        User currentUser;
+        MessageController messageController;
         public FileComplaint(UserController userController)
         {
             InitializeComponent();
-            this.userController = userController;
+            currentUser = userController.CurrentUser;
+            messageController = new MessageController();
         }
 
         private void btnPublishComplaint_Click(object sender, EventArgs e)
@@ -28,15 +30,15 @@ namespace StudentHousingManagementForms
                 MessageBox.Show("Please enter a title.");
                 return;
             }
-            if(String.IsNullOrEmpty(tbComplaintDescription.Text))
+            else if(String.IsNullOrEmpty(tbComplaintDescription.Text))
             {
                 MessageBox.Show("Please enter a description.");
                 return;
             }
 
             //Post a new complaint.
-            userController.CurrentUser.House.Building.NewComplaint(tbComplaintTitle.Text,
-                tbComplaintDescription.Text, userController.CurrentUser, DateTime.Now);
+            messageController.NewComplaint(currentUser, tbComplaintTitle.Text,
+                tbComplaintDescription.Text, DateTime.Now);
             MessageBox.Show("Complaint successfully posted.");
         }
     }

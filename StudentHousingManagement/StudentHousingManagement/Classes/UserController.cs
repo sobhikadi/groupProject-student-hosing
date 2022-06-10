@@ -75,6 +75,11 @@ namespace StudentHousingManagement
             return true;
         }
 
+        public void ChangeHouse(House house, User user)
+        {
+            user.House = house;
+        }
+
         public string RandomPassword()
         {
             Random random = new Random();

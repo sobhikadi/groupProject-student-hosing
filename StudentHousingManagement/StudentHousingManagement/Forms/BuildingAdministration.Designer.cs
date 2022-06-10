@@ -37,18 +37,19 @@
             this.lblBuildingAddress = new System.Windows.Forms.Label();
             this.tbStreetAndNumber = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbHouseNumber = new System.Windows.Forms.TextBox();
             this.btnAddHouse = new System.Windows.Forms.Button();
             this.lboxHouses = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.nudHouseNumber = new System.Windows.Forms.NumericUpDown();
             this.nudNoOfResidents = new System.Windows.Forms.NumericUpDown();
             this.cboxBuilding = new System.Windows.Forms.ComboBox();
+            this.tbNoOfHouses = new System.Windows.Forms.TextBox();
+            this.lblNoOfHouses = new System.Windows.Forms.Label();
             this.gboxAddUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNoOfHouses)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudHouseNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNoOfResidents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             this.gboxAddUser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gboxAddUser.Name = "gboxAddUser";
             this.gboxAddUser.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gboxAddUser.Size = new System.Drawing.Size(545, 463);
+            this.gboxAddUser.Size = new System.Drawing.Size(546, 490);
             this.gboxAddUser.TabIndex = 3;
             this.gboxAddUser.TabStop = false;
             this.gboxAddUser.Text = "Add Building";
@@ -123,7 +124,7 @@
             this.tbCity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbCity.Name = "tbCity";
             this.tbCity.PlaceholderText = "City";
-            this.tbCity.Size = new System.Drawing.Size(259, 34);
+            this.tbCity.Size = new System.Drawing.Size(258, 34);
             this.tbCity.TabIndex = 5;
             // 
             // lblBuildingAddress
@@ -144,31 +145,42 @@
             this.tbStreetAndNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbStreetAndNumber.Name = "tbStreetAndNumber";
             this.tbStreetAndNumber.PlaceholderText = "Adress";
-            this.tbStreetAndNumber.Size = new System.Drawing.Size(376, 34);
+            this.tbStreetAndNumber.Size = new System.Drawing.Size(375, 34);
             this.tbStreetAndNumber.TabIndex = 3;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblNoOfHouses);
+            this.groupBox1.Controls.Add(this.tbNoOfHouses);
+            this.groupBox1.Controls.Add(this.tbHouseNumber);
             this.groupBox1.Controls.Add(this.btnAddHouse);
             this.groupBox1.Controls.Add(this.lboxHouses);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.nudHouseNumber);
             this.groupBox1.Controls.Add(this.nudNoOfResidents);
             this.groupBox1.Controls.Add(this.cboxBuilding);
-            this.groupBox1.Location = new System.Drawing.Point(588, 18);
+            this.groupBox1.Location = new System.Drawing.Point(589, 18);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(526, 463);
+            this.groupBox1.Size = new System.Drawing.Size(526, 490);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add House";
             // 
+            // tbHouseNumber
+            // 
+            this.tbHouseNumber.Location = new System.Drawing.Point(149, 328);
+            this.tbHouseNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbHouseNumber.Name = "tbHouseNumber";
+            this.tbHouseNumber.Size = new System.Drawing.Size(180, 31);
+            this.tbHouseNumber.TabIndex = 16;
+            // 
             // btnAddHouse
             // 
-            this.btnAddHouse.Location = new System.Drawing.Point(194, 423);
+            this.btnAddHouse.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddHouse.Location = new System.Drawing.Point(6, 420);
             this.btnAddHouse.Name = "btnAddHouse";
-            this.btnAddHouse.Size = new System.Drawing.Size(161, 34);
+            this.btnAddHouse.Size = new System.Drawing.Size(269, 48);
             this.btnAddHouse.TabIndex = 13;
             this.btnAddHouse.Text = "Add House";
             this.btnAddHouse.UseVisualStyleBackColor = true;
@@ -178,15 +190,15 @@
             // 
             this.lboxHouses.FormattingEnabled = true;
             this.lboxHouses.ItemHeight = 25;
-            this.lboxHouses.Location = new System.Drawing.Point(149, 89);
+            this.lboxHouses.Location = new System.Drawing.Point(149, 138);
             this.lboxHouses.Name = "lboxHouses";
-            this.lboxHouses.Size = new System.Drawing.Size(371, 229);
+            this.lboxHouses.Size = new System.Drawing.Size(371, 179);
             this.lboxHouses.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 39);
+            this.label3.Location = new System.Drawing.Point(6, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 25);
             this.label3.TabIndex = 18;
@@ -195,7 +207,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 341);
+            this.label2.Location = new System.Drawing.Point(6, 333);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 25);
             this.label2.TabIndex = 17;
@@ -210,28 +222,38 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "NoOfResidents:";
             // 
-            // nudHouseNumber
-            // 
-            this.nudHouseNumber.Location = new System.Drawing.Point(173, 341);
-            this.nudHouseNumber.Name = "nudHouseNumber";
-            this.nudHouseNumber.Size = new System.Drawing.Size(182, 31);
-            this.nudHouseNumber.TabIndex = 15;
-            // 
             // nudNoOfResidents
             // 
-            this.nudNoOfResidents.Location = new System.Drawing.Point(173, 378);
+            this.nudNoOfResidents.Location = new System.Drawing.Point(149, 375);
             this.nudNoOfResidents.Name = "nudNoOfResidents";
-            this.nudNoOfResidents.Size = new System.Drawing.Size(182, 31);
+            this.nudNoOfResidents.Size = new System.Drawing.Size(181, 31);
             this.nudNoOfResidents.TabIndex = 14;
             // 
             // cboxBuilding
             // 
             this.cboxBuilding.FormattingEnabled = true;
-            this.cboxBuilding.Location = new System.Drawing.Point(149, 36);
+            this.cboxBuilding.Location = new System.Drawing.Point(149, 37);
             this.cboxBuilding.Name = "cboxBuilding";
             this.cboxBuilding.Size = new System.Drawing.Size(371, 33);
             this.cboxBuilding.TabIndex = 13;
             this.cboxBuilding.SelectedIndexChanged += new System.EventHandler(this.cboxBuilding_SelectedIndexChanged);
+            // 
+            // tbNoOfHouses
+            // 
+            this.tbNoOfHouses.Location = new System.Drawing.Point(149, 76);
+            this.tbNoOfHouses.Name = "tbNoOfHouses";
+            this.tbNoOfHouses.ReadOnly = true;
+            this.tbNoOfHouses.Size = new System.Drawing.Size(150, 31);
+            this.tbNoOfHouses.TabIndex = 19;
+            // 
+            // lblNoOfHouses
+            // 
+            this.lblNoOfHouses.AutoSize = true;
+            this.lblNoOfHouses.Location = new System.Drawing.Point(6, 79);
+            this.lblNoOfHouses.Name = "lblNoOfHouses";
+            this.lblNoOfHouses.Size = new System.Drawing.Size(129, 25);
+            this.lblNoOfHouses.TabIndex = 20;
+            this.lblNoOfHouses.Text = "No Of Houses:";
             // 
             // BuildingAdministration
             // 
@@ -248,7 +270,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudNoOfHouses)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudHouseNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNoOfResidents)).EndInit();
             this.ResumeLayout(false);
 
@@ -269,9 +290,11 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private NumericUpDown nudHouseNumber;
         private NumericUpDown nudNoOfResidents;
         private ListBox lboxHouses;
         private Button btnAddHouse;
+        private TextBox tbHouseNumber;
+        private Label lblNoOfHouses;
+        private TextBox tbNoOfHouses;
     }
 }

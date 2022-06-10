@@ -11,7 +11,6 @@ namespace StudentHousingManagementForms
             InitializeComponent();
             buildingController = new BuildingController();
             userController = new UserController(buildingController);
-            
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)

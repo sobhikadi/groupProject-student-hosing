@@ -31,6 +31,7 @@ namespace StudentHousingManagementForms
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
+            House house = (House)cboxHouseAdd.SelectedItem;
             //Check if Textboxes are not empty.
             if (String.IsNullOrEmpty(tbStudentName.Text))
             {
@@ -42,8 +43,13 @@ namespace StudentHousingManagementForms
                 MessageBox.Show("Please input an email.");
                 return;
             }
+            else if (!house.RoomAvailable())
+            {
+                MessageBox.Show("No available rooms in target house.");
+                return;
+            }
 
-            if (userController.NewUser(tbStudentName.Text, tbStudentEmail.Text, rbAdmin.Checked, (House)cboxHouseAdd.SelectedItem))
+            if (userController.NewUser(tbStudentName.Text, tbStudentEmail.Text, rbAdmin.Checked, house))
             {
                 MessageBox.Show("User succesfully added.");
                 UpdateUserList();
@@ -61,10 +67,24 @@ namespace StudentHousingManagementForms
             else MessageBox.Show("You cannot remove yourself.");
         }
 
-        private void btnUpdateInfo_Click(object sender, EventArgs e)
+        private void btnUpdateHouse_Click(object sender, EventArgs e)
         {
             User user = (User)lboxUsers.SelectedItem;
-            user.House = (House)cBoxHouseUpdate.SelectedItem;
+            House house = (House)cboxHouseUpdate.SelectedItem;
+
+            if (!house.RoomAvailable())
+            {
+                MessageBox.Show("No available rooms in target house.");
+                return;
+            }
+            
+            if (buildingController.ChangeHouse(house, user))
+            {
+                userController.ChangeHouse(house, user);
+                MessageBox.Show("House updated succesfully.");
+                UpdateUserList();
+            }
+            else MessageBox.Show("User is already in this house.");
         }
 
         private void btnGetPassword_Click(object sender, EventArgs e)
@@ -104,8 +124,8 @@ namespace StudentHousingManagementForms
 
         private void UpdateHouseUpdateList(Building building)
         {
-            cBoxHouseUpdate.DataSource = null;
-            cBoxHouseUpdate.DataSource = building.Houses;
+            cboxHouseUpdate.DataSource = null;
+            cboxHouseUpdate.DataSource= building.Houses;
         }
 
         private void cBoxBuildingAdd_SelectedIndexChanged(object sender, EventArgs e)
@@ -121,7 +141,11 @@ namespace StudentHousingManagementForms
         private void cboxHouseView_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboxHouseView.SelectedItem != null)
-            { UpdateUserList(); }
+            {
+                House house = (House)cboxHouseView.SelectedItem;
+                UpdateUserList();
+                tbNoOfResidents.Text = house.NoOfResidents.ToString();
+            }
         }
 
         private void cboxBuildingUpdate_SelectedIndexChanged(object sender, EventArgs e)
@@ -134,12 +158,12 @@ namespace StudentHousingManagementForms
             if (this.Size.Width > 1100)
             {
                 gboxAddUser.Width = this.Size.Width - 520;
-                groupBox1.Width = this.Size.Width - gboxAddUser.Width - 20;
+                gboxStudents.Width = this.Size.Width - gboxAddUser.Width - 20;
             }
             else 
             { 
-                groupBox1.Width = 312; 
-                gboxAddUser.Width = this.Width - groupBox1.Width - 20; 
+                gboxStudents.Width = 312; 
+                gboxAddUser.Width = this.Width - gboxStudents.Width - 20; 
             }
 
         }

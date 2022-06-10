@@ -18,6 +18,7 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
+            base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
@@ -46,16 +47,18 @@
             this.btnRemoveUser = new System.Windows.Forms.Button();
             this.cboxBuildingView = new System.Windows.Forms.ComboBox();
             this.cboxHouseView = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnUpdateInfo = new System.Windows.Forms.Button();
-            this.cBoxHouseUpdate = new System.Windows.Forms.ComboBox();
+            this.gboxStudents = new System.Windows.Forms.GroupBox();
+            this.tbNoOfResidents = new System.Windows.Forms.TextBox();
+            this.lblNoOfResidents = new System.Windows.Forms.Label();
+            this.gboxUpdateInfo = new System.Windows.Forms.GroupBox();
+            this.lblUpdateHouse = new System.Windows.Forms.Label();
+            this.lblUpdateBuilding = new System.Windows.Forms.Label();
+            this.btnUpdateHouse = new System.Windows.Forms.Button();
+            this.cboxHouseUpdate = new System.Windows.Forms.ComboBox();
             this.cboxBuildingUpdate = new System.Windows.Forms.ComboBox();
             this.gboxAddUser.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gboxStudents.SuspendLayout();
+            this.gboxUpdateInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblStudentName
@@ -67,7 +70,7 @@
             this.lblStudentName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblStudentName.Location = new System.Drawing.Point(16, 42);
             this.lblStudentName.Name = "lblStudentName";
-            this.lblStudentName.Size = new System.Drawing.Size(60, 23);
+            this.lblStudentName.Size = new System.Drawing.Size(68, 28);
             this.lblStudentName.TabIndex = 0;
             this.lblStudentName.Text = "Name:";
             // 
@@ -80,7 +83,7 @@
             this.tbStudentName.Location = new System.Drawing.Point(127, 38);
             this.tbStudentName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbStudentName.Name = "tbStudentName";
-            this.tbStudentName.Size = new System.Drawing.Size(425, 30);
+            this.tbStudentName.Size = new System.Drawing.Size(425, 34);
             this.tbStudentName.TabIndex = 1;
             // 
             // gboxAddUser
@@ -115,9 +118,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboxBuildingAdd.FormattingEnabled = true;
             this.cboxBuildingAdd.Location = new System.Drawing.Point(127, 132);
-            this.cboxBuildingAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboxBuildingAdd.Name = "cboxBuildingAdd";
-            this.cboxBuildingAdd.Size = new System.Drawing.Size(426, 28);
+            this.cboxBuildingAdd.Size = new System.Drawing.Size(425, 33);
             this.cboxBuildingAdd.TabIndex = 16;
             this.cboxBuildingAdd.Text = "Select Building";
             this.cboxBuildingAdd.SelectedIndexChanged += new System.EventHandler(this.cBoxBuildingAdd_SelectedIndexChanged);
@@ -128,10 +130,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboxHouseAdd.FormattingEnabled = true;
-            this.cboxHouseAdd.Location = new System.Drawing.Point(126, 184);
-            this.cboxHouseAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cboxHouseAdd.Location = new System.Drawing.Point(126, 183);
             this.cboxHouseAdd.Name = "cboxHouseAdd";
-            this.cboxHouseAdd.Size = new System.Drawing.Size(426, 28);
+            this.cboxHouseAdd.Size = new System.Drawing.Size(425, 33);
             this.cboxHouseAdd.TabIndex = 15;
             this.cboxHouseAdd.Text = "Select House";
             // 
@@ -140,10 +141,10 @@
             this.rbAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rbAdmin.AutoSize = true;
-            this.rbAdmin.Location = new System.Drawing.Point(337, 239);
+            this.rbAdmin.Location = new System.Drawing.Point(322, 238);
             this.rbAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbAdmin.Name = "rbAdmin";
-            this.rbAdmin.Size = new System.Drawing.Size(74, 24);
+            this.rbAdmin.Size = new System.Drawing.Size(90, 29);
             this.rbAdmin.TabIndex = 14;
             this.rbAdmin.TabStop = true;
             this.rbAdmin.Text = "Admin";
@@ -154,10 +155,10 @@
             this.rbStudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rbStudent.AutoSize = true;
-            this.rbStudent.Location = new System.Drawing.Point(474, 239);
+            this.rbStudent.Location = new System.Drawing.Point(456, 238);
             this.rbStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbStudent.Name = "rbStudent";
-            this.rbStudent.Size = new System.Drawing.Size(81, 24);
+            this.rbStudent.Size = new System.Drawing.Size(98, 29);
             this.rbStudent.TabIndex = 13;
             this.rbStudent.TabStop = true;
             this.rbStudent.Text = "Student";
@@ -172,7 +173,7 @@
             this.lblAdminOrStudent.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAdminOrStudent.Location = new System.Drawing.Point(16, 238);
             this.lblAdminOrStudent.Name = "lblAdminOrStudent";
-            this.lblAdminOrStudent.Size = new System.Drawing.Size(191, 23);
+            this.lblAdminOrStudent.Size = new System.Drawing.Size(218, 28);
             this.lblAdminOrStudent.TabIndex = 11;
             this.lblAdminOrStudent.Text = "Choose Admin/student:";
             // 
@@ -181,10 +182,10 @@
             this.btnAddUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddUser.Location = new System.Drawing.Point(336, 276);
+            this.btnAddUser.Location = new System.Drawing.Point(336, 277);
             this.btnAddUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(215, 38);
+            this.btnAddUser.Size = new System.Drawing.Size(214, 43);
             this.btnAddUser.TabIndex = 10;
             this.btnAddUser.Text = "Add User";
             this.btnAddUser.UseVisualStyleBackColor = true;
@@ -197,9 +198,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStudentHouse.AutoSize = true;
             this.lblStudentHouse.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblStudentHouse.Location = new System.Drawing.Point(16, 184);
+            this.lblStudentHouse.Location = new System.Drawing.Point(16, 183);
             this.lblStudentHouse.Name = "lblStudentHouse";
-            this.lblStudentHouse.Size = new System.Drawing.Size(62, 23);
+            this.lblStudentHouse.Size = new System.Drawing.Size(71, 28);
             this.lblStudentHouse.TabIndex = 8;
             this.lblStudentHouse.Text = "House:";
             // 
@@ -212,7 +213,7 @@
             this.lblStudentBuilding.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblStudentBuilding.Location = new System.Drawing.Point(16, 132);
             this.lblStudentBuilding.Name = "lblStudentBuilding";
-            this.lblStudentBuilding.Size = new System.Drawing.Size(76, 23);
+            this.lblStudentBuilding.Size = new System.Drawing.Size(88, 28);
             this.lblStudentBuilding.TabIndex = 6;
             this.lblStudentBuilding.Text = "Building:";
             // 
@@ -222,10 +223,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbStudentEmail.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbStudentEmail.Location = new System.Drawing.Point(127, 86);
+            this.tbStudentEmail.Location = new System.Drawing.Point(127, 87);
             this.tbStudentEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbStudentEmail.Name = "tbStudentEmail";
-            this.tbStudentEmail.Size = new System.Drawing.Size(425, 30);
+            this.tbStudentEmail.Size = new System.Drawing.Size(425, 34);
             this.tbStudentEmail.TabIndex = 3;
             // 
             // lblstudentEmail
@@ -237,7 +238,7 @@
             this.lblstudentEmail.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblstudentEmail.Location = new System.Drawing.Point(16, 88);
             this.lblstudentEmail.Name = "lblstudentEmail";
-            this.lblstudentEmail.Size = new System.Drawing.Size(55, 23);
+            this.lblstudentEmail.Size = new System.Drawing.Size(63, 28);
             this.lblstudentEmail.TabIndex = 2;
             this.lblstudentEmail.Text = "Email:";
             // 
@@ -247,21 +248,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lboxUsers.FormattingEnabled = true;
-            this.lboxUsers.ItemHeight = 20;
-            this.lboxUsers.Location = new System.Drawing.Point(7, 132);
+            this.lboxUsers.ItemHeight = 25;
+            this.lboxUsers.Location = new System.Drawing.Point(7, 182);
             this.lboxUsers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lboxUsers.Name = "lboxUsers";
-            this.lboxUsers.Size = new System.Drawing.Size(294, 544);
+            this.lboxUsers.Size = new System.Drawing.Size(294, 479);
             this.lboxUsers.TabIndex = 0;
             // 
             // btnGetPassword
             // 
             this.btnGetPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnGetPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnGetPassword.Location = new System.Drawing.Point(332, 585);
+            this.btnGetPassword.Location = new System.Drawing.Point(331, 585);
             this.btnGetPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGetPassword.Name = "btnGetPassword";
-            this.btnGetPassword.Size = new System.Drawing.Size(248, 38);
+            this.btnGetPassword.Size = new System.Drawing.Size(249, 38);
             this.btnGetPassword.TabIndex = 11;
             this.btnGetPassword.Text = "Login Information";
             this.btnGetPassword.UseVisualStyleBackColor = true;
@@ -270,10 +271,10 @@
             // 
             this.btnRemoveUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnRemoveUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnRemoveUser.Location = new System.Drawing.Point(332, 649);
+            this.btnRemoveUser.Location = new System.Drawing.Point(331, 648);
             this.btnRemoveUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRemoveUser.Name = "btnRemoveUser";
-            this.btnRemoveUser.Size = new System.Drawing.Size(248, 38);
+            this.btnRemoveUser.Size = new System.Drawing.Size(249, 38);
             this.btnRemoveUser.TabIndex = 12;
             this.btnRemoveUser.Text = "Remove user";
             this.btnRemoveUser.UseVisualStyleBackColor = true;
@@ -286,9 +287,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboxBuildingView.FormattingEnabled = true;
             this.cboxBuildingView.Location = new System.Drawing.Point(7, 38);
-            this.cboxBuildingView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboxBuildingView.Name = "cboxBuildingView";
-            this.cboxBuildingView.Size = new System.Drawing.Size(294, 28);
+            this.cboxBuildingView.Size = new System.Drawing.Size(294, 33);
             this.cboxBuildingView.TabIndex = 17;
             this.cboxBuildingView.Text = "Select Building";
             this.cboxBuildingView.SelectedIndexChanged += new System.EventHandler(this.cboxBuildingView_SelectedIndexChanged);
@@ -299,91 +299,107 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboxHouseView.FormattingEnabled = true;
-            this.cboxHouseView.Location = new System.Drawing.Point(7, 86);
-            this.cboxHouseView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cboxHouseView.Location = new System.Drawing.Point(7, 87);
             this.cboxHouseView.Name = "cboxHouseView";
-            this.cboxHouseView.Size = new System.Drawing.Size(294, 28);
+            this.cboxHouseView.Size = new System.Drawing.Size(294, 33);
             this.cboxHouseView.TabIndex = 18;
             this.cboxHouseView.Text = "Select House";
             this.cboxHouseView.SelectedIndexChanged += new System.EventHandler(this.cboxHouseView_SelectedIndexChanged);
             // 
-            // groupBox1
+            // gboxStudents
             // 
-            this.groupBox1.Controls.Add(this.cboxBuildingView);
-            this.groupBox1.Controls.Add(this.btnGetPassword);
-            this.groupBox1.Controls.Add(this.btnRemoveUser);
-            this.groupBox1.Controls.Add(this.cboxHouseView);
-            this.groupBox1.Controls.Add(this.lboxUsers);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox1.Location = new System.Drawing.Point(591, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(312, 698);
-            this.groupBox1.TabIndex = 19;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Students";
+            this.gboxStudents.Controls.Add(this.tbNoOfResidents);
+            this.gboxStudents.Controls.Add(this.lblNoOfResidents);
+            this.gboxStudents.Controls.Add(this.cboxBuildingView);
+            this.gboxStudents.Controls.Add(this.btnGetPassword);
+            this.gboxStudents.Controls.Add(this.btnRemoveUser);
+            this.gboxStudents.Controls.Add(this.cboxHouseView);
+            this.gboxStudents.Controls.Add(this.lboxUsers);
+            this.gboxStudents.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gboxStudents.Location = new System.Drawing.Point(592, 0);
+            this.gboxStudents.Name = "gboxStudents";
+            this.gboxStudents.Size = new System.Drawing.Size(311, 698);
+            this.gboxStudents.TabIndex = 19;
+            this.gboxStudents.TabStop = false;
+            this.gboxStudents.Text = "Students";
             // 
-            // groupBox2
+            // tbNoOfResidents
             // 
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.btnUpdateInfo);
-            this.groupBox2.Controls.Add(this.cBoxHouseUpdate);
-            this.groupBox2.Controls.Add(this.cboxBuildingUpdate);
-            this.groupBox2.Location = new System.Drawing.Point(14, 457);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(625, 267);
-            this.groupBox2.TabIndex = 17;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Update Student House";
+            this.tbNoOfResidents.Location = new System.Drawing.Point(151, 132);
+            this.tbNoOfResidents.Name = "tbNoOfResidents";
+            this.tbNoOfResidents.ReadOnly = true;
+            this.tbNoOfResidents.Size = new System.Drawing.Size(150, 31);
+            this.tbNoOfResidents.TabIndex = 20;
             // 
-            // label2
+            // lblNoOfResidents
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(17, 102);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 28);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "House:";
+            this.lblNoOfResidents.AutoSize = true;
+            this.lblNoOfResidents.Location = new System.Drawing.Point(7, 132);
+            this.lblNoOfResidents.Name = "lblNoOfResidents";
+            this.lblNoOfResidents.Size = new System.Drawing.Size(126, 25);
+            this.lblNoOfResidents.TabIndex = 19;
+            this.lblNoOfResidents.Text = "No Of Rooms:";
             // 
-            // label1
+            // gboxUpdateInfo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(17, 49);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 28);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Building:";
+            this.gboxUpdateInfo.Controls.Add(this.lblUpdateHouse);
+            this.gboxUpdateInfo.Controls.Add(this.lblUpdateBuilding);
+            this.gboxUpdateInfo.Controls.Add(this.btnUpdateHouse);
+            this.gboxUpdateInfo.Controls.Add(this.cboxHouseUpdate);
+            this.gboxUpdateInfo.Controls.Add(this.cboxBuildingUpdate);
+            this.gboxUpdateInfo.Location = new System.Drawing.Point(11, 368);
+            this.gboxUpdateInfo.Name = "gboxUpdateInfo";
+            this.gboxUpdateInfo.Size = new System.Drawing.Size(569, 267);
+            this.gboxUpdateInfo.TabIndex = 20;
+            this.gboxUpdateInfo.TabStop = false;
+            this.gboxUpdateInfo.Text = "Update Student House";
             // 
-            // btnUpdateInfo
+            // lblUpdateHouse
             // 
-            this.btnUpdateInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdateInfo.Location = new System.Drawing.Point(308, 172);
-            this.btnUpdateInfo.Name = "btnUpdateInfo";
-            this.btnUpdateInfo.Size = new System.Drawing.Size(269, 48);
-            this.btnUpdateInfo.TabIndex = 20;
-            this.btnUpdateInfo.Text = "Update Info";
-            this.btnUpdateInfo.UseVisualStyleBackColor = true;
-            this.btnUpdateInfo.Click += new System.EventHandler(this.btnUpdateInfo_Click);
+            this.lblUpdateHouse.AutoSize = true;
+            this.lblUpdateHouse.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUpdateHouse.Location = new System.Drawing.Point(17, 102);
+            this.lblUpdateHouse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUpdateHouse.Name = "lblUpdateHouse";
+            this.lblUpdateHouse.Size = new System.Drawing.Size(71, 28);
+            this.lblUpdateHouse.TabIndex = 22;
+            this.lblUpdateHouse.Text = "House:";
             // 
-            // cBoxHouseUpdate
+            // lblUpdateBuilding
             // 
-            this.cBoxHouseUpdate.FormattingEnabled = true;
-            this.cBoxHouseUpdate.Location = new System.Drawing.Point(159, 102);
-            this.cBoxHouseUpdate.Name = "cBoxHouseUpdate";
-            this.cBoxHouseUpdate.Size = new System.Drawing.Size(418, 33);
-            this.cBoxHouseUpdate.TabIndex = 18;
-            this.cBoxHouseUpdate.Text = "Select House";
+            this.lblUpdateBuilding.AutoSize = true;
+            this.lblUpdateBuilding.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUpdateBuilding.Location = new System.Drawing.Point(17, 48);
+            this.lblUpdateBuilding.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUpdateBuilding.Name = "lblUpdateBuilding";
+            this.lblUpdateBuilding.Size = new System.Drawing.Size(88, 28);
+            this.lblUpdateBuilding.TabIndex = 21;
+            this.lblUpdateBuilding.Text = "Building:";
+            // 
+            // btnUpdateHouse
+            // 
+            this.btnUpdateHouse.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdateHouse.Location = new System.Drawing.Point(283, 165);
+            this.btnUpdateHouse.Name = "btnUpdateHouse";
+            this.btnUpdateHouse.Size = new System.Drawing.Size(269, 48);
+            this.btnUpdateHouse.TabIndex = 20;
+            this.btnUpdateHouse.Text = "Update House";
+            this.btnUpdateHouse.UseVisualStyleBackColor = true;
+            this.btnUpdateHouse.Click += new System.EventHandler(this.btnUpdateHouse_Click);
+            // 
+            // cboxHouseUpdate
+            // 
+            this.cboxHouseUpdate.FormattingEnabled = true;
+            this.cboxHouseUpdate.Location = new System.Drawing.Point(126, 100);
+            this.cboxHouseUpdate.Name = "cboxHouseUpdate";
+            this.cboxHouseUpdate.Size = new System.Drawing.Size(418, 33);
+            this.cboxHouseUpdate.TabIndex = 18;
+            this.cboxHouseUpdate.Text = "Select House";
             // 
             // cboxBuildingUpdate
             // 
             this.cboxBuildingUpdate.FormattingEnabled = true;
-            this.cboxBuildingUpdate.Location = new System.Drawing.Point(159, 49);
+            this.cboxBuildingUpdate.Location = new System.Drawing.Point(127, 48);
             this.cboxBuildingUpdate.Name = "cboxBuildingUpdate";
             this.cboxBuildingUpdate.Size = new System.Drawing.Size(418, 33);
             this.cboxBuildingUpdate.TabIndex = 17;
@@ -392,21 +408,23 @@
             // 
             // UserAdministration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(903, 698);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gboxUpdateInfo);
+            this.Controls.Add(this.gboxStudents);
             this.Controls.Add(this.gboxAddUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserAdministration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "UserAdministration";
-            this.SizeChanged += new System.EventHandler(this.UserAdministration_SizeChanged);
             this.gboxAddUser.ResumeLayout(false);
             this.gboxAddUser.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gboxStudents.ResumeLayout(false);
+            this.gboxStudents.PerformLayout();
+            this.gboxUpdateInfo.ResumeLayout(false);
+            this.gboxUpdateInfo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -431,12 +449,14 @@
         private ComboBox cboxHouseAdd;
         private ComboBox cboxBuildingView;
         private ComboBox cboxHouseView;
-        private GroupBox groupBox1;
-        private GroupBox groupBox2;
-        private Label label2;
-        private Label label1;
-        private Button btnUpdateInfo;
-        private ComboBox cBoxHouseUpdate;
+        private GroupBox gboxStudents;
+        private GroupBox gboxUpdateInfo;
+        private Label lblUpdateHouse;
+        private Label lblUpdateBuilding;
+        private Button btnUpdateHouse;
+        private ComboBox cboxHouseUpdate;
         private ComboBox cboxBuildingUpdate;
+        private TextBox tbNoOfResidents;
+        private Label lblNoOfResidents;
     }
 }

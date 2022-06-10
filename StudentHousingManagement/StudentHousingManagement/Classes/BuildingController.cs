@@ -14,6 +14,7 @@ namespace StudentHousingManagement
         public BuildingController()
         {
             Buildings = new List<Building>();
+            NewBuilding("Admins", 1);
             NewBuilding("Tilburg 5025TJ, Korvelse Weg 51-54", 4);
             NewBuilding("Eindhoven 1234BG, Eindhovense Weg 1-5", 5);
         }

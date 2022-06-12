@@ -12,9 +12,12 @@ namespace StudentHousingManagementForms
 {
     public partial class DisplayFullAnnouncement : Form
     {
-        public DisplayFullAnnouncement()
+        public DisplayFullAnnouncement(StudentHousingManagement.Message message)
         {
             InitializeComponent();
+
+            tbAnnouncementTitle.Text = message.header;
+            tbAnnouncementDescription.Text = message.body;
         }
     }
 }

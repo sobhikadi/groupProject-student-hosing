@@ -98,6 +98,7 @@
             this.Margin = new System.Windows.Forms.Padding(0, 10, 10, 10);
             this.Name = "UserControlAnnouncement";
             this.Size = new System.Drawing.Size(855, 143);
+            this.Click += new System.EventHandler(this.UserControlAnnouncement_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 

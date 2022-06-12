@@ -12,6 +12,8 @@ namespace StudentHousingManagementForms
 {
     public partial class UserControlAnnouncement : UserControl
     {
+        StudentHousingManagement.Message messageToShow;
+
         public UserControlAnnouncement()
         {
             InitializeComponent();
@@ -19,16 +21,21 @@ namespace StudentHousingManagementForms
 
         public void Announcements(StudentHousingManagement.Message message) 
         {
+            messageToShow = message;
             lblUserName.Text = message.User.Name;
             lblAnnouncementTitle.Text = message.header;
-            lblAnnouncementBody.Text = message.body.Substring(0, 15);
+            lblAnnouncementBody.Text = message.body.Substring(0, 25) + "...";
             lblAnnouncementDate.Text = message.dateTime.ToString();
 
         }
 
         private void UserControlAnnouncement_Click(object sender, EventArgs e)
         {
-            DisplayFullAnnouncement displayAnnouncement = new DisplayFullAnnouncement();
+            DisplayFullAnnouncement displayAnnouncement = new DisplayFullAnnouncement(messageToShow);
+            displayAnnouncement.Show();
+
         }
+
+        
     }
 }

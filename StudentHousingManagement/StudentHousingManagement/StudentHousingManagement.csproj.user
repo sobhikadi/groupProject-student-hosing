@@ -19,6 +19,9 @@
     <Compile Update="Forms\ChoreForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\ChoresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\ChoreShedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -33,6 +36,9 @@
     </Compile>
     <Compile Update="Forms\DisplayFullAnnouncement.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\UserControlComplaints.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Forms\UserDashboard.cs">
       <SubType>Form</SubType>

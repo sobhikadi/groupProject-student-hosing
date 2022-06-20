@@ -24,8 +24,16 @@ namespace StudentHousingManagementForms
             messageToShow = message;
             lblUserName.Text = message.User.Name;
             lblAnnouncementTitle.Text = message.header;
-            lblAnnouncementBody.Text = message.body.Substring(0, 25) + "...";
-            lblAnnouncementDate.Text = message.dateTime.ToString();
+            if (message.body.Length > 50)
+            {
+                lblAnnouncementBody.Text = message.body.Substring(0, 25) + "...";
+            }
+            else if (message.body.Length < 50) 
+            {
+                lblAnnouncementBody.Text = message.body.Substring(0, 10) + "...";
+            }
+
+                lblAnnouncementDate.Text = message.dateTime.ToString();
 
         }
 

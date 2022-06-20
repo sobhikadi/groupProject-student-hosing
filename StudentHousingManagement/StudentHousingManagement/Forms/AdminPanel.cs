@@ -102,7 +102,7 @@ namespace StudentHousingManagementForms
 
         private void btnComplaints_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Complaints(), sender);
+            OpenChildForm(new Complaints(buildingController), sender);
         }
         private void btnBuildingRules_Click(object sender, EventArgs e)
         {

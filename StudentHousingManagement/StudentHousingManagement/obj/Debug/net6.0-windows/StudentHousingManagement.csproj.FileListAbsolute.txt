@@ -96,3 +96,5 @@ D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingMa
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.CreateAnnoucementUser.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.CreateAnnouncementAdmin.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.DisplayFullAnnouncement.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.ChoresForm.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserControlComplaints.resources

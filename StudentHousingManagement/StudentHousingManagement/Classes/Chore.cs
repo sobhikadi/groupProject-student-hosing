@@ -8,20 +8,25 @@ namespace StudentHousingManagement
 {
     public class Chore
     {
-        private string name;
-        private string date;
-        private User user;
+        public string ChoreName
+         { get; private set; }
 
-        public Chore(string name, string date, User user)
+        public string Date
+        { get; private set; }
+
+        public string UserName
+        { get; private set; }
+
+        public Chore(string name, string date, string userName)
         {
-            this.name = name;
-            this.date = date;
-            this.user = user;
+            ChoreName = name;
+            Date = date;
+            UserName = userName;
         }
 
-        public string GetInfo() 
+        public override string ToString() 
         {
-            return $"{name} - {user.Name}";
+            return $"{ChoreName} by {UserName}";
         }
 
     }

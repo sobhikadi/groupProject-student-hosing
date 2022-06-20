@@ -87,7 +87,7 @@ namespace StudentHousingManagementForms
 
         private void btnChoreShedule_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new ChoreShedule(), sender);
+            OpenChildForm(new ChoreShedule(userController), sender);
 
         }
 

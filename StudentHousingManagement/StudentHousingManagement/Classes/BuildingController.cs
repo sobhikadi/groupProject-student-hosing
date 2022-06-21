@@ -91,7 +91,6 @@ namespace StudentHousingManagement
                         if (u.Email == user.Email)
                         { return h; }
                     }
-                    
                 }
             }
             return null;

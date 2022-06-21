@@ -15,18 +15,11 @@ namespace StudentHousingManagementForms
     public partial class UserDashboard : Form
     {
         User currentUser;
-        Admin currentAdmin;
 
-        public Dashboard(User user)
+        public UserDashboard(User user)
         {
             InitializeComponent();
             currentUser = user;
-        }
-
-        public Dashboard(Admin admin)
-        {
-            InitializeComponent();
-            currentAdmin = admin;
         }
 
         private void Dashboard_Load(object sender, EventArgs e)

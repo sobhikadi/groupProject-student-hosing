@@ -13,13 +13,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Forms\MyProfileUser.cs">
+    <Compile Update="Forms\UserForms\MyProfileUser.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Forms\MyProfileUser.resx">
+    <EmbeddedResource Update="Forms\UserForms\MyProfileUser.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

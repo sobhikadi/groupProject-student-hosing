@@ -1,6 +1,6 @@
 ﻿namespace StudentHousingManagementForms
 {
-    partial class CreateAnnoucementUser
+    partial class CreateAnnouncementUser
     {
         /// <summary>
         /// Required designer variable.

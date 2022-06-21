@@ -12,19 +12,20 @@ using StudentHousingManagement;
 
 namespace StudentHousingManagementForms
 {
-    public partial class CreateAnnoucementUser : Form
+    public partial class CreateAnnouncementUser : Form
     {
         User currentUser;
         Admin currentAdmin;
         MessageController messageController;
-        public CreateAnnoucement(User user)
+
+        public CreateAnnouncementUser(User user)
         {
             InitializeComponent();
             messageController = new MessageController();
             currentUser = user;
         }
 
-        public CreateAnnoucement(Admin admin)
+        public CreateAnnouncementUser(Admin admin)
         {
             InitializeComponent();
             messageController = new MessageController();

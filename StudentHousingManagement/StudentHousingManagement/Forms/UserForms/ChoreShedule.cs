@@ -18,12 +18,12 @@ namespace StudentHousingManagementForms
 
         public static int Static_Month, Static_Year;
 
-        UserController userController;
+        User user;
 
-        public ChoreShedule(UserController userController)
+        public ChoreShedule(User user)
         {
             InitializeComponent();
-            this.userController = userController;
+            this.user = user;
         }
 
         private void ChoreShedule_Load(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace StudentHousingManagementForms
 
             for (int i = 1; i <= days; i++) 
             {
-                UserControlDays ucDays = new UserControlDays(userController.CurrentUser);
+                UserControlDays ucDays = new UserControlDays(user);
                 ucDays.Days(i);
                 daysContainer.Controls.Add(ucDays);
             }
@@ -96,7 +96,7 @@ namespace StudentHousingManagementForms
 
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucDays = new UserControlDays(userController.CurrentUser);
+                UserControlDays ucDays = new UserControlDays(user);
                 ucDays.Days(i);
                 daysContainer.Controls.Add(ucDays);
             }
@@ -136,7 +136,7 @@ namespace StudentHousingManagementForms
 
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucDays = new UserControlDays(userController.CurrentUser);
+                UserControlDays ucDays = new UserControlDays(user);
                 ucDays.Days(i);
                 daysContainer.Controls.Add(ucDays);
             }

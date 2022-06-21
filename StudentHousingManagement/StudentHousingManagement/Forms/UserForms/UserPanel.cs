@@ -28,7 +28,7 @@ namespace StudentHousingManagementForms
 
         private void UserPanel_Load(object sender, EventArgs e)
         {
-            UserDashboard userDashboard= new UserDashboard(userController);
+            UserDashboard userDashboard = new UserDashboard(user);
             userDashboard.TopLevel = false;
             this.pContainer.Controls.Add(userDashboard);
             userDashboard.BringToFront();
@@ -82,12 +82,12 @@ namespace StudentHousingManagementForms
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Dashboard(user), sender);
+            OpenChildForm(new UserDashboard(user), sender);
         }
 
         private void btnChoreShedule_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new ChoreShedule(userController), sender);
+            OpenChildForm(new ChoreShedule(user), sender);
 
         }
 
@@ -99,7 +99,7 @@ namespace StudentHousingManagementForms
 
         private void btnCreateAnnoucement_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new CreateAnnoucement(user), sender);
+            OpenChildForm(new CreateAnnouncementUser(user), sender);
 
         }
 

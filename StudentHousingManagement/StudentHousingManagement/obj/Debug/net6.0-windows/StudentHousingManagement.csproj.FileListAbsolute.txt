@@ -98,3 +98,13 @@ D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingMa
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.DisplayFullAnnouncement.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.ChoresForm.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserControlComplaints.resources
+C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.AdminDashboard.resources
+C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.BuildingHouseRules.resources
+C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.BuildingRules.resources
+C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.ChoresForm.resources
+C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.CreateAnnoucementUser.resources
+C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.CreateAnnouncementAdmin.resources
+C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.DisplayFullAnnouncement.resources
+C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.MyProfileUser.resources
+C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserControlComplaints.resources
+C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserDashboard.resources

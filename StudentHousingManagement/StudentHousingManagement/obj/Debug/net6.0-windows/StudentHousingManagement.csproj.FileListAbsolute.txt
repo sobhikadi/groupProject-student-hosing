@@ -108,3 +108,4 @@ C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousin
 C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.MyProfileUser.resources
 C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserControlComplaints.resources
 C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserDashboard.resources
+C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.CreateAnnouncementUser.resources

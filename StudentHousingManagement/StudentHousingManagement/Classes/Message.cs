@@ -13,9 +13,10 @@ namespace StudentHousingManagement
         { get; private set; }
         public string Body 
         { get; private set; }
-        public DateTime DateTime 
+        public DateTime dateTime
         { get; private set; }
-
+        public string Name
+        { get; private set; }
         public User User { get; private set; }
         public Admin Admin { get; private set; }
 
@@ -24,7 +25,8 @@ namespace StudentHousingManagement
             Header = header;
             Body = body;
             User = user;
-            DateTime = dateTime;
+            this.dateTime = dateTime;
+            Name = user.Name;
         }
 
         public Message(string header, string body, Admin admin, DateTime dateTime)
@@ -32,7 +34,8 @@ namespace StudentHousingManagement
             Header = header;
             Body = body;
             Admin = admin;
-            DateTime = dateTime;
+            this.dateTime = dateTime;
+            Name = admin.Name;
         }
     }
 }

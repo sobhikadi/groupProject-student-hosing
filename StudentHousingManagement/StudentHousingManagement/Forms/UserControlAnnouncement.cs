@@ -22,9 +22,9 @@ namespace StudentHousingManagementForms
         public void Announcements(StudentHousingManagement.Message message) 
         {
             messageToShow = message;
-            lblUserName.Text = message.User.Name;
-            lblAnnouncementTitle.Text = message.Header;
-            if (message.Body.Length > 50)
+            lblUserName.Text = message.Name;
+            lblAnnouncementTitle.Text = message.header;
+            if (message.body.Length > 50)
             {
                 lblAnnouncementBody.Text = message.Body.Substring(0, 25) + "...";
             }

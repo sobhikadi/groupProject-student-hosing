@@ -47,7 +47,9 @@ namespace StudentHousingManagementForms
                 return;
             }
             messageController.NewAnnouncementBuilding(admin, selectedBuilding, tbAnnouncementTitle.Text, tbAnnouncementDescription.Text, DateTime.Now);
+            buildingController.buildingManager.SaveBuilding(selectedBuilding);
             MessageBox.Show("Announcement published succesfully.");
+
         }
     }
 }

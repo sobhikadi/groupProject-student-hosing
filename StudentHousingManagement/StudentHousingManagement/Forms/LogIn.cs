@@ -11,9 +11,31 @@ namespace StudentHousingManagementForms
             InitializeComponent();
             userManager = new UserManager();
             userController = new UserController();
+            tbEmail.Focus();
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            LogInHandler();
+        }
+
+        private void tbPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                LogInHandler();
+            }
+        }
+
+        private void tbEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                LogInHandler();
+            }
+        }
+
+        public void LogInHandler() 
         {
             if (rbUser.Checked)
             {
@@ -38,52 +60,6 @@ namespace StudentHousingManagementForms
                 }
             }
             else MessageBox.Show("Invalid username or password");
-        }
-
-        private void tbPassword_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-                if (userController.LogIn(tbEmail.Text, tbPassword.Text))
-                {
-                    if (userController.CurrentUser.Admin)
-                    {
-                        AdminPanel adminPanel = new AdminPanel(this, userController, buildingController);
-                        adminPanel.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        UserPanel userPanel = new UserPanel(this, userController);
-                        userPanel.Show();
-                        this.Hide();
-                    }
-                }
-                else MessageBox.Show("Invalid username or password");
-            }
-        }
-
-        private void tbEmail_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-                if (userController.LogIn(tbEmail.Text, tbPassword.Text))
-                {
-                    if (userController.CurrentUser.Admin)
-                    {
-                        AdminPanel adminPanel = new AdminPanel(this, userController, buildingController);
-                        adminPanel.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        UserPanel userPanel = new UserPanel(this, userController);
-                        userPanel.Show();
-                        this.Hide();
-                    }
-                }
-                else MessageBox.Show("Invalid username or password");
-            }
         }
     }
 }

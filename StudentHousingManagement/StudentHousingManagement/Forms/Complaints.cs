@@ -14,10 +14,10 @@ namespace StudentHousingManagementForms
     public partial class Complaints : Form
     {
         BuildingController buildingController;
-        public Complaints(BuildingController buildingController)
+        public Complaints()
         {
             InitializeComponent();
-            this.buildingController = buildingController;
+            buildingController = new BuildingController();
         }
 
         private void Complaints_Load(object sender, EventArgs e)

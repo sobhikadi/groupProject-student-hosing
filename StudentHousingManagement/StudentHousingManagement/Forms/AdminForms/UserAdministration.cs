@@ -73,7 +73,6 @@ namespace StudentHousingManagementForms
             if (userController.NewAdmin(tbAdminName.Text, tbAdminEmail.Text))
             {
                 MessageBox.Show("Admin succesfully added.");
-                UpdateUserList();
             }
             else MessageBox.Show("This email is already in use.");
         }
@@ -108,7 +107,7 @@ namespace StudentHousingManagementForms
             else MessageBox.Show("User is already in this house.");
         }
 
-        private void btnGetPassword_Click(object sender, EventArgs e)
+        private void btnLoginInfo_Click(object sender, EventArgs e)
         {
             User user = (User)lboxUsers.SelectedItem;
             MessageBox.Show($"{user.Email} - {user.Password}");

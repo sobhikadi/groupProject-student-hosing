@@ -44,7 +44,7 @@
             this.cboxHouseView = new System.Windows.Forms.ComboBox();
             this.gboxStudents = new System.Windows.Forms.GroupBox();
             this.btnRemoveUser = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLoginInfo = new System.Windows.Forms.Button();
             this.tbNoOfResidents = new System.Windows.Forms.TextBox();
             this.lblNoOfResidents = new System.Windows.Forms.Label();
             this.gboxUpdateInfo = new System.Windows.Forms.GroupBox();
@@ -252,7 +252,7 @@
             // gboxStudents
             // 
             this.gboxStudents.Controls.Add(this.btnRemoveUser);
-            this.gboxStudents.Controls.Add(this.button1);
+            this.gboxStudents.Controls.Add(this.btnLoginInfo);
             this.gboxStudents.Controls.Add(this.tbNoOfResidents);
             this.gboxStudents.Controls.Add(this.lblNoOfResidents);
             this.gboxStudents.Controls.Add(this.cboxBuildingView);
@@ -279,15 +279,16 @@
             this.btnRemoveUser.UseVisualStyleBackColor = true;
             this.btnRemoveUser.Click += new System.EventHandler(this.btnRemoveUser_Click);
             // 
-            // button1
+            // btnLoginInfo
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(8, 731);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(221, 57);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Login Information";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLoginInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLoginInfo.Location = new System.Drawing.Point(8, 731);
+            this.btnLoginInfo.Name = "btnLoginInfo";
+            this.btnLoginInfo.Size = new System.Drawing.Size(221, 57);
+            this.btnLoginInfo.TabIndex = 21;
+            this.btnLoginInfo.Text = "Login Information";
+            this.btnLoginInfo.UseVisualStyleBackColor = true;
+            this.btnLoginInfo.Click += new System.EventHandler(this.btnLoginInfo_Click);
             // 
             // tbNoOfResidents
             // 
@@ -517,6 +518,6 @@
         private TextBox tbAdminName;
         private Label label2;
         private Button btnRemoveUser;
-        private Button button1;
+        private Button btnLoginInfo;
     }
 }

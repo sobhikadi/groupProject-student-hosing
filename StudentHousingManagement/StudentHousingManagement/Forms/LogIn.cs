@@ -36,9 +36,54 @@ namespace StudentHousingManagementForms
                     adminPanel.Show();
                     this.Hide();
                 }
+            }
+            else MessageBox.Show("Invalid username or password");
+        }
+
+        private void tbPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                if (userController.LogIn(tbEmail.Text, tbPassword.Text))
+                {
+                    if (userController.CurrentUser.Admin)
+                    {
+                        AdminPanel adminPanel = new AdminPanel(this, userController, buildingController);
+                        adminPanel.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        UserPanel userPanel = new UserPanel(this, userController);
+                        userPanel.Show();
+                        this.Hide();
+                    }
+                }
                 else MessageBox.Show("Invalid username or password");
             }
-            else MessageBox.Show("Please select if you are a user or admin.");        
+        }
+
+        private void tbEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                if (userController.LogIn(tbEmail.Text, tbPassword.Text))
+                {
+                    if (userController.CurrentUser.Admin)
+                    {
+                        AdminPanel adminPanel = new AdminPanel(this, userController, buildingController);
+                        adminPanel.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        UserPanel userPanel = new UserPanel(this, userController);
+                        userPanel.Show();
+                        this.Hide();
+                    }
+                }
+                else MessageBox.Show("Invalid username or password");
+            }
         }
     }
 }

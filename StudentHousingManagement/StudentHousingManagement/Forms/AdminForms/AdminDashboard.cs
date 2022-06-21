@@ -24,6 +24,7 @@ namespace StudentHousingManagementForms
         {
             cboxBuildings.Items.Clear();
             cboxBuildings.DataSource = buildingController.Buildings;
+            
         }
 
         private void cboxBuildings_SelectedIndexChanged(object sender, EventArgs e)
@@ -47,6 +48,8 @@ namespace StudentHousingManagementForms
 
                 }
             }
+            ChangeElementsSize();
+
         }
 
         private void flpAnnouncements_SizeChanged(object sender, EventArgs e)

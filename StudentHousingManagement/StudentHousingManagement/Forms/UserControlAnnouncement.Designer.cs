@@ -89,6 +89,7 @@
             // UserControlAnnouncement
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackColor = System.Drawing.Color.Linen;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lblAnnouncementDate);
             this.Controls.Add(this.lblPostedOn);

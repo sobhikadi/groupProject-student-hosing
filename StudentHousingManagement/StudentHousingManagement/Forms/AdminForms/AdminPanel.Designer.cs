@@ -50,6 +50,7 @@
             // pContainer
             // 
             this.pContainer.AutoSize = true;
+            this.pContainer.BackColor = System.Drawing.Color.LightSkyBlue;
             this.pContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContainer.Location = new System.Drawing.Point(273, 0);
             this.pContainer.MinimumSize = new System.Drawing.Size(921, 746);
@@ -59,6 +60,7 @@
             // 
             // pMenu
             // 
+            this.pMenu.BackColor = System.Drawing.Color.LightSkyBlue;
             this.pMenu.Controls.Add(this.btnBuildingRules);
             this.pMenu.Controls.Add(this.btnLogOut);
             this.pMenu.Controls.Add(this.btnMyProfile);
@@ -76,6 +78,7 @@
             // 
             // btnBuildingRules
             // 
+            this.btnBuildingRules.BackColor = System.Drawing.Color.Linen;
             this.btnBuildingRules.FlatAppearance.BorderSize = 0;
             this.btnBuildingRules.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBuildingRules.Location = new System.Drawing.Point(3, 515);
@@ -83,11 +86,12 @@
             this.btnBuildingRules.Size = new System.Drawing.Size(264, 49);
             this.btnBuildingRules.TabIndex = 7;
             this.btnBuildingRules.Text = "Building Rules";
-            this.btnBuildingRules.UseVisualStyleBackColor = true;
+            this.btnBuildingRules.UseVisualStyleBackColor = false;
             this.btnBuildingRules.Click += new System.EventHandler(this.btnBuildingRules_Click);
             // 
             // btnLogOut
             // 
+            this.btnLogOut.BackColor = System.Drawing.Color.Linen;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
             this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogOut.Location = new System.Drawing.Point(3, 666);
@@ -95,11 +99,12 @@
             this.btnLogOut.Size = new System.Drawing.Size(264, 49);
             this.btnLogOut.TabIndex = 6;
             this.btnLogOut.Text = "Log Out";
-            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnMyProfile
             // 
+            this.btnMyProfile.BackColor = System.Drawing.Color.Linen;
             this.btnMyProfile.FlatAppearance.BorderSize = 0;
             this.btnMyProfile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMyProfile.Location = new System.Drawing.Point(3, 592);
@@ -107,11 +112,12 @@
             this.btnMyProfile.Size = new System.Drawing.Size(264, 49);
             this.btnMyProfile.TabIndex = 5;
             this.btnMyProfile.Text = "My profile";
-            this.btnMyProfile.UseVisualStyleBackColor = true;
+            this.btnMyProfile.UseVisualStyleBackColor = false;
             this.btnMyProfile.Click += new System.EventHandler(this.btnMyProfile_Click);
             // 
             // btnUserAdmin
             // 
+            this.btnUserAdmin.BackColor = System.Drawing.Color.Linen;
             this.btnUserAdmin.FlatAppearance.BorderSize = 0;
             this.btnUserAdmin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnUserAdmin.Location = new System.Drawing.Point(3, 267);
@@ -119,11 +125,12 @@
             this.btnUserAdmin.Size = new System.Drawing.Size(264, 49);
             this.btnUserAdmin.TabIndex = 4;
             this.btnUserAdmin.Text = "User Administration";
-            this.btnUserAdmin.UseVisualStyleBackColor = true;
+            this.btnUserAdmin.UseVisualStyleBackColor = false;
             this.btnUserAdmin.Click += new System.EventHandler(this.btnUserAdmin_Click);
             // 
             // btnCreateAnnoucement
             // 
+            this.btnCreateAnnoucement.BackColor = System.Drawing.Color.Linen;
             this.btnCreateAnnoucement.FlatAppearance.BorderSize = 0;
             this.btnCreateAnnoucement.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCreateAnnoucement.Location = new System.Drawing.Point(3, 349);
@@ -131,11 +138,12 @@
             this.btnCreateAnnoucement.Size = new System.Drawing.Size(264, 49);
             this.btnCreateAnnoucement.TabIndex = 3;
             this.btnCreateAnnoucement.Text = "Create Announcement";
-            this.btnCreateAnnoucement.UseVisualStyleBackColor = true;
+            this.btnCreateAnnoucement.UseVisualStyleBackColor = false;
             this.btnCreateAnnoucement.Click += new System.EventHandler(this.btnCreateAnnoucement_Click);
             // 
             // btnComplaints
             // 
+            this.btnComplaints.BackColor = System.Drawing.Color.Linen;
             this.btnComplaints.FlatAppearance.BorderSize = 0;
             this.btnComplaints.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnComplaints.Location = new System.Drawing.Point(3, 434);
@@ -143,11 +151,12 @@
             this.btnComplaints.Size = new System.Drawing.Size(264, 49);
             this.btnComplaints.TabIndex = 2;
             this.btnComplaints.Text = "Complaints";
-            this.btnComplaints.UseVisualStyleBackColor = true;
+            this.btnComplaints.UseVisualStyleBackColor = false;
             this.btnComplaints.Click += new System.EventHandler(this.btnComplaints_Click);
             // 
             // btnBuildingAdmin
             // 
+            this.btnBuildingAdmin.BackColor = System.Drawing.Color.Linen;
             this.btnBuildingAdmin.FlatAppearance.BorderSize = 0;
             this.btnBuildingAdmin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBuildingAdmin.Location = new System.Drawing.Point(3, 184);
@@ -155,11 +164,12 @@
             this.btnBuildingAdmin.Size = new System.Drawing.Size(264, 49);
             this.btnBuildingAdmin.TabIndex = 1;
             this.btnBuildingAdmin.Text = "Building Administration";
-            this.btnBuildingAdmin.UseVisualStyleBackColor = true;
+            this.btnBuildingAdmin.UseVisualStyleBackColor = false;
             this.btnBuildingAdmin.Click += new System.EventHandler(this.btnBuildingAdmin_Click);
             // 
             // btnDashboard
             // 
+            this.btnDashboard.BackColor = System.Drawing.Color.Linen;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDashboard.Location = new System.Drawing.Point(3, 108);
@@ -167,7 +177,7 @@
             this.btnDashboard.Size = new System.Drawing.Size(264, 49);
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // pLogo

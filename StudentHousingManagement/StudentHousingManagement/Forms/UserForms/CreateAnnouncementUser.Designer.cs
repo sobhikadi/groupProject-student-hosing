@@ -61,20 +61,21 @@
             this.tbAnnouncementTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbAnnouncementTitle.Name = "tbAnnouncementTitle";
             this.tbAnnouncementTitle.Size = new System.Drawing.Size(855, 43);
-            this.tbAnnouncementTitle.TabIndex = 1;
+            this.tbAnnouncementTitle.TabIndex = 0;
             // 
             // btnPublishAnnouncement
             // 
             this.btnPublishAnnouncement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPublishAnnouncement.AutoSize = true;
+            this.btnPublishAnnouncement.BackColor = System.Drawing.Color.Linen;
             this.btnPublishAnnouncement.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPublishAnnouncement.Location = new System.Drawing.Point(559, 684);
             this.btnPublishAnnouncement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPublishAnnouncement.Name = "btnPublishAnnouncement";
             this.btnPublishAnnouncement.Size = new System.Drawing.Size(328, 54);
-            this.btnPublishAnnouncement.TabIndex = 2;
+            this.btnPublishAnnouncement.TabIndex = 3;
             this.btnPublishAnnouncement.Text = "Publish Announcement";
-            this.btnPublishAnnouncement.UseVisualStyleBackColor = true;
+            this.btnPublishAnnouncement.UseVisualStyleBackColor = false;
             this.btnPublishAnnouncement.Click += new System.EventHandler(this.btnPublishAnnouncement_Click);
             // 
             // lblAnnouncementDescription
@@ -103,7 +104,7 @@
             this.tbAnnouncementDescription.Name = "tbAnnouncementDescription";
             this.tbAnnouncementDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbAnnouncementDescription.Size = new System.Drawing.Size(855, 378);
-            this.tbAnnouncementDescription.TabIndex = 4;
+            this.tbAnnouncementDescription.TabIndex = 1;
             // 
             // rbHouse
             // 
@@ -137,6 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(921, 749);
             this.Controls.Add(this.rbBuilding);
             this.Controls.Add(this.rbHouse);

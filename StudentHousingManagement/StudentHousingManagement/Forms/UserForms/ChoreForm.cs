@@ -21,6 +21,7 @@ namespace StudentHousingManagementForms
         {
             InitializeComponent();
             this.user = user;
+            tbChore.Focus();
         }
 
         private void ChoreForm_Load(object sender, EventArgs e)
@@ -36,5 +37,14 @@ namespace StudentHousingManagementForms
             this.Close();
         }
 
+        private void tbChore_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) 
+            {
+                Is_Visible = true;
+                user.House.ChoreSchedule.AddNewChore(tbChore.Text, choreDate, user.Name);
+                this.Close();
+            }
+        }
     }
 }

@@ -74,8 +74,8 @@
             this.btnLogIn.Location = new System.Drawing.Point(181, 356);
             this.btnLogIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(339, 59);
-            this.btnLogIn.TabIndex = 3;
+            this.btnLogIn.Size = new System.Drawing.Size(271, 47);
+            this.btnLogIn.TabIndex = 2;
             this.btnLogIn.Text = "Log In";
             this.btnLogIn.UseVisualStyleBackColor = true;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
@@ -86,8 +86,10 @@
             this.tbPassword.Location = new System.Drawing.Point(276, 219);
             this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(340, 45);
-            this.tbPassword.TabIndex = 2;
+            this.tbPassword.PasswordChar = '*';
+            this.tbPassword.Size = new System.Drawing.Size(273, 39);
+            this.tbPassword.TabIndex = 1;
+            this.tbPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPassword_KeyPress);
             // 
             // lblPassword
             // 
@@ -106,8 +108,10 @@
             this.tbEmail.Location = new System.Drawing.Point(276, 95);
             this.tbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(340, 45);
-            this.tbEmail.TabIndex = 1;
+            this.tbEmail.PlaceholderText = "example@email.nl";
+            this.tbEmail.Size = new System.Drawing.Size(273, 39);
+            this.tbEmail.TabIndex = 0;
+            this.tbEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbEmail_KeyPress);
             // 
             // lblUserName
             // 
@@ -146,7 +150,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1171, 689);
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.ClientSize = new System.Drawing.Size(937, 551);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblLogo);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);

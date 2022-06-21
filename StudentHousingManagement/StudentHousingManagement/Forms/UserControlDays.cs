@@ -24,6 +24,7 @@ namespace StudentHousingManagementForms
 
         private void UserControlDays_Load(object sender, EventArgs e)
         {
+            
         }
 
         public void Days(int numsDays)
@@ -33,7 +34,7 @@ namespace StudentHousingManagementForms
 
         private void UserControlDays_Click(object sender, EventArgs e)
         {
-            Static_Day = lblDaysNum.Text;
+            
             ChoreForm choreForm = new ChoreForm(currentUser);
             choreForm.Show();
         }
@@ -48,6 +49,17 @@ namespace StudentHousingManagementForms
         { 
             if (ChoreForm.Is_Visible) { label1.Visible = true; }
             ChoreForm.Is_Visible = false;
+        }
+
+        private void UserControlDays_MouseHover(object sender, EventArgs e)
+        {
+            Static_Day = lblDaysNum.Text;
+        }
+
+        private void label1_MouseHover(object sender, EventArgs e)
+        {
+            Static_Day = lblDaysNum.Text;
+            
         }
     }
 }

@@ -57,6 +57,7 @@
             // 
             // pMenu
             // 
+            this.pMenu.BackColor = System.Drawing.Color.LightSkyBlue;
             this.pMenu.Controls.Add(this.btnBuildingHouseRules);
             this.pMenu.Controls.Add(this.btnLogOut);
             this.pMenu.Controls.Add(this.btnMyProfile);
@@ -74,98 +75,106 @@
             // 
             // btnBuildingHouseRules
             // 
+            this.btnBuildingHouseRules.BackColor = System.Drawing.Color.Linen;
             this.btnBuildingHouseRules.FlatAppearance.BorderSize = 0;
             this.btnBuildingHouseRules.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBuildingHouseRules.Location = new System.Drawing.Point(5, 516);
             this.btnBuildingHouseRules.Name = "btnBuildingHouseRules";
-            this.btnBuildingHouseRules.Size = new System.Drawing.Size(264, 49);
+            this.btnBuildingHouseRules.Size = new System.Drawing.Size(264, 54);
             this.btnBuildingHouseRules.TabIndex = 7;
             this.btnBuildingHouseRules.Text = "Building/House rules";
-            this.btnBuildingHouseRules.UseVisualStyleBackColor = true;
+            this.btnBuildingHouseRules.UseVisualStyleBackColor = false;
             this.btnBuildingHouseRules.Click += new System.EventHandler(this.btnBuildingHouseRules_Click);
             // 
             // btnLogOut
             // 
+            this.btnLogOut.BackColor = System.Drawing.Color.Linen;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
             this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogOut.Location = new System.Drawing.Point(5, 675);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(264, 49);
+            this.btnLogOut.Size = new System.Drawing.Size(264, 54);
             this.btnLogOut.TabIndex = 6;
             this.btnLogOut.Text = "Log Out";
-            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnMyProfile
             // 
+            this.btnMyProfile.BackColor = System.Drawing.Color.Linen;
             this.btnMyProfile.FlatAppearance.BorderSize = 0;
             this.btnMyProfile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMyProfile.Location = new System.Drawing.Point(5, 595);
             this.btnMyProfile.Name = "btnMyProfile";
-            this.btnMyProfile.Size = new System.Drawing.Size(264, 49);
+            this.btnMyProfile.Size = new System.Drawing.Size(264, 54);
             this.btnMyProfile.TabIndex = 5;
             this.btnMyProfile.Text = "My profile";
-            this.btnMyProfile.UseVisualStyleBackColor = true;
+            this.btnMyProfile.UseVisualStyleBackColor = false;
             this.btnMyProfile.Click += new System.EventHandler(this.btnMyProfile_Click);
             // 
             // btnWhoPaysWhat
             // 
+            this.btnWhoPaysWhat.BackColor = System.Drawing.Color.Linen;
             this.btnWhoPaysWhat.FlatAppearance.BorderSize = 0;
             this.btnWhoPaysWhat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnWhoPaysWhat.Location = new System.Drawing.Point(5, 262);
             this.btnWhoPaysWhat.Name = "btnWhoPaysWhat";
-            this.btnWhoPaysWhat.Size = new System.Drawing.Size(264, 49);
+            this.btnWhoPaysWhat.Size = new System.Drawing.Size(264, 54);
             this.btnWhoPaysWhat.TabIndex = 4;
             this.btnWhoPaysWhat.Text = "Who Pays What";
-            this.btnWhoPaysWhat.UseVisualStyleBackColor = true;
+            this.btnWhoPaysWhat.UseVisualStyleBackColor = false;
             this.btnWhoPaysWhat.Click += new System.EventHandler(this.btnWhoPaysWhat_Click);
             // 
             // btnCreateAnnoucement
             // 
+            this.btnCreateAnnoucement.BackColor = System.Drawing.Color.Linen;
             this.btnCreateAnnoucement.FlatAppearance.BorderSize = 0;
             this.btnCreateAnnoucement.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCreateAnnoucement.Location = new System.Drawing.Point(5, 346);
             this.btnCreateAnnoucement.Name = "btnCreateAnnoucement";
-            this.btnCreateAnnoucement.Size = new System.Drawing.Size(264, 49);
+            this.btnCreateAnnoucement.Size = new System.Drawing.Size(264, 54);
             this.btnCreateAnnoucement.TabIndex = 3;
             this.btnCreateAnnoucement.Text = "Create Announcement";
-            this.btnCreateAnnoucement.UseVisualStyleBackColor = true;
+            this.btnCreateAnnoucement.UseVisualStyleBackColor = false;
             this.btnCreateAnnoucement.Click += new System.EventHandler(this.btnCreateAnnoucement_Click);
             // 
             // btnFileComplaint
             // 
+            this.btnFileComplaint.BackColor = System.Drawing.Color.Linen;
             this.btnFileComplaint.FlatAppearance.BorderSize = 0;
             this.btnFileComplaint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnFileComplaint.Location = new System.Drawing.Point(5, 431);
             this.btnFileComplaint.Name = "btnFileComplaint";
-            this.btnFileComplaint.Size = new System.Drawing.Size(264, 49);
+            this.btnFileComplaint.Size = new System.Drawing.Size(264, 54);
             this.btnFileComplaint.TabIndex = 2;
             this.btnFileComplaint.Text = "File Complaint";
-            this.btnFileComplaint.UseVisualStyleBackColor = true;
+            this.btnFileComplaint.UseVisualStyleBackColor = false;
             this.btnFileComplaint.Click += new System.EventHandler(this.btnFileComplaint_Click);
             // 
             // btnChoreSchedule
             // 
+            this.btnChoreSchedule.BackColor = System.Drawing.Color.Linen;
             this.btnChoreSchedule.FlatAppearance.BorderSize = 0;
             this.btnChoreSchedule.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnChoreSchedule.Location = new System.Drawing.Point(5, 182);
             this.btnChoreSchedule.Name = "btnChoreSchedule";
-            this.btnChoreSchedule.Size = new System.Drawing.Size(264, 49);
+            this.btnChoreSchedule.Size = new System.Drawing.Size(264, 54);
             this.btnChoreSchedule.TabIndex = 1;
             this.btnChoreSchedule.Text = "Chore Shedule";
-            this.btnChoreSchedule.UseVisualStyleBackColor = true;
+            this.btnChoreSchedule.UseVisualStyleBackColor = false;
             this.btnChoreSchedule.Click += new System.EventHandler(this.btnChoreShedule_Click);
             // 
             // btnDashboard
             // 
+            this.btnDashboard.BackColor = System.Drawing.Color.Linen;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDashboard.Location = new System.Drawing.Point(5, 107);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(264, 49);
+            this.btnDashboard.Size = new System.Drawing.Size(264, 54);
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // pLogo
@@ -202,6 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1194, 746);
             this.Controls.Add(this.pContainer);
             this.Controls.Add(this.pMenu);

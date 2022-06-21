@@ -56,13 +56,14 @@
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.Color.Linen;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSave.Location = new System.Drawing.Point(165, 162);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(205, 39);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "Add Chore";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tbChore
@@ -74,6 +75,7 @@
             this.tbChore.Name = "tbChore";
             this.tbChore.Size = new System.Drawing.Size(336, 34);
             this.tbChore.TabIndex = 4;
+            this.tbChore.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbChore_KeyPress);
             // 
             // lblChore
             // 
@@ -89,6 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(512, 229);
             this.Controls.Add(this.tbChore);
             this.Controls.Add(this.lblChore);

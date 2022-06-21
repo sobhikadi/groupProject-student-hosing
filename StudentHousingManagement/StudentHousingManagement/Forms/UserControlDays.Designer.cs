@@ -48,18 +48,19 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(8, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 23);
+            this.label1.Size = new System.Drawing.Size(63, 23);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Events";
+            this.label1.Text = "Chores";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Visible = false;
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.MouseHover += new System.EventHandler(this.label1_MouseHover);
             // 
             // UserControlDays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Linen;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblDaysNum);
             this.Name = "UserControlDays";
@@ -67,6 +68,7 @@
             this.Load += new System.EventHandler(this.UserControlDays_Load);
             this.Click += new System.EventHandler(this.UserControlDays_Click);
             this.Leave += new System.EventHandler(this.UserControlDays_Leave);
+            this.MouseHover += new System.EventHandler(this.UserControlDays_MouseHover);
             this.ResumeLayout(false);
             this.PerformLayout();
 

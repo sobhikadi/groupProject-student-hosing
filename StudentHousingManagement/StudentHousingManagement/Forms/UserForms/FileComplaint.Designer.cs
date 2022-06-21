@@ -46,7 +46,7 @@
             this.tbComplaintDescription.Multiline = true;
             this.tbComplaintDescription.Name = "tbComplaintDescription";
             this.tbComplaintDescription.Size = new System.Drawing.Size(855, 378);
-            this.tbComplaintDescription.TabIndex = 9;
+            this.tbComplaintDescription.TabIndex = 1;
             // 
             // lblComplaintDescription
             // 
@@ -64,14 +64,15 @@
             // btnPublishComplaint
             // 
             this.btnPublishComplaint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPublishComplaint.BackColor = System.Drawing.Color.Linen;
             this.btnPublishComplaint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPublishComplaint.Location = new System.Drawing.Point(551, 630);
             this.btnPublishComplaint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPublishComplaint.Name = "btnPublishComplaint";
             this.btnPublishComplaint.Size = new System.Drawing.Size(328, 54);
-            this.btnPublishComplaint.TabIndex = 7;
+            this.btnPublishComplaint.TabIndex = 2;
             this.btnPublishComplaint.Text = "Publish Complaint";
-            this.btnPublishComplaint.UseVisualStyleBackColor = true;
+            this.btnPublishComplaint.UseVisualStyleBackColor = false;
             this.btnPublishComplaint.Click += new System.EventHandler(this.btnPublishComplaint_Click);
             // 
             // tbComplaintTitle
@@ -84,7 +85,7 @@
             this.tbComplaintTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbComplaintTitle.Name = "tbComplaintTitle";
             this.tbComplaintTitle.Size = new System.Drawing.Size(855, 43);
-            this.tbComplaintTitle.TabIndex = 6;
+            this.tbComplaintTitle.TabIndex = 0;
             // 
             // lblComplaintTitle
             // 
@@ -103,6 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(903, 698);
             this.Controls.Add(this.tbComplaintDescription);
             this.Controls.Add(this.lblComplaintDescription);

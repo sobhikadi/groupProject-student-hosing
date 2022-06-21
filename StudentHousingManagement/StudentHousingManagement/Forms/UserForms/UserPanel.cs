@@ -33,6 +33,9 @@ namespace StudentHousingManagementForms
             this.pContainer.Controls.Add(userDashboard);
             userDashboard.BringToFront();
             userDashboard.Show();
+            btnDashboard.BackColor = Color.DeepSkyBlue;
+            btnDashboard.ForeColor = Color.Black;
+            btnDashboard.Font = new System.Drawing.Font("Segoe UI", 13.5F);
         }
 
         private void ActivateButton(object btnSender)
@@ -44,8 +47,8 @@ namespace StudentHousingManagementForms
                     DisableButton();
                     
                     currentButton = (Button)btnSender;
-                    currentButton.BackColor = Color.DarkGray;
-                    currentButton.ForeColor = Color.White;
+                    currentButton.BackColor = Color.DeepSkyBlue;
+                    currentButton.ForeColor = Color.Black;
                     currentButton.Font = new System.Drawing.Font("Segoe UI", 13.5F);
                 }
             }
@@ -57,7 +60,7 @@ namespace StudentHousingManagementForms
             {
                 if (previousBtn.GetType() == typeof(Button))
                 {
-                    previousBtn.BackColor = Color.FromArgb(224, 224, 224);
+                    previousBtn.BackColor = Color.Linen;
                     previousBtn.ForeColor = Color.Black;
                     previousBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
                 }

@@ -72,6 +72,9 @@ namespace StudentHousingManagementForms
                     ucAnnouncement.Announcements(houseAnnouncement);
                 }
             }
+
+            ChangeElementsSize();
+
         }
 
         private void flpAnnouncements_SizeChanged(object sender, EventArgs e)

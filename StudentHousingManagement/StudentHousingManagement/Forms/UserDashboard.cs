@@ -12,7 +12,7 @@ using Message = StudentHousingManagement.Message;
 
 namespace StudentHousingManagementForms
 {
-    public partial class Dashboard : Form
+    public partial class UserDashboard : Form
     {
         User currentUser;
         Admin currentAdmin;

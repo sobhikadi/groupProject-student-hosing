@@ -65,8 +65,6 @@ D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingMa
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.BuildingAdministration.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.ChoreShedule.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.Complaints.resources
-D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.CreateAnnoucement.resources
-D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.Dashboard.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.FileComplaint.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.LogIn.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.MyProfile.resources
@@ -89,4 +87,14 @@ C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousin
 C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserControlDays.resources
 C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.ChoreForm.resources
 C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserControlAnnouncement.resources
-C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.MyProfileUser.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.ChoreForm.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserControlAnnouncement.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.BuildingHouseRules.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.BuildingRules.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.AdminDashboard.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserDashboard.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.CreateAnnoucementUser.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.CreateAnnouncementAdmin.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.DisplayFullAnnouncement.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.ChoresForm.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserControlComplaints.resources

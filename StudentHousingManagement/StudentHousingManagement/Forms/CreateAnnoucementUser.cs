@@ -12,7 +12,7 @@ using StudentHousingManagement;
 
 namespace StudentHousingManagementForms
 {
-    public partial class CreateAnnoucement : Form
+    public partial class CreateAnnoucementUser : Form
     {
         User currentUser;
         Admin currentAdmin;

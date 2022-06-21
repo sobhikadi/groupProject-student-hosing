@@ -24,6 +24,14 @@ namespace StudentHousingManagementForms
             this.admin = admin;
             this.logIn = logIn;
         }
+        private void AdminPanel_Load(object sender, EventArgs e)
+        {
+            AdminDashboard adminDashboard = new AdminDashboard(buildingController);
+            adminDashboard.TopLevel = false;
+            this.pContainer.Controls.Add(adminDashboard);
+            adminDashboard.BringToFront();
+            adminDashboard.Show();
+        }
 
         private void ActivateButton(object btnSender)
         {
@@ -72,7 +80,7 @@ namespace StudentHousingManagementForms
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Dashboard(admin), sender);
+            OpenChildForm(new AdminDashboard(buildingController), sender);
         }
 
         private void btnBuildingAdmin_Click(object sender, EventArgs e)
@@ -92,7 +100,11 @@ namespace StudentHousingManagementForms
 
         private void btnComplaints_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Complaints(), sender);
+            OpenChildForm(new Complaints(buildingController), sender);
+        }
+        private void btnBuildingRules_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new BuildingRules(), sender);
         }
 
         private void btnMyProfile_Click(object sender, EventArgs e)
@@ -105,5 +117,7 @@ namespace StudentHousingManagementForms
             logIn.Show();
             this.Close();
         }
+
+       
     }
 }

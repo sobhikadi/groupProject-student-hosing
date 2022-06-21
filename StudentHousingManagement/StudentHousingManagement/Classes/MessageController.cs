@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
 
 namespace StudentHousingManagement
 {
@@ -10,7 +13,7 @@ namespace StudentHousingManagement
     {
         public void NewAnnouncementBuilding(User user, string header, string body, DateTime dateTime)
         {
-                user.House.Building.Announcements.Add(new Message(header, body, user, dateTime));
+            user.House.Building.Announcements.Add(new Message(header, body, user, dateTime));
         }
 
         public void NewAnnouncementHouse(User user, string header, string body, DateTime dateTime)

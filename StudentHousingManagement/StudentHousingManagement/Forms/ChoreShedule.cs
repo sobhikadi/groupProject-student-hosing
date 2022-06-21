@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
+using StudentHousingManagement;
 
 namespace StudentHousingManagementForms
 {
@@ -17,9 +18,12 @@ namespace StudentHousingManagementForms
 
         public static int Static_Month, Static_Year;
 
-        public ChoreShedule()
+        UserController userController;
+
+        public ChoreShedule(UserController userController)
         {
             InitializeComponent();
+            this.userController = userController;
         }
 
         private void ChoreShedule_Load(object sender, EventArgs e)
@@ -53,7 +57,7 @@ namespace StudentHousingManagementForms
 
             for (int i = 1; i <= days; i++) 
             {
-                UserControlDays ucDays = new UserControlDays();
+                UserControlDays ucDays = new UserControlDays(userController.CurrentUser);
                 ucDays.Days(i);
                 daysContainer.Controls.Add(ucDays);
             }
@@ -71,9 +75,10 @@ namespace StudentHousingManagementForms
                 month = 1;
                 year++;
 
-                Static_Month = month;
-                Static_Year = year;
             }
+
+            Static_Month = month;
+            Static_Year = year;
 
             String monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lblMonthyear.Text = $"{monthName} - {year}";
@@ -91,7 +96,7 @@ namespace StudentHousingManagementForms
 
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucDays = new UserControlDays();
+                UserControlDays ucDays = new UserControlDays(userController.CurrentUser);
                 ucDays.Days(i);
                 daysContainer.Controls.Add(ucDays);
             }
@@ -110,10 +115,10 @@ namespace StudentHousingManagementForms
             {
                 month = 12;
                 year--;
-
-                Static_Month = month;
-                Static_Year = year;
             }
+
+            Static_Month = month;
+            Static_Year = year;
 
             String monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lblMonthyear.Text = $"{monthName} - {year}";
@@ -131,7 +136,7 @@ namespace StudentHousingManagementForms
 
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucDays = new UserControlDays();
+                UserControlDays ucDays = new UserControlDays(userController.CurrentUser);
                 ucDays.Days(i);
                 daysContainer.Controls.Add(ucDays);
             }

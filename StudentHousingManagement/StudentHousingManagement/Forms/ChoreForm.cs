@@ -7,15 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentHousingManagement;
 
 namespace StudentHousingManagementForms
 {
     public partial class ChoreForm : Form
     {
+        public static bool Is_Visible = false;
         string choreDate;
-        public ChoreForm()
+        User user;
+
+        public ChoreForm(User user)
         {
             InitializeComponent();
+            this.user = user;
         }
 
         private void ChoreForm_Load(object sender, EventArgs e)
@@ -26,7 +31,10 @@ namespace StudentHousingManagementForms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
+            Is_Visible = true;
+            user.House.ChoreSchedule.AddNewChore(tbChore.Text, choreDate, user.Name);
+            this.Close();
         }
+
     }
 }

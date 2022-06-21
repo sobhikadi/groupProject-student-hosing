@@ -11,16 +11,17 @@ using StudentHousingManagement;
 
 namespace StudentHousingManagementForms
 {
-    public partial class Complaints : Form
+
+    public partial class AdminDashboard : Form
     {
         BuildingController buildingController;
-        public Complaints(BuildingController buildingController)
+        public AdminDashboard(BuildingController buildingController)
         {
             InitializeComponent();
             this.buildingController = buildingController;
         }
 
-        private void Complaints_Load(object sender, EventArgs e)
+        private void AdminDashboard_Load(object sender, EventArgs e)
         {
             cboxBuildings.Items.Clear();
             cboxBuildings.DataSource = buildingController.Buildings;
@@ -28,33 +29,29 @@ namespace StudentHousingManagementForms
 
         private void cboxBuildings_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DisplayComplaints();
+            DisplayAnnouncements();
         }
 
-        private void cboxProcessedOrNot_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            DisplayComplaints();
-        }
-
-        private void DisplayComplaints()
+        private void DisplayAnnouncements()
         {
             foreach (Building building in buildingController.Buildings)
             {
                 if ((Building)cboxBuildings.SelectedItem == building)
                 {
-                    flpComplaints.Controls.Clear();
-                    foreach (StudentHousingManagement.Message complaint in building.Complaints)
+                    flpAnnouncements.Controls.Clear();
+                    foreach (StudentHousingManagement.Message Announcement in building.Announcements)
                     {
-                        UserControlComplaints ucComplaint = new UserControlComplaints();
-                        flpComplaints.Controls.Add(ucComplaint);
-                        ucComplaint.Complaints(complaint);
+                        UserControlAnnouncement ucAnnouncement = new UserControlAnnouncement();
+                        flpAnnouncements.Controls.Add(ucAnnouncement);
+                        ucAnnouncement.Announcements(Announcement);
                     }
 
                 }
             }
+
         }
 
-        private void flpComplaints_SizeChanged(object sender, EventArgs e)
+        private void flpAnnouncements_SizeChanged(object sender, EventArgs e)
         {
             ChangeElementsSize();
         }
@@ -63,21 +60,19 @@ namespace StudentHousingManagementForms
         {
             if (this.Size.Width > 1000)
             {
-                foreach (UserControlComplaints ucComplai in flpComplaints.Controls)
+                foreach (UserControlAnnouncement ucAnnou in flpAnnouncements.Controls)
                 {
-                    ucComplai.Width = this.Size.Width - 40;
+                    ucAnnou.Width = this.Size.Width - 40;
                 }
             }
             else
             {
-                foreach (UserControlComplaints uccompla in flpComplaints.Controls)
+                foreach (UserControlAnnouncement ucAnnou in flpAnnouncements.Controls)
                 {
-                    uccompla.Width = 855;
+                    ucAnnou.Width = 855;
                 }
 
             }
         }
-
-       
     }
 }

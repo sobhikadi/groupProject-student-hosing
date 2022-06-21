@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserPanel));
             this.pContainer = new System.Windows.Forms.Panel();
             this.pMenu = new System.Windows.Forms.Panel();
+            this.btnBuildingHouseRules = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnMyProfile = new System.Windows.Forms.Button();
             this.btnWhoPaysWhat = new System.Windows.Forms.Button();
@@ -56,6 +57,7 @@
             // 
             // pMenu
             // 
+            this.pMenu.Controls.Add(this.btnBuildingHouseRules);
             this.pMenu.Controls.Add(this.btnLogOut);
             this.pMenu.Controls.Add(this.btnMyProfile);
             this.pMenu.Controls.Add(this.btnWhoPaysWhat);
@@ -69,6 +71,18 @@
             this.pMenu.Name = "pMenu";
             this.pMenu.Size = new System.Drawing.Size(273, 746);
             this.pMenu.TabIndex = 4;
+            // 
+            // btnBuildingHouseRules
+            // 
+            this.btnBuildingHouseRules.FlatAppearance.BorderSize = 0;
+            this.btnBuildingHouseRules.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBuildingHouseRules.Location = new System.Drawing.Point(5, 516);
+            this.btnBuildingHouseRules.Name = "btnBuildingHouseRules";
+            this.btnBuildingHouseRules.Size = new System.Drawing.Size(264, 49);
+            this.btnBuildingHouseRules.TabIndex = 7;
+            this.btnBuildingHouseRules.Text = "Building/House rules";
+            this.btnBuildingHouseRules.UseVisualStyleBackColor = true;
+            this.btnBuildingHouseRules.Click += new System.EventHandler(this.btnBuildingHouseRules_Click);
             // 
             // btnLogOut
             // 
@@ -86,7 +100,7 @@
             // 
             this.btnMyProfile.FlatAppearance.BorderSize = 0;
             this.btnMyProfile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMyProfile.Location = new System.Drawing.Point(5, 580);
+            this.btnMyProfile.Location = new System.Drawing.Point(5, 595);
             this.btnMyProfile.Name = "btnMyProfile";
             this.btnMyProfile.Size = new System.Drawing.Size(264, 49);
             this.btnMyProfile.TabIndex = 5;
@@ -98,7 +112,7 @@
             // 
             this.btnWhoPaysWhat.FlatAppearance.BorderSize = 0;
             this.btnWhoPaysWhat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnWhoPaysWhat.Location = new System.Drawing.Point(5, 281);
+            this.btnWhoPaysWhat.Location = new System.Drawing.Point(5, 262);
             this.btnWhoPaysWhat.Name = "btnWhoPaysWhat";
             this.btnWhoPaysWhat.Size = new System.Drawing.Size(264, 49);
             this.btnWhoPaysWhat.TabIndex = 4;
@@ -110,7 +124,7 @@
             // 
             this.btnCreateAnnoucement.FlatAppearance.BorderSize = 0;
             this.btnCreateAnnoucement.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCreateAnnoucement.Location = new System.Drawing.Point(5, 379);
+            this.btnCreateAnnoucement.Location = new System.Drawing.Point(5, 346);
             this.btnCreateAnnoucement.Name = "btnCreateAnnoucement";
             this.btnCreateAnnoucement.Size = new System.Drawing.Size(264, 49);
             this.btnCreateAnnoucement.TabIndex = 3;
@@ -122,7 +136,7 @@
             // 
             this.btnFileComplaint.FlatAppearance.BorderSize = 0;
             this.btnFileComplaint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnFileComplaint.Location = new System.Drawing.Point(5, 479);
+            this.btnFileComplaint.Location = new System.Drawing.Point(5, 431);
             this.btnFileComplaint.Name = "btnFileComplaint";
             this.btnFileComplaint.Size = new System.Drawing.Size(264, 49);
             this.btnFileComplaint.TabIndex = 2;
@@ -134,7 +148,7 @@
             // 
             this.btnChoreSchedule.FlatAppearance.BorderSize = 0;
             this.btnChoreSchedule.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnChoreSchedule.Location = new System.Drawing.Point(5, 190);
+            this.btnChoreSchedule.Location = new System.Drawing.Point(5, 182);
             this.btnChoreSchedule.Name = "btnChoreSchedule";
             this.btnChoreSchedule.Size = new System.Drawing.Size(264, 49);
             this.btnChoreSchedule.TabIndex = 1;
@@ -194,6 +208,7 @@
             this.Name = "UserPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserPanel";
+            this.Load += new System.EventHandler(this.UserPanel_Load);
             this.pMenu.ResumeLayout(false);
             this.pLogo.ResumeLayout(false);
             this.pLogo.PerformLayout();
@@ -216,5 +231,6 @@
         private Panel pLogo;
         private Label lblLogoName;
         private PictureBox pboxLogo;
+        private Button btnBuildingHouseRules;
     }
 }

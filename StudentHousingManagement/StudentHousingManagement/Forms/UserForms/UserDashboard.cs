@@ -15,12 +15,14 @@ namespace StudentHousingManagementForms
     public partial class UserDashboard : Form
     {
         User currentUser;
+        BuildingController buildingController;
 
 
         public UserDashboard(User user)
         {
             InitializeComponent();
             currentUser = user;
+            buildingController = new BuildingController();
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
@@ -35,16 +37,19 @@ namespace StudentHousingManagementForms
 
         private void DisplayAnnouncements() 
         {
+            Building building = buildingController.GetUserBuilding(currentUser);
+            House house = buildingController.GetUserHouse(currentUser);
+
             if (cboxAllOrHouse.Text == "All")
             {
                 flpAnnouncements.Controls.Clear();
-                foreach (Message buildingAnnouncement in currentUser.House.Building.Announcements)
+                foreach (Message buildingAnnouncement in building.Announcements)
                 {
                     UserControlAnnouncement ucAnnouncement = new UserControlAnnouncement();
                     flpAnnouncements.Controls.Add(ucAnnouncement);
                     ucAnnouncement.Announcements(buildingAnnouncement); 
                 }
-                foreach (Message houseAnnouncement in currentUser.House.Announcements)
+                foreach (Message houseAnnouncement in house.Announcements)
                 {
                     UserControlAnnouncement ucAnnouncement = new UserControlAnnouncement();
                     flpAnnouncements.Controls.Add(ucAnnouncement);
@@ -55,7 +60,7 @@ namespace StudentHousingManagementForms
             if (cboxAllOrHouse.Text == "Building") 
             {
                 flpAnnouncements.Controls.Clear();
-                foreach (Message buildinAnnouncement in currentUser.House.Building.Announcements) 
+                foreach (Message buildinAnnouncement in building.Announcements) 
                 {
                     UserControlAnnouncement ucAnnouncement = new UserControlAnnouncement();
                     flpAnnouncements.Controls.Add(ucAnnouncement);
@@ -66,7 +71,7 @@ namespace StudentHousingManagementForms
             if (cboxAllOrHouse.Text == "House")
             {
                 flpAnnouncements.Controls.Clear();
-                foreach (Message houseAnnouncement in currentUser.House.Announcements)
+                foreach (Message houseAnnouncement in house.Announcements)
                 {
                     UserControlAnnouncement ucAnnouncement = new UserControlAnnouncement();
                     flpAnnouncements.Controls.Add(ucAnnouncement);

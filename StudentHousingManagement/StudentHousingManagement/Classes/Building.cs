@@ -3,10 +3,6 @@
     [Serializable]
     public class Building
     {
-        string? buildingRules;
-
-        int IDFeeder = 0;
-
         public List<User> Residents
         { get; private set; }
         public List<House> Houses
@@ -19,6 +15,8 @@
         public string Address
         { get; private set; }
         public int NoOfHouses
+        { get; private set; }
+        public string? BuildingRules
         { get; private set; }
 
         public Building(string address, int noOfHouses)
@@ -42,7 +40,7 @@
         }
         public void NewBuildingRules(string rules)
         {
-
+            BuildingRules = rules;
         }
 
         public bool HouseAvailable()

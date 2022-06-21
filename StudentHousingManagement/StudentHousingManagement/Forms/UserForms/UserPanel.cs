@@ -113,7 +113,7 @@ namespace StudentHousingManagementForms
         }
         private void btnBuildingHouseRules_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new BuildingHouseRules(), sender);
+            OpenChildForm(new HouseRules(user), sender);
 
         }
 

@@ -9,8 +9,6 @@ namespace StudentHousingManagement
     [Serializable]
     public class House
     {
-        private string houseRules;
-
         public ChoreSchedule ChoreSchedule 
         { get; private set; }
         public Building Building
@@ -23,6 +21,8 @@ namespace StudentHousingManagement
         public string HouseNumber
         { get; private set; }
         public int NoOfResidents
+        { get; private set; }
+        public string HouseRules
         { get; private set; }
 
         public House(Building building, int noOfResidents, string houseNumber)
@@ -50,7 +50,9 @@ namespace StudentHousingManagement
         { return Residents.Count < NoOfResidents; }
 
         public void NewHouseRules(string rules)
-        { }
+        {
+            HouseRules = rules;
+        }
 
         public override string ToString()
         {

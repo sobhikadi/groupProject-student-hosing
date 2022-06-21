@@ -38,18 +38,20 @@
             // 
             this.cboxBuildings.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cboxBuildings.FormattingEnabled = true;
-            this.cboxBuildings.Location = new System.Drawing.Point(128, 17);
+            this.cboxBuildings.Location = new System.Drawing.Point(112, 13);
+            this.cboxBuildings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboxBuildings.Name = "cboxBuildings";
-            this.cboxBuildings.Size = new System.Drawing.Size(497, 33);
+            this.cboxBuildings.Size = new System.Drawing.Size(435, 28);
             this.cboxBuildings.TabIndex = 0;
+            this.cboxBuildings.SelectedIndexChanged += new System.EventHandler(this.cboxBuildings_SelectedIndexChanged);
             // 
             // lblBuildings
             // 
             this.lblBuildings.AutoSize = true;
             this.lblBuildings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblBuildings.Location = new System.Drawing.Point(12, 17);
+            this.lblBuildings.Location = new System.Drawing.Point(10, 13);
             this.lblBuildings.Name = "lblBuildings";
-            this.lblBuildings.Size = new System.Drawing.Size(92, 28);
+            this.lblBuildings.Size = new System.Drawing.Size(74, 21);
             this.lblBuildings.TabIndex = 1;
             this.lblBuildings.Text = "Buildings";
             // 
@@ -59,39 +61,40 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbBuildingRules.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbBuildingRules.Location = new System.Drawing.Point(12, 73);
+            this.tbBuildingRules.Location = new System.Drawing.Point(10, 55);
+            this.tbBuildingRules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbBuildingRules.Multiline = true;
             this.tbBuildingRules.Name = "tbBuildingRules";
             this.tbBuildingRules.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbBuildingRules.Size = new System.Drawing.Size(897, 583);
+            this.tbBuildingRules.Size = new System.Drawing.Size(785, 438);
             this.tbBuildingRules.TabIndex = 2;
             // 
             // btnUpdateBuildingRules
             // 
             this.btnUpdateBuildingRules.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdateBuildingRules.BackColor = System.Drawing.Color.Linen;
             this.btnUpdateBuildingRules.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdateBuildingRules.Location = new System.Drawing.Point(563, 674);
+            this.btnUpdateBuildingRules.Location = new System.Drawing.Point(493, 506);
+            this.btnUpdateBuildingRules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdateBuildingRules.Name = "btnUpdateBuildingRules";
-            this.btnUpdateBuildingRules.Size = new System.Drawing.Size(346, 49);
+            this.btnUpdateBuildingRules.Size = new System.Drawing.Size(303, 37);
             this.btnUpdateBuildingRules.TabIndex = 3;
             this.btnUpdateBuildingRules.Text = "Update Building Rules";
-            this.btnUpdateBuildingRules.UseVisualStyleBackColor = false;
+            this.btnUpdateBuildingRules.UseVisualStyleBackColor = true;
+            this.btnUpdateBuildingRules.Click += new System.EventHandler(this.btnUpdateBuildingRules_Click);
             // 
             // BuildingRules
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(921, 746);
+            this.ClientSize = new System.Drawing.Size(806, 560);
             this.Controls.Add(this.btnUpdateBuildingRules);
             this.Controls.Add(this.tbBuildingRules);
             this.Controls.Add(this.lblBuildings);
             this.Controls.Add(this.cboxBuildings);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BuildingRules";
             this.Text = "BuildingRules";
-            this.Load += new System.EventHandler(this.BuildingRules_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

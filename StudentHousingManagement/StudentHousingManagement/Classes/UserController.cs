@@ -8,7 +8,6 @@ namespace StudentHousingManagement
 {
     public class UserController
     {
-        int IDFeeder;
         UserManager userManager;
 
         public User CurrentUser
@@ -25,7 +24,6 @@ namespace StudentHousingManagement
             Users = userManager.Users;
             Admins = userManager.Admins;
 
-            IDFeeder = 0;
             NewAdmin("Max Vaskovich", "admin");
         }
 
@@ -59,13 +57,13 @@ namespace StudentHousingManagement
             if (IsEmailUnique(email))
             {
                 //User user = new User(name, RandomPassword(), email, IDFeeder, admin, house);
-                User user = new User(name, "password", email, IDFeeder, house);
+                User user = new User(name, "password", email, house);
                 Users.Add(user);
                 userManager.SaveUsers(Users);
 
                 house.Building.AddResident(user);
                 house.AddResident(user);
-                IDFeeder++;
+                
                 return true;
             }
             else return false;

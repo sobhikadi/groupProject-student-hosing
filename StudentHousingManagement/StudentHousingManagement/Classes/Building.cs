@@ -1,5 +1,6 @@
 ﻿namespace StudentHousingManagement
 {
+    [Serializable]
     public class Building
     {
         string? buildingRules;
@@ -26,21 +27,9 @@
             this.NoOfHouses = noOfHouses;
 
             Houses = new List<House>();
-            NewHouse(100, "1");
             Residents = new List<User>();
             Complaints = new List<Message>();
             Announcements = new List<Message>();
-        }
-
-        public bool NewHouse(int noOfResidents, string houseNumber)
-        {
-            foreach(House house in Houses)
-            {
-                if (houseNumber == house.HouseNumber)
-                { return false; }
-            }
-            Houses.Add(new House(this, noOfResidents, houseNumber));
-            return true;
         }
 
         public void AddResident(User resident)

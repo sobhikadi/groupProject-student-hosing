@@ -17,13 +17,13 @@ namespace StudentHousingManagementForms
         private Form activeForm;
         private LogIn logIn;
 
-        UserController userController;
+        User user;
 
-        public UserPanel(LogIn logIn, UserController userController)
+        public UserPanel(LogIn logIn, User user)
         {
             InitializeComponent();   
             this.logIn = logIn;
-            this.userController = userController;
+            this.user = user;
         }
 
         private void ActivateButton(object btnSender)
@@ -73,7 +73,7 @@ namespace StudentHousingManagementForms
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Dashboard(userController), sender);
+            OpenChildForm(new Dashboard(user), sender);
         }
 
         private void btnChoreShedule_Click(object sender, EventArgs e)
@@ -90,19 +90,19 @@ namespace StudentHousingManagementForms
 
         private void btnCreateAnnoucement_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new CreateAnnoucement(userController), sender);
+            OpenChildForm(new CreateAnnoucement(user), sender);
 
         }
 
         private void btnFileComplaint_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FileComplaint(userController), sender);
+            OpenChildForm(new FileComplaint(user), sender);
 
         }
 
         private void btnMyProfile_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MyProfile(), sender);
+            OpenChildForm(new MyProfileUser(user), sender);
 
         }
 

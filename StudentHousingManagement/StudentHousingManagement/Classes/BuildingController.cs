@@ -8,21 +8,36 @@ namespace StudentHousingManagement
 {
     public class BuildingController
     {
+        BuildingManager buildingManager;
         public List<Building> Buildings
         { get; private set; }
 
         public BuildingController()
         {
-            Buildings = new List<Building>();
-            NewBuilding("Admins", 1);
-            NewBuilding("Tilburg 5025TJ, Korvelse Weg 51-54", 4);
-            NewBuilding("Eindhoven 1234BG, Eindhovense Weg 1-5", 5);
+            buildingManager = new BuildingManager();
+            buildingManager.LoadAllBuildings();
+            Buildings = buildingManager.Buildings;
         }
 
         public void NewBuilding(string address, int noOfHouses)
         {
-            Buildings.Add(new Building(address, noOfHouses));
+            Building building = new Building(address, noOfHouses);
+            Buildings.Add(building);
+            SaveBuilding(building);            
+
             Buildings.Sort((a, b) => a.Address.CompareTo(b.Address));
+        }
+
+        public bool NewHouse(Building building, int noOfResidents, string houseNumber)
+        {
+            foreach (House house in building.Houses)
+            {
+                if (houseNumber == house.HouseNumber)
+                { return false; }
+            }
+            building.Houses.Add(new House(building, noOfResidents, houseNumber));
+            buildingManager.SaveBuilding(building);
+            return true;
         }
 
         public bool ChangeHouse(House house, User user)
@@ -38,9 +53,17 @@ namespace StudentHousingManagement
             else return false;
         }
 
-        public void NewChoreSchedule()
+        public void SaveBuilding(Building building)
         {
+            List<string> addresses = new List<string>();
 
+            foreach (Building b in Buildings)
+            {
+                addresses.Add(b.Address);
+            }
+
+            buildingManager.SaveBuildingAddresses(addresses);
+            buildingManager.SaveBuilding(building);
         }
     }
 }

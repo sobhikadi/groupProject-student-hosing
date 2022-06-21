@@ -15,12 +15,20 @@ namespace StudentHousingManagementForms
     public partial class CreateAnnoucement : Form
     {
         User currentUser;
+        Admin currentAdmin;
         MessageController messageController;
-        public CreateAnnoucement(UserController userController)
+        public CreateAnnoucement(User user)
         {
             InitializeComponent();
             messageController = new MessageController();
-            currentUser = userController.CurrentUser;
+            currentUser = user;
+        }
+
+        public CreateAnnoucement(Admin admin)
+        {
+            InitializeComponent();
+            messageController = new MessageController();
+            currentAdmin = admin;
         }
 
         private void btnPublishAnnouncement_Click(object sender, EventArgs e)
@@ -54,7 +62,6 @@ namespace StudentHousingManagementForms
                 tbAnnouncementDescription.Text, DateTime.Now);
             }
             MessageBox.Show("Announcement published succesfully.");
-  
         }
     }
 }

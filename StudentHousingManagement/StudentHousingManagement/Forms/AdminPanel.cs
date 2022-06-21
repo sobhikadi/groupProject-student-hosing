@@ -13,17 +13,15 @@ namespace StudentHousingManagementForms
 {
     public partial class AdminPanel : Form
     {
-        UserController userController;
-        BuildingController buildingController;
+        Admin admin;
 
         Button currentButton;
         Form activeForm;
         LogIn logIn;
-        public AdminPanel(LogIn logIn, UserController userController, BuildingController buildingController)
+        public AdminPanel(LogIn logIn, Admin admin)
         {
             InitializeComponent();
-            this.userController = userController;
-            this.buildingController = buildingController;
+            this.admin = admin;
             this.logIn = logIn;
         }
 
@@ -74,22 +72,22 @@ namespace StudentHousingManagementForms
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Dashboard(userController), sender);
+            OpenChildForm(new Dashboard(admin), sender);
         }
 
         private void btnBuildingAdmin_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new BuildingAdministration(buildingController), sender);
+            OpenChildForm(new BuildingAdministration(), sender);
         }
 
         private void btnUserAdmin_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new UserAdministration(userController, buildingController), sender);
+            OpenChildForm(new UserAdministration(), sender);
         }
 
         private void btnCreateAnnoucement_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new CreateAnnoucement(userController), sender);
+            OpenChildForm(new CreateAnnoucement(admin), sender);
         }
 
         private void btnComplaints_Click(object sender, EventArgs e)

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentHousingManagement
 {
+    [Serializable]
     public class ChoreSchedule
     {
 

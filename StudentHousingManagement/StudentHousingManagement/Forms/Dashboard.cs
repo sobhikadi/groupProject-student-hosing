@@ -8,18 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentHousingManagement;
-
+using Message = StudentHousingManagement.Message;
 
 namespace StudentHousingManagementForms
 {
     public partial class Dashboard : Form
     {
-        UserController userController;
+        User currentUser;
+        Admin currentAdmin;
 
-        public Dashboard(UserController userController)
+        public Dashboard(User user)
         {
             InitializeComponent();
-            this.userController = userController;
+            currentUser = user;
+        }
+
+        public Dashboard(Admin admin)
+        {
+            InitializeComponent();
+            currentAdmin = admin;
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
@@ -30,22 +37,20 @@ namespace StudentHousingManagementForms
         private void cboxAllOrHouse_SelectedIndexChanged(object sender, EventArgs e)
         {
             DisplayAnnouncements();
-
         }
 
         private void DisplayAnnouncements() 
         {
-
             if (cboxAllOrHouse.Text == "All")
             {
                 flpAnnouncements.Controls.Clear();
-                foreach (StudentHousingManagement.Message buildinAnnouncement in userController.CurrentUser.House.Building.Announcements)
+                foreach (Message buildingAnnouncement in currentUser.House.Building.Announcements)
                 {
                     UserControlAnnouncement ucAnnouncement = new UserControlAnnouncement();
                     flpAnnouncements.Controls.Add(ucAnnouncement);
-                    ucAnnouncement.Announcements(buildinAnnouncement); 
+                    ucAnnouncement.Announcements(buildingAnnouncement); 
                 }
-                foreach (StudentHousingManagement.Message houseAnnouncement in userController.CurrentUser.House.Announcements)
+                foreach (Message houseAnnouncement in currentUser.House.Announcements)
                 {
                     UserControlAnnouncement ucAnnouncement = new UserControlAnnouncement();
                     flpAnnouncements.Controls.Add(ucAnnouncement);
@@ -56,7 +61,7 @@ namespace StudentHousingManagementForms
             if (cboxAllOrHouse.Text == "Building") 
             {
                 flpAnnouncements.Controls.Clear();
-                foreach (StudentHousingManagement.Message buildinAnnouncement in userController.CurrentUser.House.Building.Announcements) 
+                foreach (Message buildinAnnouncement in currentUser.House.Building.Announcements) 
                 {
                     UserControlAnnouncement ucAnnouncement = new UserControlAnnouncement();
                     flpAnnouncements.Controls.Add(ucAnnouncement);
@@ -67,15 +72,13 @@ namespace StudentHousingManagementForms
             if (cboxAllOrHouse.Text == "House")
             {
                 flpAnnouncements.Controls.Clear();
-                foreach (StudentHousingManagement.Message houseAnnouncement in userController.CurrentUser.House.Announcements)
+                foreach (Message houseAnnouncement in currentUser.House.Announcements)
                 {
                     UserControlAnnouncement ucAnnouncement = new UserControlAnnouncement();
                     flpAnnouncements.Controls.Add(ucAnnouncement);
                     ucAnnouncement.Announcements(houseAnnouncement);
                 }
             }
-
-
         }
 
         private void flpAnnouncements_SizeChanged(object sender, EventArgs e)
@@ -98,7 +101,6 @@ namespace StudentHousingManagementForms
                 {
                     ucAnnou.Width = 855;
                 }
-
             }
         }
     }

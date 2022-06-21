@@ -9,37 +9,56 @@ namespace StudentHousingManagement
     public class UserController
     {
         int IDFeeder;
-        BuildingController buildingController;
+        UserManager userManager;
 
-        public User? CurrentUser
+        public User CurrentUser
         { get; private set; }
+
         public List<User> Users
         { get; private set; }
+        public List<Admin> Admins
+        { get; private set; }
 
-        public UserController(BuildingController buildingController)
+        public UserController()
         {
-            this.buildingController = buildingController;
+            userManager = new UserManager();
+            Users = userManager.Users;
+            Admins = userManager.Admins;
 
-            Users = new List<User>();
             IDFeeder = 0;
-            NewUser("Max Vaskovich", "password", "admin", true, buildingController.Buildings[0].Houses[0]);
-            NewUser("Sobhi Kadi", "password", "user", false, buildingController.Buildings[1].Houses[0]);
-            NewUser("Isaac", "password", "isaac@gmail.com", false, buildingController.Buildings[1].Houses[0]);
+            NewAdmin("Max Vaskovich", "admin");
+
+            //NewUser("Max Vaskovich", "password", "admin", true, buildingController.Buildings[0].Houses[0]);
+            //NewUser("Sobhi Kadi", "password", "user", false, buildingController.Buildings[1].Houses[0]);
+            //NewUser("Isaac", "password", "isaac@gmail.com", false, buildingController.Buildings[1].Houses[0]);
         }
 
-        public bool LogIn(string email, string password)
+        public User? LogInUser(string email, string password)
         {
             foreach (User user in Users)
             {
                 if (user.Email == email && user.Password == password)
                 {
-                    CurrentUser = user;
-                    return true;
+                    CurrentUser = (User)user;
+                    return user;
                 }            
             }
-            return false;
+            return null;
         }
 
+        public Admin? LogInAdmin(string email, string password)
+        {
+            foreach (Admin admin in Admins)
+            {
+                if (admin.Email == email && admin.Password == password)
+                {
+                    return admin;
+                }
+            }
+            return null;
+        }
+
+        //Delete this method later, only used for hardcoding users.
         public bool NewUser(string name, string password, string email, bool admin, House house)
         {
             foreach(User u in Users)
@@ -59,25 +78,59 @@ namespace StudentHousingManagement
         }
         public bool NewUser(string name, string email, bool admin, House house)
         {
-            foreach (User u in Users)
+            if (IsEmailUnique(email))
             {
-                if (u.Email == email)
-                { return false; }
+                //User user = new User(name, RandomPassword(), email, IDFeeder, admin, house);
+                User user = new User(name, "password", email, IDFeeder, admin, house);
+                Users.Add(user);
+                userManager.SaveUsers(Users);
+
+                house.Building.AddResident(user);
+                house.AddResident(user);
+                IDFeeder++;
+                return true;
             }
-            //User user = new User(name, RandomPassword(), email, IDFeeder, admin, house);
-            User user = new User(name, "password", email, IDFeeder, admin, house);
-            Users.Add(user);
+            else return false;
+        }
 
-            house.Building.AddResident(user);
-            house.AddResident(user);
-
-            IDFeeder++;
-            return true;
+        public bool NewAdmin(string name, string email)
+        {
+            if (IsEmailUnique(email))
+            {
+                Admin admin = new Admin(name, email);
+                Admins.Add(admin);
+                userManager.SaveAdmins(Admins);
+                return true;
+            }
+            else return false;
         }
 
         public void ChangeHouse(House house, User user)
         {
             user.House = house;
+        }
+        public bool IsEmailUnique(string email)
+        {
+            bool unique = true;
+
+            if (Users.Count != 0)
+            {
+                foreach (User u in Users)
+                {
+                    if (u.Email == email)
+                    { unique = false; }
+                }
+            }
+
+            if (Admins.Count != 0)
+            {
+                foreach (Admin a in Admins)
+                {
+                    if (a.Email == email)
+                    { unique = false; }
+                }
+            }
+            return unique;
         }
 
         public string RandomPassword()

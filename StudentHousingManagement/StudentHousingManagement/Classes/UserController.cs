@@ -65,7 +65,7 @@ namespace StudentHousingManagement
 
                 house.Building.AddResident(user);
                 house.AddResident(user);
-                IDFeeder++;
+
                 return true;
             }
             else return false;

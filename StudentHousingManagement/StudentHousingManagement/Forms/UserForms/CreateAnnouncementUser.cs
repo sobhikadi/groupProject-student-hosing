@@ -15,21 +15,15 @@ namespace StudentHousingManagementForms
     public partial class CreateAnnouncementUser : Form
     {
         User currentUser;
-        Admin currentAdmin;
         MessageController messageController;
+        BuildingController buildingController;
 
         public CreateAnnouncementUser(User user)
         {
             InitializeComponent();
             messageController = new MessageController();
+            buildingController = new BuildingController();
             currentUser = user;
-        }
-
-        public CreateAnnouncementUser(Admin admin)
-        {
-            InitializeComponent();
-            messageController = new MessageController();
-            currentAdmin = admin;
         }
 
         private void btnPublishAnnouncement_Click(object sender, EventArgs e)
@@ -56,11 +50,14 @@ namespace StudentHousingManagementForms
             {
                 messageController.NewAnnouncementBuilding(currentUser, tbAnnouncementTitle.Text,
                 tbAnnouncementDescription.Text, DateTime.Now);
+                buildingController.buildingManager.SaveBuilding(currentUser.House.Building);
+
             }
             else if(rbHouse.Checked == true)
             {
                 messageController.NewAnnouncementHouse(currentUser, tbAnnouncementTitle.Text,
                 tbAnnouncementDescription.Text, DateTime.Now);
+                buildingController.buildingManager.SaveBuilding(currentUser.House.Building);
             }
             MessageBox.Show("Announcement published succesfully.");
         }

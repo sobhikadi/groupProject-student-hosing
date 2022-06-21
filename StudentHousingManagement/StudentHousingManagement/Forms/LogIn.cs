@@ -58,8 +58,8 @@ namespace StudentHousingManagementForms
                     adminPanel.Show();
                     this.Hide();
                 }
+                else MessageBox.Show("Invalid username or password");
             }
-            else MessageBox.Show("Invalid username or password");
         }
     }
 }

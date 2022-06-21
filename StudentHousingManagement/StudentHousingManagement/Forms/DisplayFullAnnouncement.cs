@@ -16,8 +16,8 @@ namespace StudentHousingManagementForms
         {
             InitializeComponent();
 
-            tbAnnouncementTitle.Text = message.header;
-            tbAnnouncementDescription.Text = message.body;
+            tbAnnouncementTitle.Text = message.Header;
+            tbAnnouncementDescription.Text = message.Body;
         }
     }
 }

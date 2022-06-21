@@ -52,7 +52,7 @@
     <Compile Update="Forms\MyProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\UserForms\UserAdministration.cs">
+    <Compile Update="Forms\AdminForms\UserAdministration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\UserControlAnnouncement.cs">
@@ -84,7 +84,7 @@
     <EmbeddedResource Update="Forms\MyProfile.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Update="Forms\UserForms\UserAdministration.resx">
+    <EmbeddedResource Update="Forms\AdminForms\UserAdministration.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

@@ -29,18 +29,22 @@
         private void InitializeComponent()
         {
             this.gboxAddUser = new System.Windows.Forms.GroupBox();
+            this.tbStudentPassword = new System.Windows.Forms.TextBox();
+            this.lblStudentPassword = new System.Windows.Forms.Label();
             this.btnUpdateInfo = new System.Windows.Forms.Button();
             this.tbStudentEmail = new System.Windows.Forms.TextBox();
             this.lblstudentEmail = new System.Windows.Forms.Label();
             this.tbStudentName = new System.Windows.Forms.TextBox();
             this.lblStudentName = new System.Windows.Forms.Label();
-            this.tbStudentPassword = new System.Windows.Forms.TextBox();
-            this.lblStudentPassword = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbAddress = new System.Windows.Forms.TextBox();
             this.gboxAddUser.SuspendLayout();
             this.SuspendLayout();
             // 
             // gboxAddUser
             // 
+            this.gboxAddUser.Controls.Add(this.tbAddress);
+            this.gboxAddUser.Controls.Add(this.label2);
             this.gboxAddUser.Controls.Add(this.tbStudentPassword);
             this.gboxAddUser.Controls.Add(this.lblStudentPassword);
             this.gboxAddUser.Controls.Add(this.btnUpdateInfo);
@@ -52,15 +56,35 @@
             this.gboxAddUser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gboxAddUser.Name = "gboxAddUser";
             this.gboxAddUser.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gboxAddUser.Size = new System.Drawing.Size(711, 414);
+            this.gboxAddUser.Size = new System.Drawing.Size(711, 509);
             this.gboxAddUser.TabIndex = 3;
             this.gboxAddUser.TabStop = false;
             this.gboxAddUser.Text = "My information";
             // 
+            // tbStudentPassword
+            // 
+            this.tbStudentPassword.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbStudentPassword.Location = new System.Drawing.Point(159, 169);
+            this.tbStudentPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tbStudentPassword.Name = "tbStudentPassword";
+            this.tbStudentPassword.Size = new System.Drawing.Size(530, 34);
+            this.tbStudentPassword.TabIndex = 3;
+            // 
+            // lblStudentPassword
+            // 
+            this.lblStudentPassword.AutoSize = true;
+            this.lblStudentPassword.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblStudentPassword.Location = new System.Drawing.Point(21, 172);
+            this.lblStudentPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStudentPassword.Name = "lblStudentPassword";
+            this.lblStudentPassword.Size = new System.Drawing.Size(97, 28);
+            this.lblStudentPassword.TabIndex = 11;
+            this.lblStudentPassword.Text = "Password:";
+            // 
             // btnUpdateInfo
             // 
             this.btnUpdateInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdateInfo.Location = new System.Drawing.Point(290, 242);
+            this.btnUpdateInfo.Location = new System.Drawing.Point(420, 282);
             this.btnUpdateInfo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnUpdateInfo.Name = "btnUpdateInfo";
             this.btnUpdateInfo.Size = new System.Drawing.Size(269, 48);
@@ -109,25 +133,21 @@
             this.lblStudentName.TabIndex = 0;
             this.lblStudentName.Text = "Name:";
             // 
-            // tbStudentPassword
+            // label2
             // 
-            this.tbStudentPassword.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbStudentPassword.Location = new System.Drawing.Point(159, 169);
-            this.tbStudentPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tbStudentPassword.Name = "tbStudentPassword";
-            this.tbStudentPassword.Size = new System.Drawing.Size(530, 34);
-            this.tbStudentPassword.TabIndex = 3;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(21, 229);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 25);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Address";
             // 
-            // lblStudentPassword
+            // tbAddress
             // 
-            this.lblStudentPassword.AutoSize = true;
-            this.lblStudentPassword.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblStudentPassword.Location = new System.Drawing.Point(21, 172);
-            this.lblStudentPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblStudentPassword.Name = "lblStudentPassword";
-            this.lblStudentPassword.Size = new System.Drawing.Size(97, 28);
-            this.lblStudentPassword.TabIndex = 11;
-            this.lblStudentPassword.Text = "Password:";
+            this.tbAddress.Location = new System.Drawing.Point(159, 226);
+            this.tbAddress.Name = "tbAddress";
+            this.tbAddress.Size = new System.Drawing.Size(530, 31);
+            this.tbAddress.TabIndex = 15;
             // 
             // MyProfileUser
             // 
@@ -154,5 +174,7 @@
         private Label lblStudentName;
         private TextBox tbStudentPassword;
         private Label lblStudentPassword;
+        private TextBox tbAddress;
+        private Label label2;
     }
 }

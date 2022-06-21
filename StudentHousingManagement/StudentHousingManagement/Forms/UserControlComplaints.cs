@@ -22,17 +22,17 @@ namespace StudentHousingManagementForms
         {
             complaintToShow = message;
             lblUserName.Text = message.User.Name;
-            lblComplaintTitle.Text = message.header;
-            if (message.body.Length > 50)
+            lblComplaintTitle.Text = message.Header;
+            if (message.Body.Length > 50)
             {
-                lblComplaintBody.Text = message.body.Substring(0, 25) + "...";
+                lblComplaintBody.Text = message.Body.Substring(0, 25) + "...";
             }
-            else if (message.body.Length < 50)
+            else if (message.Body.Length < 50)
             {
-                lblComplaintBody.Text = message.body.Substring(0, 10) + "...";
+                lblComplaintBody.Text = message.Body.Substring(0, 10) + "...";
             }
 
-            lblComplaintDate.Text = message.dateTime.ToString();
+            lblComplaintDate.Text = message.DateTime.ToString();
 
         }
 

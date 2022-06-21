@@ -26,14 +26,14 @@ namespace StudentHousingManagementForms
             lblAnnouncementTitle.Text = message.header;
             if (message.body.Length > 50)
             {
-                lblAnnouncementBody.Text = message.body.Substring(0, 25) + "...";
+                lblAnnouncementBody.Text = message.Body.Substring(0, 25) + "...";
             }
-            else if (message.body.Length < 50) 
+            else if (message.Body.Length < 50) 
             {
-                lblAnnouncementBody.Text = message.body.Substring(0, 10) + "...";
+                lblAnnouncementBody.Text = message.Body.Substring(0, 10) + "...";
             }
 
-                lblAnnouncementDate.Text = message.dateTime.ToString();
+                lblAnnouncementDate.Text = message.DateTime.ToString();
 
         }
 

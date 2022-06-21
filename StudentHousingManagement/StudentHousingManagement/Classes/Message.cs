@@ -9,9 +9,9 @@ namespace StudentHousingManagement
     [Serializable]
     public class Message
     {
-        public string header
+        public string Header 
         { get; private set; }
-        public string body
+        public string Body 
         { get; private set; }
         public DateTime dateTime
         { get; private set; }
@@ -22,8 +22,8 @@ namespace StudentHousingManagement
 
         public Message(string header, string body, User user, DateTime dateTime)
         {
-            this.header = header;
-            this.body = body;
+            Header = header;
+            Body = body;
             User = user;
             this.dateTime = dateTime;
             Name = user.Name;
@@ -31,8 +31,8 @@ namespace StudentHousingManagement
 
         public Message(string header, string body, Admin admin, DateTime dateTime)
         {
-            this.header = header;
-            this.body = body;
+            Header = header;
+            Body = body;
             Admin = admin;
             this.dateTime = dateTime;
             Name = admin.Name;

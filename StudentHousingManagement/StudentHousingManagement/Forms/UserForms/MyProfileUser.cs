@@ -22,6 +22,7 @@ namespace StudentHousingManagementForms
             tbStudentName.Text = user.Name;
             tbStudentEmail.Text = user.Email;
             tbStudentPassword.Text = user.Password;
+            tbAddress.Text = user.House.Building.Address;
         }
 
         private void btnUpdateInfo_Click(object sender, EventArgs e)

@@ -27,10 +27,6 @@ namespace StudentHousingManagement
 
             IDFeeder = 0;
             NewAdmin("Max Vaskovich", "admin");
-
-            //NewUser("Max Vaskovich", "password", "admin", true, buildingController.Buildings[0].Houses[0]);
-            //NewUser("Sobhi Kadi", "password", "user", false, buildingController.Buildings[1].Houses[0]);
-            //NewUser("Isaac", "password", "isaac@gmail.com", false, buildingController.Buildings[1].Houses[0]);
         }
 
         public User? LogInUser(string email, string password)
@@ -59,7 +55,7 @@ namespace StudentHousingManagement
         }
 
         //Delete this method later, only used for hardcoding users.
-        public bool NewUser(string name, string password, string email, bool admin, House house)
+        public bool NewUser(string name, string password, string email, House house)
         {
             foreach(User u in Users)
             {
@@ -67,7 +63,7 @@ namespace StudentHousingManagement
                 { return false; }
             }
 
-            User user = new User(name, password, email, IDFeeder, admin, house);
+            User user = new User(name, password, email, IDFeeder, house);
             Users.Add(user);
 
             house.Building.AddResident(user);
@@ -76,12 +72,12 @@ namespace StudentHousingManagement
             IDFeeder++;
             return true;
         }
-        public bool NewUser(string name, string email, bool admin, House house)
+        public bool NewUser(string name, string email, House house)
         {
             if (IsEmailUnique(email))
             {
                 //User user = new User(name, RandomPassword(), email, IDFeeder, admin, house);
-                User user = new User(name, "password", email, IDFeeder, admin, house);
+                User user = new User(name, "password", email, IDFeeder, house);
                 Users.Add(user);
                 userManager.SaveUsers(Users);
 

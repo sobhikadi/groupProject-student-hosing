@@ -46,7 +46,7 @@ namespace StudentHousingManagementForms
                 MessageBox.Show("Please select a building first");
                 return;
             }
-            messageController.NewAnnouncementBuilding(admin, selectedBuilding, tbAnnouncementTitle.Text, tbAnnouncementDescription.Text, DateTime.Now); ;
+            messageController.NewAnnouncementBuilding(admin, selectedBuilding, tbAnnouncementTitle.Text, tbAnnouncementDescription.Text, DateTime.Now);
             MessageBox.Show("Announcement published succesfully.");
         }
     }

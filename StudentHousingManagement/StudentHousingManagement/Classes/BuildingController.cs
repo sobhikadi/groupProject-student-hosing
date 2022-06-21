@@ -65,5 +65,31 @@ namespace StudentHousingManagement
             buildingManager.SaveBuildingAddresses(addresses);
             buildingManager.SaveBuilding(building);
         }
+
+        public Building GetUserBuilding(User user)
+        {
+            foreach (Building b in Buildings)
+            {
+                foreach (House h in b.Houses)
+                {
+                    if (b.Residents.Contains(user))
+                    { return b; }
+                }
+            }
+            return null;
+        }
+
+        public House GetUserHouse(User user)
+        {
+            foreach (Building b in Buildings)
+            {
+                foreach (House h in b.Houses)
+                {
+                    if (b.Residents.Contains(user))
+                    { return h; }
+                }
+            }
+            return null;
+        }
     }
 }

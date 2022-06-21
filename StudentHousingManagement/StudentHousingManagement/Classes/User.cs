@@ -13,8 +13,6 @@ namespace StudentHousingManagement
         { get; private set; }
         public House House
         { get; set; }
-        public bool Admin
-        { get; private set; }
 
         public int ID
         { get; private set; }
@@ -28,13 +26,12 @@ namespace StudentHousingManagement
         public double Balance
         { get; private set; }
 
-        public User(string name, string password, string email, int id, bool admin, House house)
+        public User(string name, string password, string email, int id, House house)
         {
             Name = name;
             Email = email;
             Password = password;
             ID = id;
-            Admin = admin;
             House = house;
 
             Complaints = new List<Message>();

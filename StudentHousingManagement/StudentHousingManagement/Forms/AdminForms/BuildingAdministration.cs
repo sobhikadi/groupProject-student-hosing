@@ -14,8 +14,12 @@ namespace StudentHousingManagementForms
 
         private void btnAddBuilding_Click(object sender, EventArgs e)
         {
-            buildingController.NewBuilding($"{tbCity.Text} {tbZIP.Text}, {tbStreetAndNumber.Text}", (int)nudNoOfHouses.Value);
-            UpdateBuildingList();
+            if (buildingController.NewBuilding($"{tbCity.Text} {tbZIP.Text}, {tbStreetAndNumber.Text}", (int)nudNoOfHouses.Value))
+            {
+                UpdateBuildingList();
+                MessageBox.Show("Building succesfully added.");
+            }
+            else MessageBox.Show("Building address already exists.");
         }
 
         private void btnAddHouse_Click(object sender, EventArgs e)

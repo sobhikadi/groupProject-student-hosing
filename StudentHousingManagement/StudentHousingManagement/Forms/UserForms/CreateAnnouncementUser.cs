@@ -51,7 +51,6 @@ namespace StudentHousingManagementForms
                 messageController.NewAnnouncementBuilding(currentUser, tbAnnouncementTitle.Text,
                 tbAnnouncementDescription.Text, DateTime.Now);
                 buildingController.buildingManager.SaveBuilding(currentUser.House.Building);
-
             }
             else if(rbHouse.Checked == true)
             {

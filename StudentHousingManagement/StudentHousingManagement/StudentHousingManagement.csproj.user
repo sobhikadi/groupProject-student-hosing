@@ -10,9 +10,6 @@
     <Compile Update="Forms\AdminForms\BuildingAdministration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\UserForms\BuildingHouseRules.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Forms\AdminForms\BuildingRules.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -39,6 +36,9 @@
     </Compile>
     <Compile Update="Forms\UserControlComplaints.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\UserForms\HouseRules.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\UserForms\UserDashboard.cs">
       <SubType>Form</SubType>

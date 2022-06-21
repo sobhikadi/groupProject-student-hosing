@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\moham\\.nuget\\packages\\": {}
+    "C:\\Users\\maxva\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Fontys\\Semeester 1\\Advanced block\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj",
+      "projectUniqueName": "C:\\Users\\maxva\\OneDrive\\Documents\\HBO-ICT\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj",
       "projectName": "StudentHousingManagement",
-      "projectPath": "D:\\Fontys\\Semeester 1\\Advanced block\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj",
-      "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-      "outputPath": "D:\\Fontys\\Semeester 1\\Advanced block\\student-housing-management\\StudentHousingManagement\\StudentHousingManagement\\obj\\",
+      "projectPath": "C:\\Users\\maxva\\OneDrive\\Documents\\HBO-ICT\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement.csproj",
+      "packagesPath": "C:\\Users\\maxva\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maxva\\OneDrive\\Documents\\HBO-ICT\\StudentHousingManagement\\StudentHousingManagement\\StudentHousingManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\maxva\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

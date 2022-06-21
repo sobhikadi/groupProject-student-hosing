@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StudentHousingManagement
 {
+    [Serializable]
     public class House
     {
-        private int noOfResidents;
-        private string houseNumber;
         private string houseRules;
 
         public ChoreSchedule ChoreSchedule 

@@ -15,10 +15,10 @@ namespace StudentHousingManagementForms
     {
         User currentUser;
         MessageController messageController;
-        public FileComplaint(UserController userController)
+        public FileComplaint(User user)
         {
             InitializeComponent();
-            currentUser = userController.CurrentUser;
+            currentUser = user;
             messageController = new MessageController();
         }
 

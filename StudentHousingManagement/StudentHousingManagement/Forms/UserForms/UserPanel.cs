@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentHousingManagementForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,33 +7,32 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using StudentHousingManagement;
 
 namespace StudentHousingManagementForms
 {
-    public partial class AdminPanel : Form
+    public partial class UserPanel : Form
     {
-        UserController userController;
-        BuildingController buildingController;
+        private Button currentButton;
+        private Form activeForm;
+        private LogIn logIn;
 
-        Button currentButton;
-        Form activeForm;
-        LogIn logIn;
-        public AdminPanel(LogIn logIn, UserController userController, BuildingController buildingController)
+        User user;
+
+        public UserPanel(LogIn logIn, User user)
         {
-            InitializeComponent();
-            this.userController = userController;
-            this.buildingController = buildingController;
+            InitializeComponent();   
             this.logIn = logIn;
+            this.user = user;
         }
-        private void AdminPanel_Load(object sender, EventArgs e)
+
+        private void UserPanel_Load(object sender, EventArgs e)
         {
-            AdminDashboard adminDashboard = new AdminDashboard(buildingController);
-            adminDashboard.TopLevel = false;
-            this.pContainer.Controls.Add(adminDashboard);
-            adminDashboard.BringToFront();
-            adminDashboard.Show();
+            UserDashboard userDashboard = new UserDashboard(user);
+            userDashboard.TopLevel = false;
+            this.pContainer.Controls.Add(userDashboard);
+            userDashboard.BringToFront();
+            userDashboard.Show();
             btnDashboard.BackColor = Color.DeepSkyBlue;
             btnDashboard.ForeColor = Color.Black;
             btnDashboard.Font = new System.Drawing.Font("Segoe UI", 13.5F);
@@ -45,7 +45,7 @@ namespace StudentHousingManagementForms
                 if (currentButton != (Button)btnSender)
                 {
                     DisableButton();
-
+                    
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = Color.DeepSkyBlue;
                     currentButton.ForeColor = Color.Black;
@@ -80,41 +80,47 @@ namespace StudentHousingManagementForms
             this.pContainer.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-
+            
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new AdminDashboard(buildingController), sender);
+            OpenChildForm(new UserDashboard(user), sender);
         }
 
-        private void btnBuildingAdmin_Click(object sender, EventArgs e)
+        private void btnChoreShedule_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new BuildingAdministration(buildingController), sender);
+            OpenChildForm(new ChoreShedule(user), sender);
+
         }
 
-        private void btnUserAdmin_Click(object sender, EventArgs e)
+        private void btnWhoPaysWhat_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new UserAdministration(userController, buildingController), sender);
+            OpenChildForm(new WhoPaysWhat(), sender);
+
         }
 
         private void btnCreateAnnoucement_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new CreateAnnouncementAdmin(userController), sender);
+            OpenChildForm(new CreateAnnouncementUser(user), sender);
+
         }
 
-        private void btnComplaints_Click(object sender, EventArgs e)
+        private void btnFileComplaint_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Complaints(buildingController), sender);
+            OpenChildForm(new FileComplaint(user), sender);
+
         }
-        private void btnBuildingRules_Click(object sender, EventArgs e)
+        private void btnBuildingHouseRules_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new BuildingRules(), sender);
+            OpenChildForm(new BuildingHouseRules(), sender);
+
         }
 
         private void btnMyProfile_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MyProfile(), sender);
+            OpenChildForm(new MyProfileUser(user), sender);
+
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -123,6 +129,6 @@ namespace StudentHousingManagementForms
             this.Close();
         }
 
-       
+        
     }
 }

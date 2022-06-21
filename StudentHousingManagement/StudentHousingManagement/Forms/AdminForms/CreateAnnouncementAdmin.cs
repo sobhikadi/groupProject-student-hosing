@@ -13,13 +13,14 @@ namespace StudentHousingManagementForms
 {
     public partial class CreateAnnouncementAdmin : Form
     {
-        User currentUser;
+        Admin admin;
         MessageController messageController;
-        public CreateAnnouncementAdmin(UserController userController)
+
+        public CreateAnnouncementAdmin(Admin admin)
         {
             InitializeComponent();
             messageController = new MessageController();
-            currentUser = userController.CurrentUser;
+            this.admin = admin;
         }
 
         private void btnPublishAnnouncement_Click(object sender, EventArgs e)
@@ -33,7 +34,7 @@ namespace StudentHousingManagementForms
             {
                 MessageBox.Show("Please enter a description.");
             }
-            messageController.NewAnnouncementBuilding(currentUser, tbAnnouncementTitle.Text,tbAnnouncementDescription.Text, DateTime.Now);
+            messageController.NewAnnouncementBuilding(admin, building, tbAnnouncementTitle.Text,tbAnnouncementDescription.Text, DateTime.Now);
             MessageBox.Show("Announcement published succesfully.");
         }
     }

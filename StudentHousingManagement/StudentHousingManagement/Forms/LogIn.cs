@@ -4,30 +4,36 @@ namespace StudentHousingManagementForms
     public partial class LogIn : Form
     {
         UserController userController;
-        BuildingController buildingController;
+        UserManager userManager;
 
         public LogIn()
         {
             InitializeComponent();
-            buildingController = new BuildingController();
-            userController = new UserController(buildingController);
-            tbEmail.Focus();
+            userManager = new UserManager();
+            userController = new UserController();
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            if (userController.LogIn(tbEmail.Text, tbPassword.Text))
+            if (rbUser.Checked)
             {
-                if (userController.CurrentUser.Admin)
+                User? user = userController.LogInUser(tbEmail.Text, tbPassword.Text);
+                if (user != null)
                 {
-                    AdminPanel adminPanel = new AdminPanel(this, userController, buildingController);
-                    adminPanel.Show();
+                    UserPanel userPanel = new UserPanel(this, user);
+                    userPanel.Show();
                     this.Hide();
                 }
-                else
+                else MessageBox.Show("Invalid username or password");
+            }
+
+            else if (rbAdmin.Checked)
+            {
+                Admin? admin = userController.LogInAdmin(tbEmail.Text, tbPassword.Text);
+                if (admin != null)
                 {
-                    UserPanel userPanel = new UserPanel(this, userController);
-                    userPanel.Show();
+                    AdminPanel adminPanel = new AdminPanel(this, admin);
+                    adminPanel.Show();
                     this.Hide();
                 }
             }

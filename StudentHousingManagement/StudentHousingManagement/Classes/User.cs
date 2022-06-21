@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentHousingManagement
 {
+    [Serializable]
     public class User
     {
         public List<Message> Complaints
@@ -23,12 +24,9 @@ namespace StudentHousingManagement
         { get; private set; }
         public string Email
         { get; private set; }
-        public int PhoneNumber
-        { get; private set; }
 
         public double Balance
         { get; private set; }
-
 
         public User(string name, string password, string email, int id, bool admin, House house)
         {
@@ -53,6 +51,13 @@ namespace StudentHousingManagement
         {
             Message complaint = new Message(subject, body, this, DateTime.Now);
             Complaints.Add(complaint);
+        }
+
+        public void UpdateInfo(string name, string email, string password)
+        {
+            Name = name;
+            Email = email;
+            Password = password;
         }
 
         public void UpdateBalance(double amount)

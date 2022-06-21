@@ -16,6 +16,11 @@ namespace StudentHousingManagement
             user.House.Building.Announcements.Add(new Message(header, body, user, dateTime));
         }
 
+        public void NewAnnouncementBuilding(Admin admin, Building building, string header, string body, DateTime dateTime)
+        {
+            building.Announcements.Add(new Message(header, body, admin, dateTime));
+        }
+
         public void NewAnnouncementHouse(User user, string header, string body, DateTime dateTime)
         {
             user.House.Announcements.Add(new Message(header, body, user, dateTime));

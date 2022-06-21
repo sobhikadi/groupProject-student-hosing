@@ -16,12 +16,12 @@ namespace StudentHousingManagementForms
         UserController userController;
         BuildingController buildingController;
 
-        public UserAdministration(UserController userController, BuildingController buildingController)
+        public UserAdministration()
         {
             InitializeComponent();
-            this.userController = userController;
-            this.buildingController = buildingController;
-            
+            buildingController = new BuildingController();
+            userController = new UserController();
+
             UpdateBuildingList();
 
             cboxBuildingUpdate.DataSource = null;

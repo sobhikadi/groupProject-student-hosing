@@ -5,10 +5,10 @@ namespace StudentHousingManagementForms
     public partial class BuildingAdministration : Form
     {
         BuildingController buildingController;
-        public BuildingAdministration(BuildingController buildingController)
+        public BuildingAdministration()
         {
             InitializeComponent();
-            this.buildingController = buildingController;
+            buildingController = new BuildingController();
             UpdateBuildingList();
         }
 
@@ -27,7 +27,7 @@ namespace StudentHousingManagementForms
                 return;
             }
 
-            if (building.NewHouse((int)nudNoOfResidents.Value, tbHouseNumber.Text))
+            if (buildingController.NewHouse(building, (int)nudNoOfResidents.Value, tbHouseNumber.Text))
             {
                 MessageBox.Show("House added succesfully.");
                 //cboxBuilding.SelectedIndex = 0;

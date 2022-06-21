@@ -12,15 +12,24 @@ using StudentHousingManagement;
 
 namespace StudentHousingManagementForms
 {
-    public partial class CreateAnnoucementUser : Form
+    public partial class CreateAnnouncementUser : Form
     {
         User currentUser;
+        Admin currentAdmin;
         MessageController messageController;
-        public CreateAnnoucementUser(UserController userController)
+
+        public CreateAnnouncementUser(User user)
         {
             InitializeComponent();
             messageController = new MessageController();
-            currentUser = userController.CurrentUser;
+            currentUser = user;
+        }
+
+        public CreateAnnouncementUser(Admin admin)
+        {
+            InitializeComponent();
+            messageController = new MessageController();
+            currentAdmin = admin;
         }
 
         private void btnPublishAnnouncement_Click(object sender, EventArgs e)
@@ -54,7 +63,6 @@ namespace StudentHousingManagementForms
                 tbAnnouncementDescription.Text, DateTime.Now);
             }
             MessageBox.Show("Announcement published succesfully.");
-  
         }
     }
 }

@@ -11,14 +11,13 @@ using StudentHousingManagement;
 
 namespace StudentHousingManagementForms
 {
-
     public partial class AdminDashboard : Form
     {
         BuildingController buildingController;
-        public AdminDashboard(BuildingController buildingController)
+        public AdminDashboard()
         {
             InitializeComponent();
-            this.buildingController = buildingController;
+            buildingController = new BuildingController();
         }
 
         private void AdminDashboard_Load(object sender, EventArgs e)

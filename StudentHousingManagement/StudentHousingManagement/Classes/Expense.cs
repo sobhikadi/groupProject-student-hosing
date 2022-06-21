@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentHousingManagement
 {
+    [Serializable]
     internal class Expense
     {
         double amount;

@@ -1,37 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Forms\AdminDashboard.cs">
+    <Compile Update="Forms\AdminForms\AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\AdminPanel.cs">
+    <Compile Update="Forms\AdminForms\AdminPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\BuildingAdministration.cs">
+    <Compile Update="Forms\AdminForms\BuildingAdministration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\BuildingHouseRules.cs">
+    <Compile Update="Forms\UserForms\BuildingHouseRules.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\BuildingRules.cs">
+    <Compile Update="Forms\AdminForms\BuildingRules.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\ChoreForm.cs">
+    <Compile Update="Forms\UserForms\ChoreForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\ChoresForm.cs">
+    <Compile Update="Forms\UserForms\ChoresForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\ChoreShedule.cs">
+    <Compile Update="Forms\UserForms\ChoreShedule.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Complaints.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\CreateAnnoucementUser.cs">
+    <Compile Update="Forms\UserForms\CreateAnnouncementUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\CreateAnnouncementAdmin.cs">
+    <Compile Update="Forms\AdminForms\CreateAnnouncementAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\DisplayFullAnnouncement.cs">
@@ -40,10 +40,10 @@
     <Compile Update="Forms\UserControlComplaints.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\UserDashboard.cs">
+    <Compile Update="Forms\UserForms\UserDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\FileComplaint.cs">
+    <Compile Update="Forms\UserForms\FileComplaint.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\LogIn.cs">
@@ -52,7 +52,7 @@
     <Compile Update="Forms\MyProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\UserAdministration.cs">
+    <Compile Update="Forms\UserForms\UserAdministration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\UserControlAnnouncement.cs">
@@ -64,7 +64,7 @@
     <Compile Update="Forms\UserControlDays.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Forms\UserPanel.cs">
+    <Compile Update="Forms\UserForms\UserPanel.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\WhoPaysWhat.cs">
@@ -72,10 +72,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="Forms\ChoreShedule.resx">
+    <EmbeddedResource Update="Forms\UserForms\ChoreShedule.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Update="Forms\FileComplaint.resx">
+    <EmbeddedResource Update="Forms\UserForms\FileComplaint.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Update="Forms\LogIn.resx">
@@ -84,7 +84,7 @@
     <EmbeddedResource Update="Forms\MyProfile.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Update="Forms\UserAdministration.resx">
+    <EmbeddedResource Update="Forms\UserForms\UserAdministration.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

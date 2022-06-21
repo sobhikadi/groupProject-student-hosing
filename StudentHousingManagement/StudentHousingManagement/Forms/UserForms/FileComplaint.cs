@@ -15,11 +15,13 @@ namespace StudentHousingManagementForms
     {
         User currentUser;
         MessageController messageController;
+        BuildingController buildingController;
         public FileComplaint(User user)
         {
             InitializeComponent();
             currentUser = user;
             messageController = new MessageController();
+            buildingController = new BuildingController();
         }
 
         private void btnPublishComplaint_Click(object sender, EventArgs e)
@@ -37,8 +39,8 @@ namespace StudentHousingManagementForms
             }
 
             //Post a new complaint.
-            messageController.NewComplaint(currentUser, tbComplaintTitle.Text,
-                tbComplaintDescription.Text, DateTime.Now);
+            messageController.NewComplaint(currentUser, tbComplaintTitle.Text, tbComplaintDescription.Text, DateTime.Now);
+            buildingController.buildingManager.SaveBuilding(currentUser.House.Building);
             MessageBox.Show("Complaint successfully posted.");
         }
     }

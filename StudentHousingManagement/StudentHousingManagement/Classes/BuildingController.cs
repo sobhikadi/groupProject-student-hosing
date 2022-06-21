@@ -8,7 +8,8 @@ namespace StudentHousingManagement
 {
     public class BuildingController
     {
-        BuildingManager buildingManager;
+        public BuildingManager buildingManager 
+        { get; private set; }
         public List<Building> Buildings
         { get; private set; }
 

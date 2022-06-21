@@ -16,6 +16,7 @@ namespace StudentHousingManagementForms
     {
         User currentUser;
 
+
         public UserDashboard(User user)
         {
             InitializeComponent();

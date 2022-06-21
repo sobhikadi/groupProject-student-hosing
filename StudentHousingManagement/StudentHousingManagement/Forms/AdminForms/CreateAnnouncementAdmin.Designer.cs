@@ -34,7 +34,7 @@
             this.tbAnnouncementTitle = new System.Windows.Forms.TextBox();
             this.lblAnnouncementTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboxBuildings = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // tbAnnouncementDescription
@@ -119,15 +119,15 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Choose Building:";
             // 
-            // comboBox1
+            // cboxBuildings
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(319, 607);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(569, 39);
-            this.comboBox1.TabIndex = 12;
-            this.comboBox1.Text = "Select a Building";
+            this.cboxBuildings.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cboxBuildings.FormattingEnabled = true;
+            this.cboxBuildings.Location = new System.Drawing.Point(319, 607);
+            this.cboxBuildings.Name = "cboxBuildings";
+            this.cboxBuildings.Size = new System.Drawing.Size(569, 39);
+            this.cboxBuildings.TabIndex = 12;
+            this.cboxBuildings.Text = "Select a Building";
             // 
             // CreateAnnouncementAdmin
             // 
@@ -135,7 +135,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(921, 746);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboxBuildings);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbAnnouncementDescription);
             this.Controls.Add(this.lblAnnouncementDescription);
@@ -158,6 +158,6 @@
         private TextBox tbAnnouncementTitle;
         private Label lblAnnouncementTitle;
         private Label label1;
-        private ComboBox comboBox1;
+        private ComboBox cboxBuildings;
     }
 }

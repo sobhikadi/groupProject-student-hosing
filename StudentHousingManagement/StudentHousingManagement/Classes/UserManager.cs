@@ -38,6 +38,23 @@ namespace StudentHousingManagement
             finally
             { if (fs != null) fs.Close(); }
         }
+        public void SaveAdmins(List<Admin> admins)
+        {
+            FileStream fs = null;
+            BinaryFormatter bf = null;
+
+            try
+            {
+                fs = new FileStream("Admins", FileMode.OpenOrCreate, FileAccess.Write);
+                bf = new BinaryFormatter();
+
+                bf.Serialize(fs, admins);
+            }
+            catch (Exception ex)
+            { MessageBox.Show(ex.Message); }
+            finally
+            { if (fs != null) fs.Close(); }
+        }
 
         public void LoadUsers()
         {
@@ -50,24 +67,6 @@ namespace StudentHousingManagement
                 bf = new BinaryFormatter();
 
                 Users = (List<User>)bf.Deserialize(fs);
-            }
-            catch (Exception ex)
-            { MessageBox.Show(ex.Message); }
-            finally
-            { if (fs != null) fs.Close(); }
-        }
-
-        public void SaveAdmins(List<Admin> admins)
-        {
-            FileStream fs = null;
-            BinaryFormatter bf = null;
-
-            try
-            {
-                fs = new FileStream("Admins", FileMode.OpenOrCreate, FileAccess.Write);
-                bf = new BinaryFormatter();
-
-                bf.Serialize(fs, admins);
             }
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }

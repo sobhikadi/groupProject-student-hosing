@@ -23,8 +23,8 @@ namespace StudentHousingManagementForms
         {
             messageToShow = message;
             lblUserName.Text = message.Name;
-            lblAnnouncementTitle.Text = message.header;
-            if (message.body.Length > 50)
+            lblAnnouncementTitle.Text = message.Header;
+            if (message.Body.Length > 50)
             {
                 lblAnnouncementBody.Text = message.Body.Substring(0, 25) + "...";
             }
@@ -32,9 +32,7 @@ namespace StudentHousingManagementForms
             {
                 lblAnnouncementBody.Text = message.Body.Substring(0, 10) + "...";
             }
-
-                lblAnnouncementDate.Text = message.DateTime.ToString();
-
+             lblAnnouncementDate.Text = message.DateTime.ToString();
         }
 
         private void UserControlAnnouncement_Click(object sender, EventArgs e)

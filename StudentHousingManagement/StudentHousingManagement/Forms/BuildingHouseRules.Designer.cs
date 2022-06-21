@@ -111,18 +111,20 @@
             // btnUpdateHouseRules
             // 
             this.btnUpdateHouseRules.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdateHouseRules.BackColor = System.Drawing.Color.Linen;
             this.btnUpdateHouseRules.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnUpdateHouseRules.Location = new System.Drawing.Point(563, 685);
             this.btnUpdateHouseRules.Name = "btnUpdateHouseRules";
             this.btnUpdateHouseRules.Size = new System.Drawing.Size(346, 49);
             this.btnUpdateHouseRules.TabIndex = 4;
             this.btnUpdateHouseRules.Text = "Update House Rules";
-            this.btnUpdateHouseRules.UseVisualStyleBackColor = true;
+            this.btnUpdateHouseRules.UseVisualStyleBackColor = false;
             // 
             // BuildingHouseRules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(921, 746);
             this.Controls.Add(this.btnUpdateHouseRules);
             this.Controls.Add(this.splitContainer1);

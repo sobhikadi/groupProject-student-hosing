@@ -69,18 +69,20 @@
             // btnUpdateBuildingRules
             // 
             this.btnUpdateBuildingRules.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdateBuildingRules.BackColor = System.Drawing.Color.Linen;
             this.btnUpdateBuildingRules.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnUpdateBuildingRules.Location = new System.Drawing.Point(563, 674);
             this.btnUpdateBuildingRules.Name = "btnUpdateBuildingRules";
             this.btnUpdateBuildingRules.Size = new System.Drawing.Size(346, 49);
             this.btnUpdateBuildingRules.TabIndex = 3;
             this.btnUpdateBuildingRules.Text = "Update Building Rules";
-            this.btnUpdateBuildingRules.UseVisualStyleBackColor = true;
+            this.btnUpdateBuildingRules.UseVisualStyleBackColor = false;
             // 
             // BuildingRules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(921, 746);
             this.Controls.Add(this.btnUpdateBuildingRules);
             this.Controls.Add(this.tbBuildingRules);

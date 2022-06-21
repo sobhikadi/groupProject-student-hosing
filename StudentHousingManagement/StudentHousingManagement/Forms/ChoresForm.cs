@@ -22,6 +22,7 @@ namespace StudentHousingManagementForms
 
         private void ChoresForm_Load(object sender, EventArgs e)
         {
+            tbDate.Text = $"{UserControlDays.Static_Day:00}/{ChoreShedule.Static_Month:00}/{ChoreShedule.Static_Year}";
             lboxChores.Items.Clear();
             foreach (Chore chore in chores) 
             {
@@ -30,6 +31,21 @@ namespace StudentHousingManagementForms
                     lboxChores.Items.Add(chore);
                 }
             }
+
+        }
+
+        private void btnDeleteChores_Click(object sender, EventArgs e)
+        {
+            if (chores.Contains(lboxChores.SelectedItem)) chores.Remove((Chore)lboxChores.SelectedItem);
+            lboxChores.Items.Clear();
+            foreach (Chore chore in chores)
+            {
+                if (chore.Date == $"{UserControlDays.Static_Day:00}/{ChoreShedule.Static_Month:00}/{ChoreShedule.Static_Year}")
+                {
+                    lboxChores.Items.Add(chore);
+                }
+            }
+            if (lboxChores.Items.Count == 0) { ChoreForm.Is_Visible = false; }
 
         }
     }

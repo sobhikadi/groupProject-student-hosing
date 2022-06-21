@@ -68,7 +68,7 @@
             this.btnLogIn.Location = new System.Drawing.Point(145, 285);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(271, 47);
-            this.btnLogIn.TabIndex = 6;
+            this.btnLogIn.TabIndex = 2;
             this.btnLogIn.Text = "Log In";
             this.btnLogIn.UseVisualStyleBackColor = true;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
@@ -78,8 +78,10 @@
             this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbPassword.Location = new System.Drawing.Point(221, 175);
             this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(273, 39);
-            this.tbPassword.TabIndex = 5;
+            this.tbPassword.TabIndex = 1;
+            this.tbPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPassword_KeyPress);
             // 
             // lblPassword
             // 
@@ -96,8 +98,10 @@
             this.tbEmail.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbEmail.Location = new System.Drawing.Point(221, 76);
             this.tbEmail.Name = "tbEmail";
+            this.tbEmail.PlaceholderText = "example@email.nl";
             this.tbEmail.Size = new System.Drawing.Size(273, 39);
-            this.tbEmail.TabIndex = 3;
+            this.tbEmail.TabIndex = 0;
+            this.tbEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbEmail_KeyPress);
             // 
             // lblUserName
             // 
@@ -113,6 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(937, 551);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblLogo);

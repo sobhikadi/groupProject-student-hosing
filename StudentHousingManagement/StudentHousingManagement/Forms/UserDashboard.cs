@@ -75,6 +75,7 @@ namespace StudentHousingManagementForms
                 }
             }
 
+            ChangeElementsSize();
 
         }
 

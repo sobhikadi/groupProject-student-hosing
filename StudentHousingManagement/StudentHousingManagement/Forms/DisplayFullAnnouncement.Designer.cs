@@ -86,14 +86,15 @@
             this.lblAnnouncementTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAnnouncementTitle.Location = new System.Drawing.Point(35, 31);
             this.lblAnnouncementTitle.Name = "lblAnnouncementTitle";
-            this.lblAnnouncementTitle.Size = new System.Drawing.Size(250, 46);
+            this.lblAnnouncementTitle.Size = new System.Drawing.Size(232, 46);
             this.lblAnnouncementTitle.TabIndex = 5;
-            this.lblAnnouncementTitle.Text = "Messegae Title:";
+            this.lblAnnouncementTitle.Text = "Message Title:";
             // 
             // DisplayFullAnnouncement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(925, 712);
             this.Controls.Add(this.tbAnnouncementDescription);
             this.Controls.Add(this.lblAnnouncementDescription);

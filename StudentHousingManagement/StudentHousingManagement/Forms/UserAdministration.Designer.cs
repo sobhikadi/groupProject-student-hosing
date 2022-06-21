@@ -82,7 +82,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbStudentName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbStudentName.Location = new System.Drawing.Point(102, 30);
-            this.tbStudentName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbStudentName.Margin = new System.Windows.Forms.Padding(2);
             this.tbStudentName.Name = "tbStudentName";
             this.tbStudentName.Size = new System.Drawing.Size(540, 30);
             this.tbStudentName.TabIndex = 1;
@@ -104,9 +104,9 @@
             this.gboxAddUser.Controls.Add(this.tbStudentName);
             this.gboxAddUser.Controls.Add(this.lblStudentName);
             this.gboxAddUser.Location = new System.Drawing.Point(9, 0);
-            this.gboxAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gboxAddUser.Margin = new System.Windows.Forms.Padding(2);
             this.gboxAddUser.Name = "gboxAddUser";
-            this.gboxAddUser.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gboxAddUser.Padding = new System.Windows.Forms.Padding(2);
             this.gboxAddUser.Size = new System.Drawing.Size(654, 274);
             this.gboxAddUser.TabIndex = 2;
             this.gboxAddUser.TabStop = false;
@@ -119,7 +119,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboxBuildingAdd.FormattingEnabled = true;
             this.cboxBuildingAdd.Location = new System.Drawing.Point(102, 106);
-            this.cboxBuildingAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxBuildingAdd.Margin = new System.Windows.Forms.Padding(2);
             this.cboxBuildingAdd.Name = "cboxBuildingAdd";
             this.cboxBuildingAdd.Size = new System.Drawing.Size(540, 28);
             this.cboxBuildingAdd.TabIndex = 16;
@@ -133,7 +133,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboxHouseAdd.FormattingEnabled = true;
             this.cboxHouseAdd.Location = new System.Drawing.Point(101, 146);
-            this.cboxHouseAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxHouseAdd.Margin = new System.Windows.Forms.Padding(2);
             this.cboxHouseAdd.Name = "cboxHouseAdd";
             this.cboxHouseAdd.Size = new System.Drawing.Size(540, 28);
             this.cboxHouseAdd.TabIndex = 15;
@@ -145,7 +145,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rbAdmin.AutoSize = true;
             this.rbAdmin.Location = new System.Drawing.Point(454, 190);
-            this.rbAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.rbAdmin.Name = "rbAdmin";
             this.rbAdmin.Size = new System.Drawing.Size(74, 24);
             this.rbAdmin.TabIndex = 14;
@@ -159,7 +159,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rbStudent.AutoSize = true;
             this.rbStudent.Location = new System.Drawing.Point(561, 190);
-            this.rbStudent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbStudent.Margin = new System.Windows.Forms.Padding(2);
             this.rbStudent.Name = "rbStudent";
             this.rbStudent.Size = new System.Drawing.Size(81, 24);
             this.rbStudent.TabIndex = 13;
@@ -187,7 +187,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAddUser.Location = new System.Drawing.Point(468, 222);
-            this.btnAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddUser.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(171, 34);
             this.btnAddUser.TabIndex = 10;
@@ -230,7 +230,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbStudentEmail.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbStudentEmail.Location = new System.Drawing.Point(102, 70);
-            this.tbStudentEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbStudentEmail.Margin = new System.Windows.Forms.Padding(2);
             this.tbStudentEmail.Name = "tbStudentEmail";
             this.tbStudentEmail.Size = new System.Drawing.Size(540, 30);
             this.tbStudentEmail.TabIndex = 3;
@@ -257,7 +257,7 @@
             this.lboxUsers.FormattingEnabled = true;
             this.lboxUsers.ItemHeight = 20;
             this.lboxUsers.Location = new System.Drawing.Point(6, 146);
-            this.lboxUsers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lboxUsers.Margin = new System.Windows.Forms.Padding(2);
             this.lboxUsers.Name = "lboxUsers";
             this.lboxUsers.Size = new System.Drawing.Size(236, 564);
             this.lboxUsers.TabIndex = 0;
@@ -267,7 +267,7 @@
             this.btnGetPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnGetPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnGetPassword.Location = new System.Drawing.Point(265, 656);
-            this.btnGetPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGetPassword.Margin = new System.Windows.Forms.Padding(2);
             this.btnGetPassword.Name = "btnGetPassword";
             this.btnGetPassword.Size = new System.Drawing.Size(199, 30);
             this.btnGetPassword.TabIndex = 11;
@@ -279,7 +279,7 @@
             this.btnRemoveUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnRemoveUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRemoveUser.Location = new System.Drawing.Point(265, 706);
-            this.btnRemoveUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRemoveUser.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemoveUser.Name = "btnRemoveUser";
             this.btnRemoveUser.Size = new System.Drawing.Size(199, 30);
             this.btnRemoveUser.TabIndex = 12;
@@ -294,7 +294,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboxBuildingView.FormattingEnabled = true;
             this.cboxBuildingView.Location = new System.Drawing.Point(6, 30);
-            this.cboxBuildingView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxBuildingView.Margin = new System.Windows.Forms.Padding(2);
             this.cboxBuildingView.Name = "cboxBuildingView";
             this.cboxBuildingView.Size = new System.Drawing.Size(236, 28);
             this.cboxBuildingView.TabIndex = 17;
@@ -308,7 +308,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboxHouseView.FormattingEnabled = true;
             this.cboxHouseView.Location = new System.Drawing.Point(6, 70);
-            this.cboxHouseView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxHouseView.Margin = new System.Windows.Forms.Padding(2);
             this.cboxHouseView.Name = "cboxHouseView";
             this.cboxHouseView.Size = new System.Drawing.Size(236, 28);
             this.cboxHouseView.TabIndex = 18;
@@ -326,9 +326,9 @@
             this.gboxStudents.Controls.Add(this.lboxUsers);
             this.gboxStudents.Dock = System.Windows.Forms.DockStyle.Right;
             this.gboxStudents.Location = new System.Drawing.Point(672, 0);
-            this.gboxStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gboxStudents.Margin = new System.Windows.Forms.Padding(2);
             this.gboxStudents.Name = "gboxStudents";
-            this.gboxStudents.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gboxStudents.Padding = new System.Windows.Forms.Padding(2);
             this.gboxStudents.Size = new System.Drawing.Size(249, 746);
             this.gboxStudents.TabIndex = 19;
             this.gboxStudents.TabStop = false;
@@ -337,7 +337,7 @@
             // tbNoOfResidents
             // 
             this.tbNoOfResidents.Location = new System.Drawing.Point(121, 106);
-            this.tbNoOfResidents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNoOfResidents.Margin = new System.Windows.Forms.Padding(2);
             this.tbNoOfResidents.Name = "tbNoOfResidents";
             this.tbNoOfResidents.ReadOnly = true;
             this.tbNoOfResidents.Size = new System.Drawing.Size(121, 27);
@@ -361,9 +361,9 @@
             this.gboxUpdateInfo.Controls.Add(this.cboxHouseUpdate);
             this.gboxUpdateInfo.Controls.Add(this.cboxBuildingUpdate);
             this.gboxUpdateInfo.Location = new System.Drawing.Point(9, 294);
-            this.gboxUpdateInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gboxUpdateInfo.Margin = new System.Windows.Forms.Padding(2);
             this.gboxUpdateInfo.Name = "gboxUpdateInfo";
-            this.gboxUpdateInfo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gboxUpdateInfo.Padding = new System.Windows.Forms.Padding(2);
             this.gboxUpdateInfo.Size = new System.Drawing.Size(455, 214);
             this.gboxUpdateInfo.TabIndex = 20;
             this.gboxUpdateInfo.TabStop = false;
@@ -393,7 +393,7 @@
             // 
             this.btnUpdateHouse.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnUpdateHouse.Location = new System.Drawing.Point(226, 132);
-            this.btnUpdateHouse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdateHouse.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateHouse.Name = "btnUpdateHouse";
             this.btnUpdateHouse.Size = new System.Drawing.Size(215, 38);
             this.btnUpdateHouse.TabIndex = 20;
@@ -405,7 +405,7 @@
             // 
             this.cboxHouseUpdate.FormattingEnabled = true;
             this.cboxHouseUpdate.Location = new System.Drawing.Point(101, 80);
-            this.cboxHouseUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxHouseUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.cboxHouseUpdate.Name = "cboxHouseUpdate";
             this.cboxHouseUpdate.Size = new System.Drawing.Size(335, 28);
             this.cboxHouseUpdate.TabIndex = 18;
@@ -415,7 +415,7 @@
             // 
             this.cboxBuildingUpdate.FormattingEnabled = true;
             this.cboxBuildingUpdate.Location = new System.Drawing.Point(102, 38);
-            this.cboxBuildingUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxBuildingUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.cboxBuildingUpdate.Name = "cboxBuildingUpdate";
             this.cboxBuildingUpdate.Size = new System.Drawing.Size(335, 28);
             this.cboxBuildingUpdate.TabIndex = 17;
@@ -426,12 +426,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(921, 746);
             this.Controls.Add(this.gboxUpdateInfo);
             this.Controls.Add(this.gboxStudents);
             this.Controls.Add(this.gboxAddUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserAdministration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "UserAdministration";

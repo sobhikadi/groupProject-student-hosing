@@ -64,7 +64,6 @@ namespace StudentHousingManagement
         {
             FileStream fs = null;
             BinaryFormatter bf = null;
-            string s = $"{path}/Files/Users";
 
             try
             {

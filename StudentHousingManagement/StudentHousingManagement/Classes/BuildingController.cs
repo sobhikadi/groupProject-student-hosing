@@ -20,13 +20,20 @@ namespace StudentHousingManagement
             Buildings = buildingManager.Buildings;
         }
 
-        public void NewBuilding(string address, int noOfHouses)
+        public bool NewBuilding(string address, int noOfHouses)
         {
+            foreach (Building b in Buildings)
+            {
+                if (b.Address == address)
+                { return false; }
+            }
             Building building = new Building(address, noOfHouses);
             Buildings.Add(building);
             SaveBuilding(building);            
 
             Buildings.Sort((a, b) => a.Address.CompareTo(b.Address));
+
+            return true;
         }
 
         public bool NewHouse(Building building, int noOfResidents, string houseNumber)

@@ -54,24 +54,6 @@ namespace StudentHousingManagement
             return null;
         }
 
-        //Delete this method later, only used for hardcoding users.
-        public bool NewUser(string name, string password, string email, House house)
-        {
-            foreach(User u in Users)
-            {
-                if (u.Email == email)
-                { return false; }
-            }
-
-            User user = new User(name, password, email, IDFeeder, house);
-            Users.Add(user);
-
-            house.Building.AddResident(user);
-            house.AddResident(user);
-
-            IDFeeder++;
-            return true;
-        }
         public bool NewUser(string name, string email, House house)
         {
             if (IsEmailUnique(email))

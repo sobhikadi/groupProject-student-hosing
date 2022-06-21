@@ -60,6 +60,8 @@ namespace StudentHousingManagement
 
         public void LoadAllBuildings()
         {
+            if (buildingAddresses == null)
+            { return; }
             FileStream? fs = null;
             BinaryFormatter? bf = null;
 

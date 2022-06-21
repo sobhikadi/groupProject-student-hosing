@@ -51,8 +51,9 @@ namespace StudentHousingManagementForms
 
             if (userController.NewUser(tbStudentName.Text, tbStudentEmail.Text, house))
             {
-                MessageBox.Show("User succesfully added.");
+                buildingController.buildingManager.SaveBuilding(house.Building);
                 UpdateUserList();
+                MessageBox.Show("User succesfully added."); 
             }
             else MessageBox.Show("This email is already in use.");
         }

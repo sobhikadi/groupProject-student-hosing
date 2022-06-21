@@ -69,12 +69,12 @@ namespace StudentHousingManagement
 
         public Building GetUserBuilding(User user)
         {
-            foreach (Building b in Buildings)
+            foreach (Building building in Buildings)
             {
-                foreach (House h in b.Houses)
+                foreach (User u in building.Residents)
                 {
-                    if (b.Residents.Contains(user))
-                    { return b; }
+                    if (u.Email == user.Email)
+                    { return building; }
                 }
             }
             return null;
@@ -86,8 +86,12 @@ namespace StudentHousingManagement
             {
                 foreach (House h in b.Houses)
                 {
-                    if (b.Residents.Contains(user))
-                    { return h; }
+                    foreach (User u in h.Residents)
+                    {
+                        if (u.Email == user.Email)
+                        { return h; }
+                    }
+                    
                 }
             }
             return null;

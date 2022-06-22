@@ -4,18 +4,16 @@ namespace StudentHousingManagementForms
     public partial class LogIn : Form
     {
         UserController userController;
-        UserManager userManager;
 
         public LogIn()
         {
             InitializeComponent();
-            userManager = new UserManager();
-            userController = new UserController();
             tbEmail.Focus();
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
+            userController = new UserController();
             LogInHandler();
         }
 

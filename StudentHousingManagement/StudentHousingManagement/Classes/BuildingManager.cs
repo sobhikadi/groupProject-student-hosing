@@ -9,7 +9,6 @@ namespace StudentHousingManagement
 {
     public class BuildingManager
     {
-        string path;
 
         List<string> buildingAddresses;
 
@@ -18,8 +17,6 @@ namespace StudentHousingManagement
 
         public BuildingManager()
         {
-            path = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName);
-
             Buildings = new List<Building>();
             LoadBuildingAddresses();
         }
@@ -31,7 +28,7 @@ namespace StudentHousingManagement
 
             try
             {
-                fs = new FileStream($"{path}/StudentHousingManagement/Files/{building.Address}", FileMode.OpenOrCreate, FileAccess.Write);
+                fs = new FileStream($"{building.Address}", FileMode.OpenOrCreate, FileAccess.Write);
                 bf = new BinaryFormatter();
                 bf.Serialize(fs, building);
             }
@@ -49,7 +46,7 @@ namespace StudentHousingManagement
 
             try
             {
-                fs = new FileStream($"{path}/StudentHousingManagement/Files/{building.Address}", FileMode.Open, FileAccess.Read);
+                fs = new FileStream($"{building.Address}", FileMode.Open, FileAccess.Read);
                 bf = new BinaryFormatter();
                 building = (Building)bf.Deserialize(fs);
             }
@@ -73,7 +70,7 @@ namespace StudentHousingManagement
             {
                 try
                 {
-                    fs = new FileStream($"{path}/StudentHousingManagement/Files/{buildingAddress}", FileMode.Open, FileAccess.Read);
+                    fs = new FileStream($"{buildingAddress}", FileMode.Open, FileAccess.Read);
                     bf = new BinaryFormatter();
                     Buildings.Add((Building)bf.Deserialize(fs));
                 }
@@ -92,7 +89,7 @@ namespace StudentHousingManagement
 
             try
             {
-                fs = new FileStream($"{path}/StudentHousingManagement/Files/Building addresses", FileMode.OpenOrCreate, FileAccess.Write);
+                fs = new FileStream($"Building addresses", FileMode.OpenOrCreate, FileAccess.Write);
                 bf = new BinaryFormatter();
                 bf.Serialize(fs, buildingAddresses);
             }
@@ -109,7 +106,7 @@ namespace StudentHousingManagement
 
             try
             {
-                fs = new FileStream($"{path}/StudentHousingManagement/Files/Building addresses", FileMode.Open, FileAccess.Read);
+                fs = new FileStream($"Building addresses", FileMode.Open, FileAccess.Read);
                 bf = new BinaryFormatter();
                 buildingAddresses = (List<string>)bf.Deserialize(fs);
             }

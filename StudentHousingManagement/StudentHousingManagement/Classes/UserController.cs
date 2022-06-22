@@ -9,6 +9,7 @@ namespace StudentHousingManagement
     public class UserController
     {
         UserManager userManager;
+        BuildingController buildingController;
 
         public User CurrentUser
         { get; private set; }
@@ -21,9 +22,11 @@ namespace StudentHousingManagement
         public UserController()
         {
             userManager = new UserManager();
+            buildingController = new BuildingController();
+
             Users = userManager.Users;
             Admins = userManager.Admins;
-
+            
             NewAdmin("Max Vaskovich", "admin");
         }
 
@@ -60,10 +63,9 @@ namespace StudentHousingManagement
                 User user = new User(name, "password", email, house);
                 Users.Add(user);
                 userManager.SaveUsers(Users);
-
                 house.Building.AddResident(user);
                 house.AddResident(user);
-                
+
                 return true;
             }
             else return false;

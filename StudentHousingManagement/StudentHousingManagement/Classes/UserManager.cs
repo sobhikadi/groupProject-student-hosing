@@ -10,7 +10,6 @@ namespace StudentHousingManagement
 {
     public class UserManager
     {
-        string path;
         public List<User> Users
         { get; private set; }
         public List<Admin> Admins
@@ -18,7 +17,6 @@ namespace StudentHousingManagement
 
         public UserManager()
         {
-            path = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName);
 
             Users = new List<User>();
             Admins = new List<Admin>();
@@ -32,7 +30,7 @@ namespace StudentHousingManagement
 
             try
             {
-                fs = new FileStream($"{path}/StudentHousingManagement/Files/Users", FileMode.OpenOrCreate, FileAccess.Write);
+                fs = new FileStream("Users", FileMode.OpenOrCreate, FileAccess.Write);
                 bf = new BinaryFormatter();
 
                 bf.Serialize(fs, users);
@@ -49,7 +47,7 @@ namespace StudentHousingManagement
 
             try
             {
-                fs = new FileStream($"{path}/StudentHousingManagement/Files/Admins", FileMode.OpenOrCreate, FileAccess.Write);
+                fs = new FileStream("Admins", FileMode.OpenOrCreate, FileAccess.Write);
                 bf = new BinaryFormatter();
 
                 bf.Serialize(fs, admins);
@@ -67,7 +65,7 @@ namespace StudentHousingManagement
 
             try
             {
-                fs = new FileStream($"{path}/StudentHousingManagement/Files/Users", FileMode.Open, FileAccess.Read);
+                fs = new FileStream("Users", FileMode.Open, FileAccess.Read);
                 bf = new BinaryFormatter();
 
                 Users = (List<User>)bf.Deserialize(fs);
@@ -85,7 +83,7 @@ namespace StudentHousingManagement
 
             try
             {
-                fs = new FileStream($"{path}/StudentHousingManagement/Files/Admins", FileMode.Open, FileAccess.Read);
+                fs = new FileStream("Admins", FileMode.Open, FileAccess.Read);
                 bf = new BinaryFormatter();
 
                 Admins = (List<Admin>)bf.Deserialize(fs);

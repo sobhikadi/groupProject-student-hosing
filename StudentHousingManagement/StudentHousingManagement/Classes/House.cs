@@ -34,16 +34,17 @@ namespace StudentHousingManagement
             ChoreSchedule = new ChoreSchedule();
             Residents = new List<User>();
             Announcements = new List<Message>();
-            
         }
 
         public void AddResident(User resident)
         {
             Residents.Add(resident);
+            SaveMe();
         }
         public void RemoveResident(User resident)
         {
             Residents.Remove(resident);
+            SaveMe();
         }
 
         public bool RoomAvailable()
@@ -52,6 +53,13 @@ namespace StudentHousingManagement
         public void NewHouseRules(string rules)
         {
             HouseRules = rules;
+            SaveMe();
+        }
+
+        public void SaveMe()
+        {
+            BuildingController buildingController = new BuildingController();
+            buildingController.SaveBuilding(this.Building);
         }
 
         public override string ToString()

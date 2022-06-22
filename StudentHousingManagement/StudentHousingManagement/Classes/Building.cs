@@ -33,18 +33,27 @@
         public void AddResident(User resident)
         {
             Residents.Add(resident);
+            SaveMe();
         }
         public void RemoveResident(User resident)
         {
             Residents.Remove(resident);
+            SaveMe();
         }
         public void NewBuildingRules(string rules)
         {
             BuildingRules = rules;
+            SaveMe();
         }
 
         public bool HouseAvailable()
         { return Houses.Count < NoOfHouses; }
+
+        public void SaveMe()
+        {
+            BuildingController buildingController = new BuildingController();
+            buildingController.SaveBuilding(this);
+        }
 
         public override string ToString()
         {

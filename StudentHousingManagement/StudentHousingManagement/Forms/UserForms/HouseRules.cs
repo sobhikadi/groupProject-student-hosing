@@ -14,17 +14,23 @@ namespace StudentHousingManagementForms
     public partial class HouseRules : Form
     {
         User user;
+        House house;
         public HouseRules(User user)
         {
             InitializeComponent();
             this.user = user;
-            tbHouseRules.Text = user.House.HouseRules;
-            tbBuildingRules.Text = user.House.Building.BuildingRules;
+
+            BuildingController buildingController = new BuildingController();
+            house = buildingController.GetUserHouse(user);
+
+            tbHouseRules.Text = house.HouseRules;
+            tbBuildingRules.Text = house.Building.BuildingRules;
         }
 
         private void btnUpdateHouseRules_Click(object sender, EventArgs e)
         {
-            user.House.NewHouseRules(tbHouseRules.Text);
+            house.NewHouseRules(tbHouseRules.Text);
+
             MessageBox.Show("House rules updated.");
         }
     }

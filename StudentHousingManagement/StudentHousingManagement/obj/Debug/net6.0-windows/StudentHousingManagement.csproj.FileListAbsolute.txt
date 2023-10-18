@@ -86,7 +86,6 @@ D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingMa
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserControlBlank.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserControlComplaints.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.UserControlDays.resources
-D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.BuildingHouseRules.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.ChoreForm.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.ChoresForm.resources
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.ChoreShedule.resources
@@ -107,3 +106,4 @@ D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingMa
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagement.genruntimeconfig.cache
 D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\ref\StudentHousingManagement.dll
 C:\Users\maxva\OneDrive\Documents\HBO-ICT\StudentHousingManagement\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.HouseRules.resources
+D:\Fontys\Semeester 1\Advanced block\student-housing-management\StudentHousingManagement\StudentHousingManagement\obj\Debug\net6.0-windows\StudentHousingManagementForms.HouseRules.resources

@@ -46,7 +46,7 @@ namespace StudentHousingManagementForms
 
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = Color.DeepSkyBlue;
-                    currentButton.ForeColor = Color.Black;
+                    currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Segoe UI", 13.5F);
                 }
             }
